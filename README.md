@@ -31,20 +31,20 @@ Trillion Labs AI Agent Hackathon 2026 · Track 1 (Zoro-1 Arena) · Two Drone · 
 | [`scenario-past_hazard.jsonl`](logs/scenario-past_hazard.jsonl), [`scenario-rule.jsonl`](logs/scenario-rule.jsonl) | 지난 사건 + 사진 속 위험, 운영 규칙 추가 | 긴급 + 확인 필요 / 규칙 적용으로 최우선 |
 | [`decisions.jsonl`](logs/decisions.jsonl), [`proof.json`](logs/proof.json) | 합성 신고 100건 폭주와 전체 점검 | 100건 33.5초, 폴백 0건, 규칙 추가 시 6건 1.4초 재정렬, 전 항목 통과 |
 
-발표 영상(무음 3편)은 발표 슬라이드에 들어 있다. 실제 iPhone 17로 촬영했고, 화면의 시간 수치는 촬영 당시 상황판 기록이다.
+발표 영상(무음 3편)은 발표 슬라이드에 들어 있다. 실제 iPhone 17로 촬영했고, 화면과 슬라이드의 시간 수치(제출→카드 1.16초, 규칙 재정렬 1.6초·4위→1위, 100건 30.8초·3.25건/초, 장애 복구 5초)는 촬영 당시 상황판 기록이다: [`logs/video-takes/`](logs/video-takes/) (clip1~5의 `metrics`). `labels.jsonl`의 사람 라벨 1건은 점검 스크립트가 넣은 테스트 입력이다.
 
 ## 결과 요약
 
-모든 Zoro 수치는 **학습 라벨 0건**이다.
+Zoro는 미세조정하지 않았다. 판정 기준값(생명 위협 0.34, 사진 피해 0.60)만 합성 학습 세트로 보정했다. 아래 71.6%는 평가용 4단계 정책 기준이며, 사진 피해 질문 문구는 시나리오 사진을 보고 다듬어 다소 낙관적일 수 있다(그래서 처음 보는 사진 193장으로 따로 확인했다).
 
 **사진+글 신고 긴급도** (CrisisMMD 사진 + 합성 신고 글, 사진·글 재난 종류가 일치하는 303건, 4단계)
 
 | 모델 | 학습 라벨 | 깔끔한 글 | 오타·사투리 글 |
 |---|---:|---:|---:|
 | **Zoro-1** | 0건 | **71.6%** | **71.9%** |
-| KcELECTRA+CLIP+규칙 | 50건 | 67.3% | 65.0% |
-| KcELECTRA+CLIP+규칙 | 200건 | 73.9% | 68.0% |
-| KcELECTRA+CLIP+규칙 | 1,500건 | 77.9% | 78.2% |
+| KcELECTRA+CLIP+규칙 | 글 50건 + 사진 2,468장 | 67.3% | 65.0% |
+| KcELECTRA+CLIP+규칙 | 글 200건 + 사진 2,468장 | 73.9% | 68.0% |
+| KcELECTRA+CLIP+규칙 | 글 1,500건 + 사진 2,468장 | 77.9% | 78.2% |
 
 - **범용 VLM 비교.** 같은 질문 분해 방식에서 Zoro 62.4%, Qwen2.5-VL-7B 33.7%였다. 건당 중앙값은 291 ms 대 1,213 ms였고, Qwen은 303건 중 56건이 응답 형식 오류로 판정할 수 없었다(56건을 모두 정답으로 쳐도 52.1%). 이 비교는 질문 개선 전 버전이며, 튜닝한 Qwen의 성능까지 뜻하지는 않는다. [7절](bench/BENCHMARK_LOG.md#7-qwen-분해형을-추가한-동일-방식-비교-2026-11-19)
 - **오타·사투리 글.** 합성 신고 400건의 사진과 정답을 고정하고 글만 다시 썼다. Zoro는 그대로였고 라벨 200건 이하 전용 파이프라인은 떨어졌다. [18절](bench/BENCHMARK_LOG.md#18-zoro-쪽-신고-글-분포-이동과-추론-모드-재판단-2026-11-20-claude-세션) · [비교 모델](bench/report119/results/noisy-shift/)
@@ -61,11 +61,12 @@ Trillion Labs AI Agent Hackathon 2026 · Track 1 (Zoro-1 Arena) · Two Drone · 
 
 **처음 보는 재난 사진** (CrisisMMD, 평가 설계에 쓰지 않은 193장, 심각 피해 여부)
 
-Zoro 77.2%, 사진 라벨 2,468장으로 학습한 CLIP 분류기 80.8~81.3%. [평가셋](bench/claude_eval/severity_holdout.py) · [Zoro 채점](evidence/damage-review/image-severity.json)
+Zoro 77.2%(149/193), 사진 라벨 2,468장으로 학습한 CLIP ViT-B/32 분류기 81.3%(157/193). [평가셋](bench/claude_eval/severity_holdout.py) · [Zoro 채점](evidence/damage-review/image-severity.json) · [CLIP 채점](bench/claude_eval/clip_holdout.py) ([결과](bench/claude_eval/results/clip_holdout.txt))
 
 **한계**
 - 흐린 사진에서는 학습한 모델이 더 강하다. 심각 피해 Zoro 65% 대 KcELECTRA+CLIP 73%. [22절](bench/BENCHMARK_LOG.md)
-- 생명 위협을 놓치지 않도록 기준을 낮게 잡아, 폭주 100건에서 최우선을 정답(32건)보다 많이(39건) 매긴다.
+- 생명 위협을 놓치지 않도록 기준을 낮게 잡아 최우선을 많이 매긴다. 규칙 없이 돌린 폭주 100건에서 최우선 38건, 같은 100건의 정답은 32건이었다([기록](evidence/damage-review/after.json)). 장애 시나리오의 test-0074(정답 비긴급)도 복구 후 Zoro가 최우선으로 올렸다.
+- 평가는 CrisisMMD 사진과 합성 신고 글, 실제 119 통화 전사(글만)로 했다. 실제 119 사진 신고 데이터로는 검증하지 못했다.
 - 라벨이 수천 건 쌓이면 전용 파이프라인이 앞선다. 그래서 접수요원 수정을 라벨로 저장한다.
 
 ## 동작 방식

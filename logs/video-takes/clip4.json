@@ -1,0 +1,1188 @@
+{
+  "clip": 4,
+  "snapshots": {
+    "before": {
+      "cards": [
+        {
+          "id": "2528d595ad3a4ad782710c396fadfcdf",
+          "text": "경기 남양주시 와부읍인데, 지난주에 주택 화재가 있었어요. 그때 모두 대피해서 다친 사람은 없었답니다. 보험 처리는 어디에 물어보면 되는지요.",
+          "source": "example",
+          "scenario_id": "test-0395",
+          "image_url": "/api/reports/2528d595ad3a4ad782710c396fadfcdf/image",
+          "created_at": 1795114699.183555,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.007000000000000006,
+              "life_threat": 0.001,
+              "severe": 0.2645,
+              "now": 0.2133,
+              "field_photo": 0.9427,
+              "ongoing_hazard": 0.8146,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.001,
+              "trapped": 0.003,
+              "minor_injury": 0.003,
+              "none": 0.993
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.9713,
+            "photo_kind": "fire_smoke_burn",
+            "photo_prob": 0.9911,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.2645,
+              "mild": 0.1106,
+              "none": 0.6249
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "지난 사건으로 분류됐지만 사진에 촬영 당시 즉각적인 위험이 보여 검수 필요"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 1110.5
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "90cf0fd517d54516a71e686b49b05552",
+          "text": "구례군 구례읍 침수 빨리 확인해주세요. 연락이 안 돼서 급합니다.",
+          "source": "example",
+          "scenario_id": "test-0162",
+          "image_url": "/api/reports/90cf0fd517d54516a71e686b49b05552/image",
+          "created_at": 1795114699.1933541,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.5045,
+              "life_threat": 0.0948,
+              "severe": 0.7761,
+              "now": 0.9286,
+              "field_photo": 0.9454,
+              "ongoing_hazard": 0.661,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0948,
+              "trapped": 0.3978,
+              "minor_injury": 0.0118,
+              "none": 0.4955
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9884,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9867,
+            "review_uncertainty": [
+              "people"
+            ],
+            "damage_probabilities": {
+              "severe": 0.7761,
+              "mild": 0.1706,
+              "none": 0.0532
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "진행 중인 사건",
+              "사진에 촬영 당시 진행 중인 위험",
+              "사진에 심각한 물적 피해",
+              "판단 불확실 · 인명 위험"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 1105
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "796a45ce608f4797877d54d168382cc2",
+          "text": "울산 울주군 언양읍인데요, 태풍 때문에 차 안에 사람이 갇혀 있어요. 빨리 도와주이소!",
+          "source": "example",
+          "scenario_id": "test-0005",
+          "image_url": "/api/reports/796a45ce608f4797877d54d168382cc2/image",
+          "created_at": 1795114699.1882355,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.9917,
+              "life_threat": 0.0091,
+              "severe": 0.7001,
+              "now": 0.9493,
+              "field_photo": 0.9703,
+              "ongoing_hazard": 0.3499,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0091,
+              "trapped": 0.9805,
+              "minor_injury": 0.0022,
+              "none": 0.0083
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9776,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9929,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.7001,
+              "mild": 0.2238,
+              "none": 0.0761
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "사진에 심각한 물적 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 1116
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "a20eddd4cc79411990bd1778a3b22c64",
+          "text": "서울 은평구 불광동인데요, 태풍 피해가 났어요. 옆집 노부모님이 거동을 못 하셔서 집 안에 갇혀 계세요. 어떻게 해야 하나요.",
+          "source": "example",
+          "scenario_id": "test-0393",
+          "image_url": "/api/reports/a20eddd4cc79411990bd1778a3b22c64/image",
+          "created_at": 1795114699.1973958,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.901,
+              "life_threat": 0.0135,
+              "severe": 0.3203,
+              "now": 0.7612,
+              "field_photo": 0.9628,
+              "ongoing_hazard": 0.4332,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0135,
+              "trapped": 0.8752,
+              "minor_injury": 0.0124,
+              "none": 0.099
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9782,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9601,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.3203,
+              "mild": 0.5343,
+              "none": 0.1454
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 1109.9
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "1b217843d95848788e98733961f521e1",
+          "text": "남양주시 와부읍 태풍 피해예요. 빨리 확인해주세요.",
+          "source": "example",
+          "scenario_id": "test-0189",
+          "image_url": "/api/reports/1b217843d95848788e98733961f521e1/image",
+          "created_at": 1795114699.2013977,
+          "status": "done",
+          "urgency": "normal",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "normal",
+            "probs": {
+              "people": 0.17620000000000002,
+              "life_threat": 0.0329,
+              "severe": 0.1907,
+              "now": 0.9394,
+              "field_photo": 0.9513,
+              "ongoing_hazard": 0.3596,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0329,
+              "trapped": 0.1219,
+              "minor_injury": 0.0214,
+              "none": 0.8238
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9909,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.939,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.1907,
+              "mild": 0.6839,
+              "none": 0.1254
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "인명 위험·사진 속 진행 위험·심각한 물적 피해 신호 없음"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 548.4
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "e8da4860d43e4fbfa47cefb5ff1048d3",
+          "text": "경기 남양주시 와부읍 폭우 관련해서 어제 찍은 사진 공유드려요 확인 한번만 부탁드려요",
+          "source": "example",
+          "scenario_id": "test-0014",
+          "image_url": "/api/reports/e8da4860d43e4fbfa47cefb5ff1048d3/image",
+          "created_at": 1795114699.2051666,
+          "status": "done",
+          "urgency": "non_urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "non_urgent",
+            "probs": {
+              "people": 0.15849999999999997,
+              "life_threat": 0.035,
+              "severe": 0.863,
+              "now": 0.3023,
+              "field_photo": 0.987,
+              "ongoing_hazard": 0.2782,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.035,
+              "trapped": 0.1052,
+              "minor_injury": 0.0182,
+              "none": 0.8415
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9941,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.5616,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.863,
+              "mild": 0.1095,
+              "none": 0.0275
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "지난 사건으로 분류"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 558.5
+          },
+          "recovery": null,
+          "rule_revision": 0
+        }
+      ],
+      "rules": [],
+      "revision": 0,
+      "labels": 0,
+      "outage_recovery": false,
+      "burst": null,
+      "version": 12
+    },
+    "reranked": {
+      "cards": [
+        {
+          "id": "a20eddd4cc79411990bd1778a3b22c64",
+          "text": "서울 은평구 불광동인데요, 태풍 피해가 났어요. 옆집 노부모님이 거동을 못 하셔서 집 안에 갇혀 계세요. 어떻게 해야 하나요.",
+          "source": "example",
+          "scenario_id": "test-0393",
+          "image_url": "/api/reports/a20eddd4cc79411990bd1778a3b22c64/image",
+          "created_at": 1795114699.1973958,
+          "status": "done",
+          "urgency": "top",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "top",
+            "probs": {
+              "people": 0.9027000000000001,
+              "life_threat": 0.014,
+              "severe": 0.3349,
+              "now": 0.7525,
+              "field_photo": 0.9621,
+              "ongoing_hazard": 0.4333,
+              "rule_1": 0.9629,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.014,
+              "trapped": 0.8762,
+              "minor_injury": 0.0125,
+              "none": 0.0973
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9795,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9595,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.3349,
+              "mild": 0.5266,
+              "none": 0.1384
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "운영 규칙 적용 · 고립된 고령자·어린이는 최우선"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": true,
+                "applied": true
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 829.8
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "2528d595ad3a4ad782710c396fadfcdf",
+          "text": "경기 남양주시 와부읍인데, 지난주에 주택 화재가 있었어요. 그때 모두 대피해서 다친 사람은 없었답니다. 보험 처리는 어디에 물어보면 되는지요.",
+          "source": "example",
+          "scenario_id": "test-0395",
+          "image_url": "/api/reports/2528d595ad3a4ad782710c396fadfcdf/image",
+          "created_at": 1795114699.183555,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.006800000000000028,
+              "life_threat": 0.0009,
+              "severe": 0.2717,
+              "now": 0.2172,
+              "field_photo": 0.9354,
+              "ongoing_hazard": 0.8211,
+              "rule_1": 0.0448,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0009,
+              "trapped": 0.0029,
+              "minor_injury": 0.003,
+              "none": 0.9932
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.972,
+            "photo_kind": "fire_smoke_burn",
+            "photo_prob": 0.9906,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.2717,
+              "mild": 0.1087,
+              "none": 0.6197
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "지난 사건으로 분류됐지만 사진에 촬영 당시 즉각적인 위험이 보여 검수 필요"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 836
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "90cf0fd517d54516a71e686b49b05552",
+          "text": "구례군 구례읍 침수 빨리 확인해주세요. 연락이 안 돼서 급합니다.",
+          "source": "example",
+          "scenario_id": "test-0162",
+          "image_url": "/api/reports/90cf0fd517d54516a71e686b49b05552/image",
+          "created_at": 1795114699.1933541,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.5077,
+              "life_threat": 0.0956,
+              "severe": 0.7814,
+              "now": 0.9202,
+              "field_photo": 0.9411,
+              "ongoing_hazard": 0.6582,
+              "rule_1": 0.1122,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0956,
+              "trapped": 0.3992,
+              "minor_injury": 0.0129,
+              "none": 0.4923
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9882,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9858,
+            "review_uncertainty": [
+              "people"
+            ],
+            "damage_probabilities": {
+              "severe": 0.7814,
+              "mild": 0.1652,
+              "none": 0.0535
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "진행 중인 사건",
+              "사진에 촬영 당시 진행 중인 위험",
+              "사진에 심각한 물적 피해",
+              "판단 불확실 · 인명 위험"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 811.7
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "796a45ce608f4797877d54d168382cc2",
+          "text": "울산 울주군 언양읍인데요, 태풍 때문에 차 안에 사람이 갇혀 있어요. 빨리 도와주이소!",
+          "source": "example",
+          "scenario_id": "test-0005",
+          "image_url": "/api/reports/796a45ce608f4797877d54d168382cc2/image",
+          "created_at": 1795114699.1882355,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.9921,
+              "life_threat": 0.0087,
+              "severe": 0.7029,
+              "now": 0.9439,
+              "field_photo": 0.9684,
+              "ongoing_hazard": 0.3545,
+              "rule_1": 0.2103,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0087,
+              "trapped": 0.9814,
+              "minor_injury": 0.002,
+              "none": 0.0079
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9787,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9928,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.7029,
+              "mild": 0.2216,
+              "none": 0.0755
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "사진에 심각한 물적 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 838.3
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "1b217843d95848788e98733961f521e1",
+          "text": "남양주시 와부읍 태풍 피해예요. 빨리 확인해주세요.",
+          "source": "example",
+          "scenario_id": "test-0189",
+          "image_url": "/api/reports/1b217843d95848788e98733961f521e1/image",
+          "created_at": 1795114699.2013977,
+          "status": "done",
+          "urgency": "normal",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "normal",
+            "probs": {
+              "people": 0.17620000000000002,
+              "life_threat": 0.0329,
+              "severe": 0.2027,
+              "now": 0.9394,
+              "field_photo": 0.9487,
+              "ongoing_hazard": 0.3503,
+              "rule_1": 0.079,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0329,
+              "trapped": 0.1219,
+              "minor_injury": 0.0214,
+              "none": 0.8238
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9909,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9367,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.2027,
+              "mild": 0.667,
+              "none": 0.1303
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "인명 위험·사진 속 진행 위험·심각한 물적 피해 신호 없음"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 510.9
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "e8da4860d43e4fbfa47cefb5ff1048d3",
+          "text": "경기 남양주시 와부읍 폭우 관련해서 어제 찍은 사진 공유드려요 확인 한번만 부탁드려요",
+          "source": "example",
+          "scenario_id": "test-0014",
+          "image_url": "/api/reports/e8da4860d43e4fbfa47cefb5ff1048d3/image",
+          "created_at": 1795114699.2051666,
+          "status": "done",
+          "urgency": "non_urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "non_urgent",
+            "probs": {
+              "people": 0.1521,
+              "life_threat": 0.0339,
+              "severe": 0.8714,
+              "now": 0.3034,
+              "field_photo": 0.9877,
+              "ongoing_hazard": 0.2781,
+              "rule_1": 0.0372,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0339,
+              "trapped": 0.0999,
+              "minor_injury": 0.0184,
+              "none": 0.8479
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.994,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.5672,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.8714,
+              "mild": 0.102,
+              "none": 0.0266
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "지난 사건으로 분류"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 494.9
+          },
+          "recovery": null,
+          "rule_revision": 1
+        }
+      ],
+      "rules": [
+        "고립된 고령자·어린이는 최우선"
+      ],
+      "revision": 1,
+      "labels": 0,
+      "outage_recovery": false,
+      "burst": null,
+      "version": 19
+    },
+    "after": {
+      "cards": [
+        {
+          "id": "a20eddd4cc79411990bd1778a3b22c64",
+          "text": "서울 은평구 불광동인데요, 태풍 피해가 났어요. 옆집 노부모님이 거동을 못 하셔서 집 안에 갇혀 계세요. 어떻게 해야 하나요.",
+          "source": "example",
+          "scenario_id": "test-0393",
+          "image_url": "/api/reports/a20eddd4cc79411990bd1778a3b22c64/image",
+          "created_at": 1795114699.1973958,
+          "status": "done",
+          "urgency": "top",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "top",
+            "probs": {
+              "people": 0.9027000000000001,
+              "life_threat": 0.014,
+              "severe": 0.3349,
+              "now": 0.7525,
+              "field_photo": 0.9621,
+              "ongoing_hazard": 0.4333,
+              "rule_1": 0.9629,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.014,
+              "trapped": 0.8762,
+              "minor_injury": 0.0125,
+              "none": 0.0973
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9795,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9595,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.3349,
+              "mild": 0.5266,
+              "none": 0.1384
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "운영 규칙 적용 · 고립된 고령자·어린이는 최우선"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": true,
+                "applied": true
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 829.8
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "2528d595ad3a4ad782710c396fadfcdf",
+          "text": "경기 남양주시 와부읍인데, 지난주에 주택 화재가 있었어요. 그때 모두 대피해서 다친 사람은 없었답니다. 보험 처리는 어디에 물어보면 되는지요.",
+          "source": "example",
+          "scenario_id": "test-0395",
+          "image_url": "/api/reports/2528d595ad3a4ad782710c396fadfcdf/image",
+          "created_at": 1795114699.183555,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.006800000000000028,
+              "life_threat": 0.0009,
+              "severe": 0.2717,
+              "now": 0.2172,
+              "field_photo": 0.9354,
+              "ongoing_hazard": 0.8211,
+              "rule_1": 0.0448,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0009,
+              "trapped": 0.0029,
+              "minor_injury": 0.003,
+              "none": 0.9932
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.972,
+            "photo_kind": "fire_smoke_burn",
+            "photo_prob": 0.9906,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.2717,
+              "mild": 0.1087,
+              "none": 0.6197
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "지난 사건으로 분류됐지만 사진에 촬영 당시 즉각적인 위험이 보여 검수 필요"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 836
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "90cf0fd517d54516a71e686b49b05552",
+          "text": "구례군 구례읍 침수 빨리 확인해주세요. 연락이 안 돼서 급합니다.",
+          "source": "example",
+          "scenario_id": "test-0162",
+          "image_url": "/api/reports/90cf0fd517d54516a71e686b49b05552/image",
+          "created_at": 1795114699.1933541,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.5077,
+              "life_threat": 0.0956,
+              "severe": 0.7814,
+              "now": 0.9202,
+              "field_photo": 0.9411,
+              "ongoing_hazard": 0.6582,
+              "rule_1": 0.1122,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0956,
+              "trapped": 0.3992,
+              "minor_injury": 0.0129,
+              "none": 0.4923
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9882,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9858,
+            "review_uncertainty": [
+              "people"
+            ],
+            "damage_probabilities": {
+              "severe": 0.7814,
+              "mild": 0.1652,
+              "none": 0.0535
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "진행 중인 사건",
+              "사진에 촬영 당시 진행 중인 위험",
+              "사진에 심각한 물적 피해",
+              "판단 불확실 · 인명 위험"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 811.7
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "796a45ce608f4797877d54d168382cc2",
+          "text": "울산 울주군 언양읍인데요, 태풍 때문에 차 안에 사람이 갇혀 있어요. 빨리 도와주이소!",
+          "source": "example",
+          "scenario_id": "test-0005",
+          "image_url": "/api/reports/796a45ce608f4797877d54d168382cc2/image",
+          "created_at": 1795114699.1882355,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.9921,
+              "life_threat": 0.0087,
+              "severe": 0.7029,
+              "now": 0.9439,
+              "field_photo": 0.9684,
+              "ongoing_hazard": 0.3545,
+              "rule_1": 0.2103,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0087,
+              "trapped": 0.9814,
+              "minor_injury": 0.002,
+              "none": 0.0079
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9787,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9928,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.7029,
+              "mild": 0.2216,
+              "none": 0.0755
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "사진에 심각한 물적 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 838.3
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "1b217843d95848788e98733961f521e1",
+          "text": "남양주시 와부읍 태풍 피해예요. 빨리 확인해주세요.",
+          "source": "example",
+          "scenario_id": "test-0189",
+          "image_url": "/api/reports/1b217843d95848788e98733961f521e1/image",
+          "created_at": 1795114699.2013977,
+          "status": "done",
+          "urgency": "normal",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "normal",
+            "probs": {
+              "people": 0.17620000000000002,
+              "life_threat": 0.0329,
+              "severe": 0.2027,
+              "now": 0.9394,
+              "field_photo": 0.9487,
+              "ongoing_hazard": 0.3503,
+              "rule_1": 0.079,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0329,
+              "trapped": 0.1219,
+              "minor_injury": 0.0214,
+              "none": 0.8238
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.9909,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.9367,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.2027,
+              "mild": 0.667,
+              "none": 0.1303
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "인명 위험·사진 속 진행 위험·심각한 물적 피해 신호 없음"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 510.9
+          },
+          "recovery": null,
+          "rule_revision": 1
+        },
+        {
+          "id": "e8da4860d43e4fbfa47cefb5ff1048d3",
+          "text": "경기 남양주시 와부읍 폭우 관련해서 어제 찍은 사진 공유드려요 확인 한번만 부탁드려요",
+          "source": "example",
+          "scenario_id": "test-0014",
+          "image_url": "/api/reports/e8da4860d43e4fbfa47cefb5ff1048d3/image",
+          "created_at": 1795114699.2051666,
+          "status": "done",
+          "urgency": "non_urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "non_urgent",
+            "probs": {
+              "people": 0.1521,
+              "life_threat": 0.0339,
+              "severe": 0.8714,
+              "now": 0.3034,
+              "field_photo": 0.9877,
+              "ongoing_hazard": 0.2781,
+              "rule_1": 0.0372,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.0339,
+              "trapped": 0.0999,
+              "minor_injury": 0.0184,
+              "none": 0.8479
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "storm_flood",
+            "claim_prob": 0.994,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.5672,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.8714,
+              "mild": 0.102,
+              "none": 0.0266
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "지난 사건으로 분류"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [
+              {
+                "key": "rule_1",
+                "condition": "고립된 고령자·어린이는 최우선",
+                "matched": false,
+                "applied": false
+              }
+            ],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 494.9
+          },
+          "recovery": null,
+          "rule_revision": 1
+        }
+      ],
+      "rules": [
+        "고립된 고령자·어린이는 최우선"
+      ],
+      "revision": 1,
+      "labels": 0,
+      "outage_recovery": false,
+      "burst": null,
+      "version": 19
+    }
+  },
+  "metrics": {
+    "old_rank": 4,
+    "new_rank": 1,
+    "ranks": [
+      4,
+      1
+    ],
+    "cards": 6,
+    "id": "a20eddd4cc79411990bd1778a3b22c64",
+    "scenario_id": "test-0393",
+    "before": "urgent",
+    "after": "top",
+    "all_ms": 1598,
+    "rule": "고립된 고령자·어린이는 최우선",
+    "rule_revision": 1,
+    "initial_order": [
+      "2528d595ad3a4ad782710c396fadfcdf",
+      "90cf0fd517d54516a71e686b49b05552",
+      "796a45ce608f4797877d54d168382cc2",
+      "a20eddd4cc79411990bd1778a3b22c64",
+      "1b217843d95848788e98733961f521e1",
+      "e8da4860d43e4fbfa47cefb5ff1048d3"
+    ],
+    "final_order": [
+      "a20eddd4cc79411990bd1778a3b22c64",
+      "2528d595ad3a4ad782710c396fadfcdf",
+      "90cf0fd517d54516a71e686b49b05552",
+      "796a45ce608f4797877d54d168382cc2",
+      "1b217843d95848788e98733961f521e1",
+      "e8da4860d43e4fbfa47cefb5ff1048d3"
+    ],
+    "badge": "재정렬 완료 1.6초",
+    "screen_seconds": "1.6"
+  }
+}

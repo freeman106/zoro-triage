@@ -1,0 +1,353 @@
+{
+  "clip": 2,
+  "snapshots": {
+    "before": {
+      "cards": [
+        {
+          "id": "c096fa0b09664729a573f4ef5d1fd24f",
+          "text": "3층 집에 불났어요 연기 엄청 나고 할머니가 안에서 못 나오세요",
+          "source": "phone",
+          "scenario_id": null,
+          "image_url": "/api/reports/c096fa0b09664729a573f4ef5d1fd24f/image",
+          "created_at": 1795113846.3631067,
+          "status": "done",
+          "urgency": "top",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "top",
+            "probs": {
+              "people": 0.9573,
+              "life_threat": 0.0391,
+              "severe": 0.9568,
+              "now": 0.9511,
+              "field_photo": 0.8259,
+              "ongoing_hazard": 0.9075,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0391,
+              "trapped": 0.9151,
+              "minor_injury": 0.0031,
+              "none": 0.0427
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.9877,
+            "photo_kind": "fire_smoke_burn",
+            "photo_prob": 0.9302,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.9568,
+              "mild": 0.0331,
+              "none": 0.0101
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "사진에 촬영 당시 진행 중인 위험",
+              "사진에 심각한 물적 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 234.7
+          },
+          "recovery": null,
+          "rule_revision": 0
+        }
+      ],
+      "rules": [],
+      "revision": 0,
+      "labels": 0,
+      "outage_recovery": false,
+      "burst": null,
+      "version": 2
+    },
+    "classified": {
+      "cards": [
+        {
+          "id": "c096fa0b09664729a573f4ef5d1fd24f",
+          "text": "3층 집에 불났어요 연기 엄청 나고 할머니가 안에서 못 나오세요",
+          "source": "phone",
+          "scenario_id": null,
+          "image_url": "/api/reports/c096fa0b09664729a573f4ef5d1fd24f/image",
+          "created_at": 1795113846.3631067,
+          "status": "done",
+          "urgency": "top",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "top",
+            "probs": {
+              "people": 0.9573,
+              "life_threat": 0.0391,
+              "severe": 0.9568,
+              "now": 0.9511,
+              "field_photo": 0.8259,
+              "ongoing_hazard": 0.9075,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0391,
+              "trapped": 0.9151,
+              "minor_injury": 0.0031,
+              "none": 0.0427
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.9877,
+            "photo_kind": "fire_smoke_burn",
+            "photo_prob": 0.9302,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.9568,
+              "mild": 0.0331,
+              "none": 0.0101
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "사진에 촬영 당시 진행 중인 위험",
+              "사진에 심각한 물적 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 234.7
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "7a26b62b27894cd3b655627978d9c2af",
+          "text": "골목에 불났어요 펑 소리 나고 불꽃 튀어요",
+          "source": "phone",
+          "scenario_id": null,
+          "image_url": "/api/reports/7a26b62b27894cd3b655627978d9c2af/image",
+          "created_at": 1795114058.4636962,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.5486,
+              "life_threat": 0.1435,
+              "severe": 0.5581,
+              "now": 0.9685,
+              "field_photo": 0.9866,
+              "ongoing_hazard": 0.6703,
+              "mismatch": null
+            },
+            "mismatch": true,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.1435,
+              "trapped": 0.3805,
+              "minor_injury": 0.0246,
+              "none": 0.4514
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.9764,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.8841,
+            "review_uncertainty": [
+              "people"
+            ],
+            "damage_probabilities": {
+              "severe": 0.5581,
+              "mild": 0.4084,
+              "none": 0.0335
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "진행 중인 사건",
+              "사진에 촬영 당시 진행 중인 위험",
+              "글과 사진의 재난 유형이 다를 수 있음",
+              "판단 불확실 · 인명 위험",
+              "참고 · 등급에 영향 없는 불확실 판단 · 사진 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 374.4
+          },
+          "recovery": null,
+          "rule_revision": 0
+        }
+      ],
+      "rules": [],
+      "revision": 0,
+      "labels": 0,
+      "outage_recovery": false,
+      "burst": null,
+      "version": 4
+    },
+    "after": {
+      "cards": [
+        {
+          "id": "c096fa0b09664729a573f4ef5d1fd24f",
+          "text": "3층 집에 불났어요 연기 엄청 나고 할머니가 안에서 못 나오세요",
+          "source": "phone",
+          "scenario_id": null,
+          "image_url": "/api/reports/c096fa0b09664729a573f4ef5d1fd24f/image",
+          "created_at": 1795113846.3631067,
+          "status": "done",
+          "urgency": "top",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "top",
+            "probs": {
+              "people": 0.9573,
+              "life_threat": 0.0391,
+              "severe": 0.9568,
+              "now": 0.9511,
+              "field_photo": 0.8259,
+              "ongoing_hazard": 0.9075,
+              "mismatch": null
+            },
+            "mismatch": false,
+            "non_field_photo": false,
+            "person_state": "trapped",
+            "person_probabilities": {
+              "life_threat": 0.0391,
+              "trapped": 0.9151,
+              "minor_injury": 0.0031,
+              "none": 0.0427
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.9877,
+            "photo_kind": "fire_smoke_burn",
+            "photo_prob": 0.9302,
+            "review_uncertainty": [],
+            "damage_probabilities": {
+              "severe": 0.9568,
+              "mild": 0.0331,
+              "none": 0.0101
+            },
+            "damage_threshold": 0.6,
+            "review": false,
+            "reasons": [
+              "진행 중인 사건",
+              "신고 글에 인명 고립",
+              "사진에 촬영 당시 진행 중인 위험",
+              "사진에 심각한 물적 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 234.7
+          },
+          "recovery": null,
+          "rule_revision": 0
+        },
+        {
+          "id": "7a26b62b27894cd3b655627978d9c2af",
+          "text": "골목에 불났어요 펑 소리 나고 불꽃 튀어요",
+          "source": "phone",
+          "scenario_id": null,
+          "image_url": "/api/reports/7a26b62b27894cd3b655627978d9c2af/image",
+          "created_at": 1795114058.4636962,
+          "status": "done",
+          "urgency": "urgent",
+          "human_urgency": null,
+          "decision": {
+            "urgency": "urgent",
+            "probs": {
+              "people": 0.5486,
+              "life_threat": 0.1435,
+              "severe": 0.5581,
+              "now": 0.9685,
+              "field_photo": 0.9866,
+              "ongoing_hazard": 0.6703,
+              "mismatch": null
+            },
+            "mismatch": true,
+            "non_field_photo": false,
+            "person_state": "none",
+            "person_probabilities": {
+              "life_threat": 0.1435,
+              "trapped": 0.3805,
+              "minor_injury": 0.0246,
+              "none": 0.4514
+            },
+            "person_threshold": 0.34,
+            "claim_kind": "fire",
+            "claim_prob": 0.9764,
+            "photo_kind": "water_storm",
+            "photo_prob": 0.8841,
+            "review_uncertainty": [
+              "people"
+            ],
+            "damage_probabilities": {
+              "severe": 0.5581,
+              "mild": 0.4084,
+              "none": 0.0335
+            },
+            "damage_threshold": 0.6,
+            "review": true,
+            "reasons": [
+              "진행 중인 사건",
+              "사진에 촬영 당시 진행 중인 위험",
+              "글과 사진의 재난 유형이 다를 수 있음",
+              "판단 불확실 · 인명 위험",
+              "참고 · 등급에 영향 없는 불확실 판단 · 사진 피해"
+            ],
+            "mode": "zoro",
+            "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+            "rules": [],
+            "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+            "ms": 374.4
+          },
+          "recovery": null,
+          "rule_revision": 0
+        }
+      ],
+      "rules": [],
+      "revision": 0,
+      "labels": 0,
+      "outage_recovery": false,
+      "burst": null,
+      "version": 4
+    }
+  },
+  "metrics": {
+    "id": "7a26b62b27894cd3b655627978d9c2af",
+    "submit_to_card_ms": 1237,
+    "submit_to_classified_ms": 1495,
+    "timing_basis": "physical_submit_click",
+    "device": "physical iPhone",
+    "camera_start": 14.143968749999999,
+    "intro_segments": [
+      [
+        7.02696875,
+        9.42696875
+      ]
+    ],
+    "urgency": "urgent",
+    "review": true,
+    "mismatch": true,
+    "claim_kind": "fire",
+    "claim_prob": 0.9764,
+    "photo_kind": "water_storm",
+    "photo_prob": 0.8841,
+    "model_ms": 374.4
+  }
+}
