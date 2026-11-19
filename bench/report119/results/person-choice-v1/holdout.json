@@ -1,0 +1,19 @@
+{
+  "n": 400,
+  "threshold": 0.34,
+  "tp": 112,
+  "fp": 0,
+  "fn": 5,
+  "recall": 0.9572649572649573,
+  "precision": 1.0,
+  "top": 153,
+  "top_rate": 0.3825,
+  "correct_state": 389,
+  "counts": {
+    "trapped": 144,
+    "life_threat": 112,
+    "none": 142,
+    "minor_injury": 2
+  },
+  "adopt": true
+}

@@ -1,0 +1,1839 @@
+{
+  "gate": "recall>=0.90 AND top_rate<=0.40",
+  "selection": "max min(recall-.90,.40-top_rate); ties precision,recall,threshold",
+  "selected": {
+    "n": 700,
+    "threshold": 0.34,
+    "tp": 209,
+    "fp": 0,
+    "fn": 9,
+    "recall": 0.9587155963302753,
+    "precision": 1.0,
+    "top": 243,
+    "top_rate": 0.34714285714285714,
+    "correct_state": 681,
+    "counts": {
+      "life_threat": 209,
+      "trapped": 250,
+      "none": 236,
+      "minor_injury": 5
+    }
+  },
+  "grid": [
+    {
+      "n": 700,
+      "threshold": 0.0,
+      "tp": 218,
+      "fp": 482,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 0.31142857142857144,
+      "top": 586,
+      "top_rate": 0.8371428571428572,
+      "correct_state": 218,
+      "counts": {
+        "life_threat": 700
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.01,
+      "tp": 218,
+      "fp": 268,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 0.448559670781893,
+      "top": 442,
+      "top_rate": 0.6314285714285715,
+      "correct_state": 431,
+      "counts": {
+        "life_threat": 486,
+        "none": 101,
+        "trapped": 113
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.02,
+      "tp": 218,
+      "fp": 169,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 0.5633074935400517,
+      "top": 387,
+      "top_rate": 0.5528571428571428,
+      "correct_state": 529,
+      "counts": {
+        "life_threat": 387,
+        "none": 117,
+        "trapped": 196
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.03,
+      "tp": 218,
+      "fp": 136,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 0.615819209039548,
+      "top": 370,
+      "top_rate": 0.5285714285714286,
+      "correct_state": 561,
+      "counts": {
+        "life_threat": 354,
+        "none": 126,
+        "trapped": 220
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.04,
+      "tp": 218,
+      "fp": 115,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 0.6546546546546547,
+      "top": 355,
+      "top_rate": 0.5071428571428571,
+      "correct_state": 582,
+      "counts": {
+        "life_threat": 333,
+        "none": 134,
+        "trapped": 233
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.05,
+      "tp": 217,
+      "fp": 98,
+      "fn": 1,
+      "recall": 0.9954128440366973,
+      "precision": 0.6888888888888889,
+      "top": 338,
+      "top_rate": 0.4828571428571429,
+      "correct_state": 598,
+      "counts": {
+        "life_threat": 315,
+        "none": 148,
+        "trapped": 237
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.06,
+      "tp": 217,
+      "fp": 80,
+      "fn": 1,
+      "recall": 0.9954128440366973,
+      "precision": 0.7306397306397306,
+      "top": 324,
+      "top_rate": 0.46285714285714286,
+      "correct_state": 616,
+      "counts": {
+        "life_threat": 297,
+        "none": 164,
+        "trapped": 239
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.07,
+      "tp": 217,
+      "fp": 64,
+      "fn": 1,
+      "recall": 0.9954128440366973,
+      "precision": 0.7722419928825622,
+      "top": 309,
+      "top_rate": 0.44142857142857145,
+      "correct_state": 630,
+      "counts": {
+        "life_threat": 281,
+        "none": 178,
+        "trapped": 241
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.08,
+      "tp": 217,
+      "fp": 52,
+      "fn": 1,
+      "recall": 0.9954128440366973,
+      "precision": 0.8066914498141264,
+      "top": 297,
+      "top_rate": 0.42428571428571427,
+      "correct_state": 642,
+      "counts": {
+        "life_threat": 269,
+        "none": 189,
+        "trapped": 242
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.09,
+      "tp": 217,
+      "fp": 41,
+      "fn": 1,
+      "recall": 0.9954128440366973,
+      "precision": 0.8410852713178295,
+      "top": 286,
+      "top_rate": 0.4085714285714286,
+      "correct_state": 653,
+      "counts": {
+        "life_threat": 258,
+        "none": 200,
+        "trapped": 242
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.1,
+      "tp": 217,
+      "fp": 27,
+      "fn": 1,
+      "recall": 0.9954128440366973,
+      "precision": 0.889344262295082,
+      "top": 273,
+      "top_rate": 0.39,
+      "correct_state": 667,
+      "counts": {
+        "life_threat": 244,
+        "none": 214,
+        "trapped": 242
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.11,
+      "tp": 216,
+      "fp": 19,
+      "fn": 2,
+      "recall": 0.9908256880733946,
+      "precision": 0.9191489361702128,
+      "top": 267,
+      "top_rate": 0.38142857142857145,
+      "correct_state": 674,
+      "counts": {
+        "life_threat": 235,
+        "none": 221,
+        "trapped": 243,
+        "minor_injury": 1
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.12,
+      "tp": 216,
+      "fp": 16,
+      "fn": 2,
+      "recall": 0.9908256880733946,
+      "precision": 0.9310344827586207,
+      "top": 264,
+      "top_rate": 0.37714285714285717,
+      "correct_state": 677,
+      "counts": {
+        "life_threat": 232,
+        "none": 224,
+        "trapped": 243,
+        "minor_injury": 1
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.13,
+      "tp": 216,
+      "fp": 11,
+      "fn": 2,
+      "recall": 0.9908256880733946,
+      "precision": 0.9515418502202643,
+      "top": 259,
+      "top_rate": 0.37,
+      "correct_state": 682,
+      "counts": {
+        "life_threat": 227,
+        "none": 229,
+        "trapped": 243,
+        "minor_injury": 1
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.14,
+      "tp": 216,
+      "fp": 10,
+      "fn": 2,
+      "recall": 0.9908256880733946,
+      "precision": 0.9557522123893806,
+      "top": 258,
+      "top_rate": 0.36857142857142855,
+      "correct_state": 682,
+      "counts": {
+        "life_threat": 226,
+        "none": 229,
+        "trapped": 244,
+        "minor_injury": 1
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.15,
+      "tp": 216,
+      "fp": 6,
+      "fn": 2,
+      "recall": 0.9908256880733946,
+      "precision": 0.972972972972973,
+      "top": 254,
+      "top_rate": 0.3628571428571429,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 222,
+        "none": 232,
+        "trapped": 245,
+        "minor_injury": 1
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.16,
+      "tp": 216,
+      "fp": 5,
+      "fn": 2,
+      "recall": 0.9908256880733946,
+      "precision": 0.9773755656108597,
+      "top": 253,
+      "top_rate": 0.36142857142857143,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 221,
+        "none": 232,
+        "trapped": 246,
+        "minor_injury": 1
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.17,
+      "tp": 215,
+      "fp": 4,
+      "fn": 3,
+      "recall": 0.9862385321100917,
+      "precision": 0.9817351598173516,
+      "top": 251,
+      "top_rate": 0.3585714285714286,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 219,
+        "none": 233,
+        "trapped": 246,
+        "minor_injury": 2
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.18,
+      "tp": 215,
+      "fp": 3,
+      "fn": 3,
+      "recall": 0.9862385321100917,
+      "precision": 0.9862385321100917,
+      "top": 250,
+      "top_rate": 0.35714285714285715,
+      "correct_state": 686,
+      "counts": {
+        "life_threat": 218,
+        "none": 234,
+        "trapped": 246,
+        "minor_injury": 2
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.19,
+      "tp": 215,
+      "fp": 3,
+      "fn": 3,
+      "recall": 0.9862385321100917,
+      "precision": 0.9862385321100917,
+      "top": 250,
+      "top_rate": 0.35714285714285715,
+      "correct_state": 686,
+      "counts": {
+        "life_threat": 218,
+        "none": 234,
+        "trapped": 246,
+        "minor_injury": 2
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.2,
+      "tp": 215,
+      "fp": 2,
+      "fn": 3,
+      "recall": 0.9862385321100917,
+      "precision": 0.9907834101382489,
+      "top": 249,
+      "top_rate": 0.3557142857142857,
+      "correct_state": 686,
+      "counts": {
+        "life_threat": 217,
+        "trapped": 247,
+        "none": 234,
+        "minor_injury": 2
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.21,
+      "tp": 215,
+      "fp": 2,
+      "fn": 3,
+      "recall": 0.9862385321100917,
+      "precision": 0.9907834101382489,
+      "top": 249,
+      "top_rate": 0.3557142857142857,
+      "correct_state": 686,
+      "counts": {
+        "life_threat": 217,
+        "trapped": 247,
+        "none": 234,
+        "minor_injury": 2
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.22,
+      "tp": 213,
+      "fp": 1,
+      "fn": 5,
+      "recall": 0.9770642201834863,
+      "precision": 0.9953271028037384,
+      "top": 247,
+      "top_rate": 0.35285714285714287,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 214,
+        "trapped": 247,
+        "none": 235,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.23,
+      "tp": 213,
+      "fp": 1,
+      "fn": 5,
+      "recall": 0.9770642201834863,
+      "precision": 0.9953271028037384,
+      "top": 247,
+      "top_rate": 0.35285714285714287,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 214,
+        "trapped": 247,
+        "none": 235,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.24,
+      "tp": 213,
+      "fp": 1,
+      "fn": 5,
+      "recall": 0.9770642201834863,
+      "precision": 0.9953271028037384,
+      "top": 247,
+      "top_rate": 0.35285714285714287,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 214,
+        "trapped": 247,
+        "none": 235,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.25,
+      "tp": 213,
+      "fp": 1,
+      "fn": 5,
+      "recall": 0.9770642201834863,
+      "precision": 0.9953271028037384,
+      "top": 247,
+      "top_rate": 0.35285714285714287,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 214,
+        "trapped": 247,
+        "none": 235,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.26,
+      "tp": 213,
+      "fp": 1,
+      "fn": 5,
+      "recall": 0.9770642201834863,
+      "precision": 0.9953271028037384,
+      "top": 247,
+      "top_rate": 0.35285714285714287,
+      "correct_state": 685,
+      "counts": {
+        "life_threat": 214,
+        "trapped": 247,
+        "none": 235,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.27,
+      "tp": 212,
+      "fp": 1,
+      "fn": 6,
+      "recall": 0.9724770642201835,
+      "precision": 0.9953051643192489,
+      "top": 246,
+      "top_rate": 0.3514285714285714,
+      "correct_state": 684,
+      "counts": {
+        "life_threat": 213,
+        "trapped": 247,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.28,
+      "tp": 211,
+      "fp": 1,
+      "fn": 7,
+      "recall": 0.9678899082568807,
+      "precision": 0.9952830188679245,
+      "top": 246,
+      "top_rate": 0.3514285714285714,
+      "correct_state": 683,
+      "counts": {
+        "life_threat": 212,
+        "trapped": 248,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.29,
+      "tp": 211,
+      "fp": 0,
+      "fn": 7,
+      "recall": 0.9678899082568807,
+      "precision": 1.0,
+      "top": 245,
+      "top_rate": 0.35,
+      "correct_state": 683,
+      "counts": {
+        "life_threat": 211,
+        "trapped": 249,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.3,
+      "tp": 210,
+      "fp": 0,
+      "fn": 8,
+      "recall": 0.963302752293578,
+      "precision": 1.0,
+      "top": 244,
+      "top_rate": 0.3485714285714286,
+      "correct_state": 682,
+      "counts": {
+        "life_threat": 210,
+        "trapped": 250,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.31,
+      "tp": 210,
+      "fp": 0,
+      "fn": 8,
+      "recall": 0.963302752293578,
+      "precision": 1.0,
+      "top": 244,
+      "top_rate": 0.3485714285714286,
+      "correct_state": 682,
+      "counts": {
+        "life_threat": 210,
+        "trapped": 250,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.32,
+      "tp": 210,
+      "fp": 0,
+      "fn": 8,
+      "recall": 0.963302752293578,
+      "precision": 1.0,
+      "top": 244,
+      "top_rate": 0.3485714285714286,
+      "correct_state": 682,
+      "counts": {
+        "life_threat": 210,
+        "trapped": 250,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.33,
+      "tp": 210,
+      "fp": 0,
+      "fn": 8,
+      "recall": 0.963302752293578,
+      "precision": 1.0,
+      "top": 244,
+      "top_rate": 0.3485714285714286,
+      "correct_state": 682,
+      "counts": {
+        "life_threat": 210,
+        "trapped": 250,
+        "none": 236,
+        "minor_injury": 4
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.34,
+      "tp": 209,
+      "fp": 0,
+      "fn": 9,
+      "recall": 0.9587155963302753,
+      "precision": 1.0,
+      "top": 243,
+      "top_rate": 0.34714285714285714,
+      "correct_state": 681,
+      "counts": {
+        "life_threat": 209,
+        "trapped": 250,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.35,
+      "tp": 208,
+      "fp": 0,
+      "fn": 10,
+      "recall": 0.9541284403669725,
+      "precision": 1.0,
+      "top": 243,
+      "top_rate": 0.34714285714285714,
+      "correct_state": 680,
+      "counts": {
+        "life_threat": 208,
+        "trapped": 251,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.36,
+      "tp": 207,
+      "fp": 0,
+      "fn": 11,
+      "recall": 0.9495412844036697,
+      "precision": 1.0,
+      "top": 243,
+      "top_rate": 0.34714285714285714,
+      "correct_state": 679,
+      "counts": {
+        "life_threat": 207,
+        "trapped": 252,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.37,
+      "tp": 207,
+      "fp": 0,
+      "fn": 11,
+      "recall": 0.9495412844036697,
+      "precision": 1.0,
+      "top": 243,
+      "top_rate": 0.34714285714285714,
+      "correct_state": 679,
+      "counts": {
+        "life_threat": 207,
+        "trapped": 252,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.38,
+      "tp": 205,
+      "fp": 0,
+      "fn": 13,
+      "recall": 0.9403669724770642,
+      "precision": 1.0,
+      "top": 243,
+      "top_rate": 0.34714285714285714,
+      "correct_state": 677,
+      "counts": {
+        "life_threat": 205,
+        "trapped": 254,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.39,
+      "tp": 200,
+      "fp": 0,
+      "fn": 18,
+      "recall": 0.9174311926605505,
+      "precision": 1.0,
+      "top": 240,
+      "top_rate": 0.34285714285714286,
+      "correct_state": 672,
+      "counts": {
+        "life_threat": 200,
+        "trapped": 259,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.4,
+      "tp": 199,
+      "fp": 0,
+      "fn": 19,
+      "recall": 0.9128440366972477,
+      "precision": 1.0,
+      "top": 239,
+      "top_rate": 0.3414285714285714,
+      "correct_state": 671,
+      "counts": {
+        "life_threat": 199,
+        "trapped": 260,
+        "none": 236,
+        "minor_injury": 5
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.41,
+      "tp": 196,
+      "fp": 0,
+      "fn": 22,
+      "recall": 0.8990825688073395,
+      "precision": 1.0,
+      "top": 236,
+      "top_rate": 0.33714285714285713,
+      "correct_state": 668,
+      "counts": {
+        "life_threat": 196,
+        "trapped": 262,
+        "none": 236,
+        "minor_injury": 6
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.42,
+      "tp": 193,
+      "fp": 0,
+      "fn": 25,
+      "recall": 0.8853211009174312,
+      "precision": 1.0,
+      "top": 235,
+      "top_rate": 0.3357142857142857,
+      "correct_state": 665,
+      "counts": {
+        "life_threat": 193,
+        "trapped": 263,
+        "none": 237,
+        "minor_injury": 7
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.43,
+      "tp": 190,
+      "fp": 0,
+      "fn": 28,
+      "recall": 0.8715596330275229,
+      "precision": 1.0,
+      "top": 233,
+      "top_rate": 0.33285714285714285,
+      "correct_state": 662,
+      "counts": {
+        "life_threat": 190,
+        "trapped": 266,
+        "none": 237,
+        "minor_injury": 7
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.44,
+      "tp": 187,
+      "fp": 0,
+      "fn": 31,
+      "recall": 0.8577981651376146,
+      "precision": 1.0,
+      "top": 232,
+      "top_rate": 0.3314285714285714,
+      "correct_state": 659,
+      "counts": {
+        "life_threat": 187,
+        "trapped": 268,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.45,
+      "tp": 185,
+      "fp": 0,
+      "fn": 33,
+      "recall": 0.8486238532110092,
+      "precision": 1.0,
+      "top": 231,
+      "top_rate": 0.33,
+      "correct_state": 657,
+      "counts": {
+        "life_threat": 185,
+        "trapped": 270,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.46,
+      "tp": 184,
+      "fp": 0,
+      "fn": 34,
+      "recall": 0.8440366972477065,
+      "precision": 1.0,
+      "top": 231,
+      "top_rate": 0.33,
+      "correct_state": 656,
+      "counts": {
+        "life_threat": 184,
+        "trapped": 271,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.47,
+      "tp": 184,
+      "fp": 0,
+      "fn": 34,
+      "recall": 0.8440366972477065,
+      "precision": 1.0,
+      "top": 231,
+      "top_rate": 0.33,
+      "correct_state": 656,
+      "counts": {
+        "life_threat": 184,
+        "trapped": 271,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.48,
+      "tp": 182,
+      "fp": 0,
+      "fn": 36,
+      "recall": 0.8348623853211009,
+      "precision": 1.0,
+      "top": 229,
+      "top_rate": 0.3271428571428571,
+      "correct_state": 654,
+      "counts": {
+        "life_threat": 182,
+        "trapped": 273,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.49,
+      "tp": 180,
+      "fp": 0,
+      "fn": 38,
+      "recall": 0.8256880733944955,
+      "precision": 1.0,
+      "top": 228,
+      "top_rate": 0.32571428571428573,
+      "correct_state": 652,
+      "counts": {
+        "life_threat": 180,
+        "trapped": 275,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.5,
+      "tp": 179,
+      "fp": 0,
+      "fn": 39,
+      "recall": 0.8211009174311926,
+      "precision": 1.0,
+      "top": 227,
+      "top_rate": 0.3242857142857143,
+      "correct_state": 651,
+      "counts": {
+        "life_threat": 179,
+        "trapped": 276,
+        "none": 237,
+        "minor_injury": 8
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.51,
+      "tp": 178,
+      "fp": 0,
+      "fn": 40,
+      "recall": 0.8165137614678899,
+      "precision": 1.0,
+      "top": 227,
+      "top_rate": 0.3242857142857143,
+      "correct_state": 650,
+      "counts": {
+        "life_threat": 178,
+        "trapped": 276,
+        "none": 237,
+        "minor_injury": 9
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.52,
+      "tp": 177,
+      "fp": 0,
+      "fn": 41,
+      "recall": 0.8119266055045872,
+      "precision": 1.0,
+      "top": 226,
+      "top_rate": 0.32285714285714284,
+      "correct_state": 649,
+      "counts": {
+        "life_threat": 177,
+        "trapped": 277,
+        "none": 237,
+        "minor_injury": 9
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.53,
+      "tp": 174,
+      "fp": 0,
+      "fn": 44,
+      "recall": 0.7981651376146789,
+      "precision": 1.0,
+      "top": 223,
+      "top_rate": 0.31857142857142856,
+      "correct_state": 646,
+      "counts": {
+        "life_threat": 174,
+        "trapped": 279,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.54,
+      "tp": 174,
+      "fp": 0,
+      "fn": 44,
+      "recall": 0.7981651376146789,
+      "precision": 1.0,
+      "top": 223,
+      "top_rate": 0.31857142857142856,
+      "correct_state": 646,
+      "counts": {
+        "life_threat": 174,
+        "trapped": 279,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.55,
+      "tp": 173,
+      "fp": 0,
+      "fn": 45,
+      "recall": 0.7935779816513762,
+      "precision": 1.0,
+      "top": 222,
+      "top_rate": 0.3171428571428571,
+      "correct_state": 645,
+      "counts": {
+        "life_threat": 173,
+        "trapped": 280,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.56,
+      "tp": 172,
+      "fp": 0,
+      "fn": 46,
+      "recall": 0.7889908256880734,
+      "precision": 1.0,
+      "top": 221,
+      "top_rate": 0.3157142857142857,
+      "correct_state": 644,
+      "counts": {
+        "life_threat": 172,
+        "trapped": 281,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.57,
+      "tp": 172,
+      "fp": 0,
+      "fn": 46,
+      "recall": 0.7889908256880734,
+      "precision": 1.0,
+      "top": 221,
+      "top_rate": 0.3157142857142857,
+      "correct_state": 644,
+      "counts": {
+        "life_threat": 172,
+        "trapped": 281,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.58,
+      "tp": 170,
+      "fp": 0,
+      "fn": 48,
+      "recall": 0.7798165137614679,
+      "precision": 1.0,
+      "top": 219,
+      "top_rate": 0.31285714285714283,
+      "correct_state": 642,
+      "counts": {
+        "life_threat": 170,
+        "trapped": 283,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.59,
+      "tp": 169,
+      "fp": 0,
+      "fn": 49,
+      "recall": 0.7752293577981652,
+      "precision": 1.0,
+      "top": 219,
+      "top_rate": 0.31285714285714283,
+      "correct_state": 641,
+      "counts": {
+        "life_threat": 169,
+        "trapped": 284,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.6,
+      "tp": 169,
+      "fp": 0,
+      "fn": 49,
+      "recall": 0.7752293577981652,
+      "precision": 1.0,
+      "top": 219,
+      "top_rate": 0.31285714285714283,
+      "correct_state": 641,
+      "counts": {
+        "life_threat": 169,
+        "trapped": 284,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.61,
+      "tp": 168,
+      "fp": 0,
+      "fn": 50,
+      "recall": 0.7706422018348624,
+      "precision": 1.0,
+      "top": 219,
+      "top_rate": 0.31285714285714283,
+      "correct_state": 640,
+      "counts": {
+        "life_threat": 168,
+        "trapped": 285,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.62,
+      "tp": 166,
+      "fp": 0,
+      "fn": 52,
+      "recall": 0.7614678899082569,
+      "precision": 1.0,
+      "top": 217,
+      "top_rate": 0.31,
+      "correct_state": 638,
+      "counts": {
+        "life_threat": 166,
+        "trapped": 287,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.63,
+      "tp": 166,
+      "fp": 0,
+      "fn": 52,
+      "recall": 0.7614678899082569,
+      "precision": 1.0,
+      "top": 217,
+      "top_rate": 0.31,
+      "correct_state": 638,
+      "counts": {
+        "life_threat": 166,
+        "trapped": 287,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.64,
+      "tp": 166,
+      "fp": 0,
+      "fn": 52,
+      "recall": 0.7614678899082569,
+      "precision": 1.0,
+      "top": 217,
+      "top_rate": 0.31,
+      "correct_state": 638,
+      "counts": {
+        "life_threat": 166,
+        "trapped": 287,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.65,
+      "tp": 164,
+      "fp": 0,
+      "fn": 54,
+      "recall": 0.7522935779816514,
+      "precision": 1.0,
+      "top": 215,
+      "top_rate": 0.30714285714285716,
+      "correct_state": 636,
+      "counts": {
+        "life_threat": 164,
+        "trapped": 289,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.66,
+      "tp": 163,
+      "fp": 0,
+      "fn": 55,
+      "recall": 0.7477064220183486,
+      "precision": 1.0,
+      "top": 214,
+      "top_rate": 0.3057142857142857,
+      "correct_state": 635,
+      "counts": {
+        "life_threat": 163,
+        "trapped": 290,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.67,
+      "tp": 161,
+      "fp": 0,
+      "fn": 57,
+      "recall": 0.7385321100917431,
+      "precision": 1.0,
+      "top": 212,
+      "top_rate": 0.3028571428571429,
+      "correct_state": 633,
+      "counts": {
+        "life_threat": 161,
+        "trapped": 292,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.68,
+      "tp": 161,
+      "fp": 0,
+      "fn": 57,
+      "recall": 0.7385321100917431,
+      "precision": 1.0,
+      "top": 212,
+      "top_rate": 0.3028571428571429,
+      "correct_state": 633,
+      "counts": {
+        "life_threat": 161,
+        "trapped": 292,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.69,
+      "tp": 159,
+      "fp": 0,
+      "fn": 59,
+      "recall": 0.7293577981651376,
+      "precision": 1.0,
+      "top": 210,
+      "top_rate": 0.3,
+      "correct_state": 631,
+      "counts": {
+        "life_threat": 159,
+        "trapped": 294,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.7,
+      "tp": 158,
+      "fp": 0,
+      "fn": 60,
+      "recall": 0.7247706422018348,
+      "precision": 1.0,
+      "top": 209,
+      "top_rate": 0.2985714285714286,
+      "correct_state": 630,
+      "counts": {
+        "life_threat": 158,
+        "trapped": 295,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.71,
+      "tp": 157,
+      "fp": 0,
+      "fn": 61,
+      "recall": 0.7201834862385321,
+      "precision": 1.0,
+      "top": 209,
+      "top_rate": 0.2985714285714286,
+      "correct_state": 629,
+      "counts": {
+        "life_threat": 157,
+        "trapped": 296,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.72,
+      "tp": 156,
+      "fp": 0,
+      "fn": 62,
+      "recall": 0.7155963302752294,
+      "precision": 1.0,
+      "top": 208,
+      "top_rate": 0.29714285714285715,
+      "correct_state": 628,
+      "counts": {
+        "life_threat": 156,
+        "trapped": 297,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.73,
+      "tp": 156,
+      "fp": 0,
+      "fn": 62,
+      "recall": 0.7155963302752294,
+      "precision": 1.0,
+      "top": 208,
+      "top_rate": 0.29714285714285715,
+      "correct_state": 628,
+      "counts": {
+        "life_threat": 156,
+        "trapped": 297,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.74,
+      "tp": 156,
+      "fp": 0,
+      "fn": 62,
+      "recall": 0.7155963302752294,
+      "precision": 1.0,
+      "top": 208,
+      "top_rate": 0.29714285714285715,
+      "correct_state": 628,
+      "counts": {
+        "life_threat": 156,
+        "trapped": 297,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.75,
+      "tp": 156,
+      "fp": 0,
+      "fn": 62,
+      "recall": 0.7155963302752294,
+      "precision": 1.0,
+      "top": 208,
+      "top_rate": 0.29714285714285715,
+      "correct_state": 628,
+      "counts": {
+        "life_threat": 156,
+        "trapped": 297,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.76,
+      "tp": 155,
+      "fp": 0,
+      "fn": 63,
+      "recall": 0.7110091743119266,
+      "precision": 1.0,
+      "top": 207,
+      "top_rate": 0.2957142857142857,
+      "correct_state": 627,
+      "counts": {
+        "life_threat": 155,
+        "trapped": 298,
+        "none": 237,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.77,
+      "tp": 154,
+      "fp": 0,
+      "fn": 64,
+      "recall": 0.7064220183486238,
+      "precision": 1.0,
+      "top": 207,
+      "top_rate": 0.2957142857142857,
+      "correct_state": 626,
+      "counts": {
+        "life_threat": 154,
+        "trapped": 298,
+        "none": 238,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.78,
+      "tp": 153,
+      "fp": 0,
+      "fn": 65,
+      "recall": 0.7018348623853211,
+      "precision": 1.0,
+      "top": 206,
+      "top_rate": 0.29428571428571426,
+      "correct_state": 625,
+      "counts": {
+        "life_threat": 153,
+        "trapped": 299,
+        "none": 238,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.79,
+      "tp": 153,
+      "fp": 0,
+      "fn": 65,
+      "recall": 0.7018348623853211,
+      "precision": 1.0,
+      "top": 206,
+      "top_rate": 0.29428571428571426,
+      "correct_state": 625,
+      "counts": {
+        "life_threat": 153,
+        "trapped": 299,
+        "none": 238,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.8,
+      "tp": 153,
+      "fp": 0,
+      "fn": 65,
+      "recall": 0.7018348623853211,
+      "precision": 1.0,
+      "top": 206,
+      "top_rate": 0.29428571428571426,
+      "correct_state": 625,
+      "counts": {
+        "life_threat": 153,
+        "trapped": 299,
+        "none": 238,
+        "minor_injury": 10
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.81,
+      "tp": 152,
+      "fp": 0,
+      "fn": 66,
+      "recall": 0.6972477064220184,
+      "precision": 1.0,
+      "top": 205,
+      "top_rate": 0.29285714285714287,
+      "correct_state": 624,
+      "counts": {
+        "life_threat": 152,
+        "trapped": 299,
+        "none": 238,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.82,
+      "tp": 151,
+      "fp": 0,
+      "fn": 67,
+      "recall": 0.6926605504587156,
+      "precision": 1.0,
+      "top": 204,
+      "top_rate": 0.2914285714285714,
+      "correct_state": 623,
+      "counts": {
+        "life_threat": 151,
+        "trapped": 299,
+        "none": 239,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.83,
+      "tp": 149,
+      "fp": 0,
+      "fn": 69,
+      "recall": 0.6834862385321101,
+      "precision": 1.0,
+      "top": 203,
+      "top_rate": 0.29,
+      "correct_state": 621,
+      "counts": {
+        "life_threat": 149,
+        "trapped": 300,
+        "none": 240,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.84,
+      "tp": 147,
+      "fp": 0,
+      "fn": 71,
+      "recall": 0.6743119266055045,
+      "precision": 1.0,
+      "top": 202,
+      "top_rate": 0.2885714285714286,
+      "correct_state": 619,
+      "counts": {
+        "life_threat": 147,
+        "trapped": 302,
+        "none": 240,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.85,
+      "tp": 146,
+      "fp": 0,
+      "fn": 72,
+      "recall": 0.6697247706422018,
+      "precision": 1.0,
+      "top": 202,
+      "top_rate": 0.2885714285714286,
+      "correct_state": 618,
+      "counts": {
+        "life_threat": 146,
+        "trapped": 303,
+        "none": 240,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.86,
+      "tp": 141,
+      "fp": 0,
+      "fn": 77,
+      "recall": 0.6467889908256881,
+      "precision": 1.0,
+      "top": 198,
+      "top_rate": 0.28285714285714286,
+      "correct_state": 613,
+      "counts": {
+        "life_threat": 141,
+        "trapped": 308,
+        "none": 240,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.87,
+      "tp": 137,
+      "fp": 0,
+      "fn": 81,
+      "recall": 0.6284403669724771,
+      "precision": 1.0,
+      "top": 197,
+      "top_rate": 0.2814285714285714,
+      "correct_state": 609,
+      "counts": {
+        "life_threat": 137,
+        "trapped": 311,
+        "none": 241,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.88,
+      "tp": 134,
+      "fp": 0,
+      "fn": 84,
+      "recall": 0.6146788990825688,
+      "precision": 1.0,
+      "top": 196,
+      "top_rate": 0.28,
+      "correct_state": 606,
+      "counts": {
+        "trapped": 314,
+        "none": 241,
+        "life_threat": 134,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.89,
+      "tp": 132,
+      "fp": 0,
+      "fn": 86,
+      "recall": 0.6055045871559633,
+      "precision": 1.0,
+      "top": 195,
+      "top_rate": 0.2785714285714286,
+      "correct_state": 604,
+      "counts": {
+        "trapped": 316,
+        "none": 241,
+        "life_threat": 132,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.9,
+      "tp": 129,
+      "fp": 0,
+      "fn": 89,
+      "recall": 0.591743119266055,
+      "precision": 1.0,
+      "top": 193,
+      "top_rate": 0.2757142857142857,
+      "correct_state": 601,
+      "counts": {
+        "trapped": 319,
+        "none": 241,
+        "life_threat": 129,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.91,
+      "tp": 122,
+      "fp": 0,
+      "fn": 96,
+      "recall": 0.5596330275229358,
+      "precision": 1.0,
+      "top": 190,
+      "top_rate": 0.2714285714285714,
+      "correct_state": 594,
+      "counts": {
+        "trapped": 324,
+        "none": 243,
+        "life_threat": 122,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.92,
+      "tp": 115,
+      "fp": 0,
+      "fn": 103,
+      "recall": 0.5275229357798165,
+      "precision": 1.0,
+      "top": 187,
+      "top_rate": 0.2671428571428571,
+      "correct_state": 587,
+      "counts": {
+        "trapped": 331,
+        "none": 243,
+        "life_threat": 115,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.93,
+      "tp": 112,
+      "fp": 0,
+      "fn": 106,
+      "recall": 0.5137614678899083,
+      "precision": 1.0,
+      "top": 184,
+      "top_rate": 0.26285714285714284,
+      "correct_state": 584,
+      "counts": {
+        "trapped": 334,
+        "none": 243,
+        "life_threat": 112,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.94,
+      "tp": 105,
+      "fp": 0,
+      "fn": 113,
+      "recall": 0.481651376146789,
+      "precision": 1.0,
+      "top": 179,
+      "top_rate": 0.2557142857142857,
+      "correct_state": 577,
+      "counts": {
+        "trapped": 341,
+        "none": 243,
+        "life_threat": 105,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.95,
+      "tp": 91,
+      "fp": 0,
+      "fn": 127,
+      "recall": 0.41743119266055045,
+      "precision": 1.0,
+      "top": 170,
+      "top_rate": 0.24285714285714285,
+      "correct_state": 563,
+      "counts": {
+        "trapped": 354,
+        "none": 244,
+        "life_threat": 91,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.96,
+      "tp": 81,
+      "fp": 0,
+      "fn": 137,
+      "recall": 0.37155963302752293,
+      "precision": 1.0,
+      "top": 163,
+      "top_rate": 0.23285714285714285,
+      "correct_state": 553,
+      "counts": {
+        "trapped": 363,
+        "none": 245,
+        "life_threat": 81,
+        "minor_injury": 11
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.97,
+      "tp": 62,
+      "fp": 0,
+      "fn": 156,
+      "recall": 0.28440366972477066,
+      "precision": 1.0,
+      "top": 155,
+      "top_rate": 0.22142857142857142,
+      "correct_state": 534,
+      "counts": {
+        "trapped": 379,
+        "none": 247,
+        "life_threat": 62,
+        "minor_injury": 12
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.98,
+      "tp": 46,
+      "fp": 0,
+      "fn": 172,
+      "recall": 0.21100917431192662,
+      "precision": 1.0,
+      "top": 144,
+      "top_rate": 0.2057142857142857,
+      "correct_state": 518,
+      "counts": {
+        "trapped": 395,
+        "none": 247,
+        "life_threat": 46,
+        "minor_injury": 12
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 0.99,
+      "tp": 30,
+      "fp": 0,
+      "fn": 188,
+      "recall": 0.13761467889908258,
+      "precision": 1.0,
+      "top": 139,
+      "top_rate": 0.19857142857142857,
+      "correct_state": 502,
+      "counts": {
+        "trapped": 406,
+        "none": 252,
+        "life_threat": 30,
+        "minor_injury": 12
+      }
+    },
+    {
+      "n": 700,
+      "threshold": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 218,
+      "recall": 0.0,
+      "precision": 0,
+      "top": 118,
+      "top_rate": 0.16857142857142857,
+      "correct_state": 472,
+      "counts": {
+        "trapped": 436,
+        "none": 252,
+        "minor_injury": 12
+      }
+    }
+  ],
+  "signature": {
+    "bench_person_choice.py": "4b2c5bc10c819cf8cbecd7811b78a0b586724b044405f5df4ea57e0e554e7bc1",
+    "person_choice.py": "f1572dc4b0c11c55288a6c15f272e52db8aec562da5fa0f9bf1428128a6d01f9",
+    "bench_life_gate.py": "689caafdee03174d691d7130944a4ccf45129d7134bc391db27b5e52956562f2",
+    "scenarios.json": "dd7643beede7396b8bf74f056fd00e5f022630299cfd8d5a0e041545681464c1",
+    "decision.py": "0f9e5b59c5d1fdb8221e7540be8872c92a66f8e5eac894539bdac88e2196f0c5",
+    "mismatch_types.py": "039a4bb61d32823c9753f374062fd07454c26cc850aedd924ed3111ed7d0bc0d",
+    "train-predictions.jsonl": "ac976690d875dcffae2ddc0ea8127e643df5f52f1715e28a6bc8e52594a23fd0",
+    "test-predictions.jsonl": "48cd4aef49fa3505569ae86aa96fabca883329cadf332fc0b0c1dcf2048b5c5c"
+  },
+  "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da"
+}

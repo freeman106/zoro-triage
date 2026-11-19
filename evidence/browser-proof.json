@@ -1,0 +1,14 @@
+{
+  "receipt": "제보가 접수됐습니다. · 접수 번호 823f1fb2c9e84d00961055c2b4232b7b",
+  "board_total": "107",
+  "probabilities": "위험 인원\n80%\n진행 중\n92%\n사진 피해\n41%\n사진·설명 불일치\n39%\n처리\n214 ms",
+  "calibration": {
+    "rtt": 365,
+    "offset": -70.23095703125
+  },
+  "receipt_to_paint_estimate_ms": 196,
+  "submit_to_paint_ms": 663,
+  "noOverflow": true,
+  "pageErrors": [],
+  "label": "사람 검수를 저장했습니다."
+}

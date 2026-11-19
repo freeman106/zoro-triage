@@ -1,0 +1,5391 @@
+{
+  "input_sha256": {
+    "decision.py": "ebf16ea234034f59f3335247948e148cbfe78e10e160a3cb3c4c0a3f701bbea2",
+    "store.py": "0dd854141a3be4dff7dcbaad1b5713b268be1a6fac19c5b4357c34425ea41ac8",
+    "mismatch_types.py": "039a4bb61d32823c9753f374062fd07454c26cc850aedd924ed3111ed7d0bc0d",
+    "mismatch_config.json": "bbd58e9fb4c726e03035a88f787009477128d5c89ded2d66fb47af6b39091582",
+    "scene_question.py": "79982d3f018e685737858d92027ffbd7c242ad71c63a9cffee9a626d978bb9b1",
+    "fixtures/reports.json": "09c1c0b6d603d821171c47f9d300bb11a90812a347a372293091f53629cf199d",
+    "person_choice.py": "f1572dc4b0c11c55288a6c15f272e52db8aec562da5fa0f9bf1428128a6d01f9",
+    "person_threshold.json": "aaee85fc66fd9342d381f9234005b711390ec7fa378ffeaceef0ba54336facac"
+  },
+  "model_pool_size": 12,
+  "orders": [
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "operator_rules": [],
+  "drain_seconds": 1.0,
+  "warmup_workers": 4,
+  "warmup_count": 8,
+  "timeout_definition": "Engine timeout fallback (shared decision deadline or socket timeout)",
+  "warmups": [
+    {
+      "trial": 1,
+      "before_workers": 2,
+      "workers": 4,
+      "count": 8,
+      "elapsed_ms": 1969,
+      "median_decision_ms": 949.85,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 1019.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 942.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 1028.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 948.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 951.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 997.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 933.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 928.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 1,
+      "before_workers": 3,
+      "workers": 4,
+      "count": 8,
+      "elapsed_ms": 2337,
+      "median_decision_ms": 1137.25,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 1130.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 1179.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 1179.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 1189.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 1114.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 1139.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 1134.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 1131.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "before_workers": 3,
+      "workers": 4,
+      "count": 8,
+      "elapsed_ms": 2009,
+      "median_decision_ms": 967.5999999999999,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 940.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 941.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 1041.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 1042.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 986.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 984.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 950.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 947.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "before_workers": 2,
+      "workers": 4,
+      "count": 8,
+      "elapsed_ms": 1927,
+      "median_decision_ms": 952.45,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 990.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 937.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 929.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 983.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 969.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 967.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 925.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 924.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "before_workers": 2,
+      "workers": 4,
+      "count": 8,
+      "elapsed_ms": 2063,
+      "median_decision_ms": 1023.55,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 954.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 952.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 969.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 966.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 1086.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 1083.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 1078.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 1078.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "before_workers": 3,
+      "workers": 4,
+      "count": 8,
+      "elapsed_ms": 1982,
+      "median_decision_ms": 982.0,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 963.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 977.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 979.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 970.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 994.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 990.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 984.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 984.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "trial": 1,
+      "workers": 2,
+      "count": 100,
+      "elapsed_ms": 28643,
+      "median_decision_ms": 566.7,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 379.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 381.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 604.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 658.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 558.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 498.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 539.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 537.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0220",
+          "ms": 586.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0218",
+          "ms": 592.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0161",
+          "ms": 594.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0199",
+          "ms": 588.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0014",
+          "ms": 552.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0137",
+          "ms": 549.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0324",
+          "ms": 580.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0273",
+          "ms": 579.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0009",
+          "ms": 575.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0271",
+          "ms": 572.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0185",
+          "ms": 688.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0123",
+          "ms": 684.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0086",
+          "ms": 442.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0204",
+          "ms": 442.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0077",
+          "ms": 509.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0231",
+          "ms": 507.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0267",
+          "ms": 601.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0187",
+          "ms": 599.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0320",
+          "ms": 510.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0249",
+          "ms": 507.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0162",
+          "ms": 562.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0012",
+          "ms": 570.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0337",
+          "ms": 591.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0221",
+          "ms": 586.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0033",
+          "ms": 569.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0323",
+          "ms": 567.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0223",
+          "ms": 560.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0146",
+          "ms": 559.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0055",
+          "ms": 580.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0256",
+          "ms": 579.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0325",
+          "ms": 558.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0166",
+          "ms": 562.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0250",
+          "ms": 551.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0386",
+          "ms": 552.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0395",
+          "ms": 648.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0113",
+          "ms": 646.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0053",
+          "ms": 551.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0382",
+          "ms": 544.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0136",
+          "ms": 653.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0230",
+          "ms": 648.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0084",
+          "ms": 605.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0258",
+          "ms": 604.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0213",
+          "ms": 599.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0156",
+          "ms": 595.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0098",
+          "ms": 594.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0057",
+          "ms": 648.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0181",
+          "ms": 605.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0026",
+          "ms": 549.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0120",
+          "ms": 555.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0253",
+          "ms": 554.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0042",
+          "ms": 562.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0138",
+          "ms": 557.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0281",
+          "ms": 566.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0313",
+          "ms": 566.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0097",
+          "ms": 525.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0227",
+          "ms": 525.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0205",
+          "ms": 561.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0110",
+          "ms": 556.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0074",
+          "ms": 601.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0135",
+          "ms": 602.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0215",
+          "ms": 596.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0122",
+          "ms": 598.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0065",
+          "ms": 616.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0319",
+          "ms": 611.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0039",
+          "ms": 573.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0066",
+          "ms": 573.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0002",
+          "ms": 601.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0024",
+          "ms": 599.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0393",
+          "ms": 574.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0340",
+          "ms": 573.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0396",
+          "ms": 566.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0285",
+          "ms": 569.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0140",
+          "ms": 534.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0175",
+          "ms": 533.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0083",
+          "ms": 596.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0088",
+          "ms": 595.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0013",
+          "ms": 538.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0333",
+          "ms": 539.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0158",
+          "ms": 565.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0182",
+          "ms": 564.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0354",
+          "ms": 552.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0189",
+          "ms": 549.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0003",
+          "ms": 576.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0171",
+          "ms": 577.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0045",
+          "ms": 563.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0316",
+          "ms": 563.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0126",
+          "ms": 550.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0240",
+          "ms": 545.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0245",
+          "ms": 503.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0015",
+          "ms": 500.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0260",
+          "ms": 565.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0264",
+          "ms": 563.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 1,
+      "workers": 3,
+      "count": 100,
+      "elapsed_ms": 27979,
+      "median_decision_ms": 828.25,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 706.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 712.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 706.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 691.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 794.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 791.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 629.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 768.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0220",
+          "ms": 763.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0218",
+          "ms": 606.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0161",
+          "ms": 696.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0199",
+          "ms": 757.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0014",
+          "ms": 651.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0137",
+          "ms": 796.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0324",
+          "ms": 732.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0273",
+          "ms": 803.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0009",
+          "ms": 834.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0271",
+          "ms": 832.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0185",
+          "ms": 879.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0123",
+          "ms": 844.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0086",
+          "ms": 842.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0204",
+          "ms": 680.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0077",
+          "ms": 811.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0231",
+          "ms": 812.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0267",
+          "ms": 772.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0187",
+          "ms": 822.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0320",
+          "ms": 815.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0249",
+          "ms": 667.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0162",
+          "ms": 772.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0012",
+          "ms": 796.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0337",
+          "ms": 793.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0221",
+          "ms": 819.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0033",
+          "ms": 827.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0323",
+          "ms": 825.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0223",
+          "ms": 788.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0146",
+          "ms": 846.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0055",
+          "ms": 840.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0256",
+          "ms": 698.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0325",
+          "ms": 827.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0166",
+          "ms": 824.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0250",
+          "ms": 598.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0386",
+          "ms": 811.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0395",
+          "ms": 873.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0113",
+          "ms": 884.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0053",
+          "ms": 854.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0382",
+          "ms": 788.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0136",
+          "ms": 755.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0230",
+          "ms": 888.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0084",
+          "ms": 890.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0258",
+          "ms": 937.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0213",
+          "ms": 937.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0156",
+          "ms": 933.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0098",
+          "ms": 809.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0057",
+          "ms": 968.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0181",
+          "ms": 967.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0026",
+          "ms": 1107.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0120",
+          "ms": 956.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0253",
+          "ms": 951.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0042",
+          "ms": 824.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0138",
+          "ms": 869.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0281",
+          "ms": 868.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0313",
+          "ms": 832.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0097",
+          "ms": 828.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0227",
+          "ms": 824.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0205",
+          "ms": 851.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0110",
+          "ms": 735.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0074",
+          "ms": 945.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0135",
+          "ms": 823.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0215",
+          "ms": 658.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0122",
+          "ms": 686.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0065",
+          "ms": 892.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0319",
+          "ms": 807.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0039",
+          "ms": 931.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0066",
+          "ms": 835.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0002",
+          "ms": 918.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0024",
+          "ms": 855.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0393",
+          "ms": 855.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0340",
+          "ms": 879.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0396",
+          "ms": 765.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0285",
+          "ms": 874.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0140",
+          "ms": 764.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0175",
+          "ms": 919.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0083",
+          "ms": 888.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0088",
+          "ms": 909.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0013",
+          "ms": 899.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0333",
+          "ms": 821.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0158",
+          "ms": 923.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0182",
+          "ms": 836.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0354",
+          "ms": 928.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0189",
+          "ms": 878.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0003",
+          "ms": 886.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0171",
+          "ms": 882.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0045",
+          "ms": 816.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0316",
+          "ms": 930.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0126",
+          "ms": 832.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0240",
+          "ms": 949.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0245",
+          "ms": 898.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0015",
+          "ms": 913.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0260",
+          "ms": 888.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0264",
+          "ms": 772.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "workers": 3,
+      "count": 100,
+      "elapsed_ms": 28644,
+      "median_decision_ms": 840.5,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 780.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 784.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 792.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 761.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 755.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 755.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 758.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 795.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0220",
+          "ms": 789.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0218",
+          "ms": 923.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0161",
+          "ms": 976.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0199",
+          "ms": 971.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0014",
+          "ms": 847.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0137",
+          "ms": 786.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0324",
+          "ms": 788.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0273",
+          "ms": 810.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0009",
+          "ms": 784.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0271",
+          "ms": 778.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0185",
+          "ms": 768.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0123",
+          "ms": 761.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0086",
+          "ms": 761.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0204",
+          "ms": 722.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0077",
+          "ms": 722.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0231",
+          "ms": 721.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0267",
+          "ms": 795.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0187",
+          "ms": 832.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0320",
+          "ms": 834.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0249",
+          "ms": 782.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0162",
+          "ms": 850.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0012",
+          "ms": 849.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0337",
+          "ms": 719.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0221",
+          "ms": 824.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0033",
+          "ms": 824.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0323",
+          "ms": 614.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0223",
+          "ms": 794.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0146",
+          "ms": 851.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0055",
+          "ms": 833.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0256",
+          "ms": 817.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0325",
+          "ms": 755.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0166",
+          "ms": 684.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0250",
+          "ms": 875.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0386",
+          "ms": 878.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0395",
+          "ms": 983.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0113",
+          "ms": 976.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0053",
+          "ms": 973.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0382",
+          "ms": 842.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0136",
+          "ms": 917.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0230",
+          "ms": 913.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0084",
+          "ms": 898.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0258",
+          "ms": 743.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0213",
+          "ms": 838.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0156",
+          "ms": 838.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0098",
+          "ms": 772.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0057",
+          "ms": 809.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0181",
+          "ms": 927.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0026",
+          "ms": 735.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0120",
+          "ms": 930.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0253",
+          "ms": 895.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0042",
+          "ms": 920.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0138",
+          "ms": 907.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0281",
+          "ms": 818.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0313",
+          "ms": 916.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0097",
+          "ms": 785.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0227",
+          "ms": 886.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0205",
+          "ms": 852.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0110",
+          "ms": 917.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0074",
+          "ms": 909.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0135",
+          "ms": 829.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0215",
+          "ms": 948.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0122",
+          "ms": 855.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0065",
+          "ms": 966.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0319",
+          "ms": 927.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0039",
+          "ms": 953.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0066",
+          "ms": 931.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0002",
+          "ms": 822.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0024",
+          "ms": 908.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0393",
+          "ms": 825.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0340",
+          "ms": 944.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0396",
+          "ms": 911.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0285",
+          "ms": 913.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0140",
+          "ms": 901.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0175",
+          "ms": 816.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0083",
+          "ms": 930.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0088",
+          "ms": 841.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0013",
+          "ms": 955.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0333",
+          "ms": 917.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0158",
+          "ms": 921.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0182",
+          "ms": 906.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0354",
+          "ms": 826.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0189",
+          "ms": 938.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0003",
+          "ms": 839.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0171",
+          "ms": 930.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0045",
+          "ms": 893.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0316",
+          "ms": 912.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0126",
+          "ms": 1042.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0240",
+          "ms": 898.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0245",
+          "ms": 1091.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0015",
+          "ms": 810.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0260",
+          "ms": 759.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0264",
+          "ms": 546.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "workers": 2,
+      "count": 100,
+      "elapsed_ms": 29222,
+      "median_decision_ms": 582.6500000000001,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 388.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 385.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 590.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 646.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 490.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 440.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 557.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 550.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0220",
+          "ms": 592.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0218",
+          "ms": 590.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0161",
+          "ms": 574.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0199",
+          "ms": 572.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0014",
+          "ms": 552.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0137",
+          "ms": 551.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0324",
+          "ms": 598.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0273",
+          "ms": 600.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0009",
+          "ms": 591.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0271",
+          "ms": 586.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0185",
+          "ms": 607.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0123",
+          "ms": 604.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0086",
+          "ms": 437.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0204",
+          "ms": 435.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0077",
+          "ms": 527.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0231",
+          "ms": 525.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0267",
+          "ms": 541.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0187",
+          "ms": 545.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0320",
+          "ms": 535.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0249",
+          "ms": 531.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0162",
+          "ms": 611.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0012",
+          "ms": 614.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0337",
+          "ms": 565.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0221",
+          "ms": 558.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0033",
+          "ms": 587.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0323",
+          "ms": 583.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0223",
+          "ms": 584.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0146",
+          "ms": 582.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0055",
+          "ms": 538.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0256",
+          "ms": 536.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0325",
+          "ms": 579.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0166",
+          "ms": 582.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0250",
+          "ms": 634.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0386",
+          "ms": 637.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0395",
+          "ms": 696.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0113",
+          "ms": 692.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0053",
+          "ms": 581.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0382",
+          "ms": 580.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0136",
+          "ms": 570.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0230",
+          "ms": 568.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0084",
+          "ms": 684.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0258",
+          "ms": 683.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0213",
+          "ms": 552.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0156",
+          "ms": 550.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0098",
+          "ms": 521.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0057",
+          "ms": 523.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0181",
+          "ms": 600.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0026",
+          "ms": 594.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0120",
+          "ms": 577.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0253",
+          "ms": 576.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0042",
+          "ms": 572.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0138",
+          "ms": 568.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0281",
+          "ms": 588.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0313",
+          "ms": 586.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0097",
+          "ms": 556.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0227",
+          "ms": 558.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0205",
+          "ms": 629.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0110",
+          "ms": 625.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0074",
+          "ms": 620.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0135",
+          "ms": 622.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0215",
+          "ms": 609.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0122",
+          "ms": 609.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0065",
+          "ms": 599.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0319",
+          "ms": 592.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0039",
+          "ms": 593.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0066",
+          "ms": 591.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0002",
+          "ms": 614.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0024",
+          "ms": 611.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0393",
+          "ms": 602.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0340",
+          "ms": 600.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0396",
+          "ms": 562.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0285",
+          "ms": 560.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0140",
+          "ms": 649.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0175",
+          "ms": 651.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0083",
+          "ms": 565.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0088",
+          "ms": 566.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0013",
+          "ms": 631.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0333",
+          "ms": 631.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0158",
+          "ms": 577.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0182",
+          "ms": 571.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0354",
+          "ms": 538.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0189",
+          "ms": 536.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0003",
+          "ms": 587.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0171",
+          "ms": 582.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0045",
+          "ms": 569.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0316",
+          "ms": 566.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0126",
+          "ms": 601.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0240",
+          "ms": 599.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0245",
+          "ms": 659.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0015",
+          "ms": 661.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0260",
+          "ms": 584.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0264",
+          "ms": 579.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "workers": 2,
+      "count": 100,
+      "elapsed_ms": 29007,
+      "median_decision_ms": 580.75,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 510.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 514.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 524.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 518.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 487.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 485.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 532.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 531.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0220",
+          "ms": 643.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0218",
+          "ms": 645.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0161",
+          "ms": 576.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0199",
+          "ms": 579.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0014",
+          "ms": 600.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0137",
+          "ms": 640.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0324",
+          "ms": 555.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0273",
+          "ms": 506.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0009",
+          "ms": 579.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0271",
+          "ms": 576.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0185",
+          "ms": 595.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0123",
+          "ms": 594.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0086",
+          "ms": 440.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0204",
+          "ms": 436.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0077",
+          "ms": 535.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0231",
+          "ms": 536.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0267",
+          "ms": 691.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0187",
+          "ms": 687.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0320",
+          "ms": 526.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0249",
+          "ms": 530.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0162",
+          "ms": 530.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0012",
+          "ms": 532.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0337",
+          "ms": 597.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0221",
+          "ms": 592.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0033",
+          "ms": 570.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0323",
+          "ms": 568.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0223",
+          "ms": 548.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0146",
+          "ms": 546.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0055",
+          "ms": 583.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0256",
+          "ms": 581.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0325",
+          "ms": 594.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0166",
+          "ms": 590.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0250",
+          "ms": 585.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0386",
+          "ms": 588.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0395",
+          "ms": 657.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0113",
+          "ms": 655.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0053",
+          "ms": 582.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0382",
+          "ms": 586.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0136",
+          "ms": 625.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0230",
+          "ms": 622.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0084",
+          "ms": 598.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0258",
+          "ms": 591.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0213",
+          "ms": 602.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0156",
+          "ms": 598.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0098",
+          "ms": 509.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0057",
+          "ms": 512.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0181",
+          "ms": 594.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0026",
+          "ms": 587.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0120",
+          "ms": 558.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0253",
+          "ms": 555.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0042",
+          "ms": 561.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0138",
+          "ms": 560.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0281",
+          "ms": 625.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0313",
+          "ms": 624.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0097",
+          "ms": 519.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0227",
+          "ms": 514.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0205",
+          "ms": 614.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0110",
+          "ms": 611.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0074",
+          "ms": 610.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0135",
+          "ms": 611.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0215",
+          "ms": 594.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0122",
+          "ms": 589.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0065",
+          "ms": 614.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0319",
+          "ms": 612.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0039",
+          "ms": 561.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0066",
+          "ms": 557.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0002",
+          "ms": 608.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0024",
+          "ms": 605.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0393",
+          "ms": 595.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0340",
+          "ms": 594.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0396",
+          "ms": 545.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0285",
+          "ms": 549.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0140",
+          "ms": 513.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0175",
+          "ms": 510.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0083",
+          "ms": 598.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0088",
+          "ms": 599.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0013",
+          "ms": 555.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0333",
+          "ms": 556.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0158",
+          "ms": 659.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0182",
+          "ms": 655.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0354",
+          "ms": 553.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0189",
+          "ms": 553.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0003",
+          "ms": 577.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0171",
+          "ms": 579.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0045",
+          "ms": 544.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0316",
+          "ms": 546.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0126",
+          "ms": 589.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0240",
+          "ms": 585.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0245",
+          "ms": 632.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0015",
+          "ms": 631.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0260",
+          "ms": 568.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0264",
+          "ms": 568.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "workers": 3,
+      "count": 100,
+      "elapsed_ms": 28918,
+      "median_decision_ms": 867.8499999999999,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0,
+      "decisions": [
+        {
+          "scenario_id": "test-0062",
+          "ms": 612.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0019",
+          "ms": 623.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0005",
+          "ms": 614.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0106",
+          "ms": 674.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0034",
+          "ms": 763.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0107",
+          "ms": 761.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0142",
+          "ms": 707.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0195",
+          "ms": 793.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0220",
+          "ms": 790.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0218",
+          "ms": 561.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0161",
+          "ms": 854.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0199",
+          "ms": 853.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0014",
+          "ms": 855.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0137",
+          "ms": 778.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0324",
+          "ms": 781.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0273",
+          "ms": 714.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0009",
+          "ms": 837.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0271",
+          "ms": 830.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0185",
+          "ms": 903.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0123",
+          "ms": 838.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0086",
+          "ms": 836.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0204",
+          "ms": 698.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0077",
+          "ms": 813.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0231",
+          "ms": 868.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0267",
+          "ms": 866.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0187",
+          "ms": 725.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0320",
+          "ms": 759.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0249",
+          "ms": 779.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0162",
+          "ms": 775.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0012",
+          "ms": 823.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0337",
+          "ms": 935.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0221",
+          "ms": 745.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0033",
+          "ms": 951.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0323",
+          "ms": 910.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0223",
+          "ms": 911.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0146",
+          "ms": 900.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0055",
+          "ms": 743.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0256",
+          "ms": 867.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0325",
+          "ms": 769.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0166",
+          "ms": 954.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0250",
+          "ms": 906.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0386",
+          "ms": 913.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0395",
+          "ms": 900.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0113",
+          "ms": 825.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0053",
+          "ms": 928.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0382",
+          "ms": 826.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0136",
+          "ms": 934.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0230",
+          "ms": 915.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0084",
+          "ms": 924.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0258",
+          "ms": 907.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0213",
+          "ms": 822.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0156",
+          "ms": 949.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0098",
+          "ms": 844.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0057",
+          "ms": 972.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0181",
+          "ms": 908.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0026",
+          "ms": 921.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0120",
+          "ms": 881.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0253",
+          "ms": 814.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0042",
+          "ms": 942.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0138",
+          "ms": 826.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0281",
+          "ms": 944.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0313",
+          "ms": 885.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0097",
+          "ms": 881.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0227",
+          "ms": 857.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0205",
+          "ms": 782.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0110",
+          "ms": 930.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0074",
+          "ms": 843.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0135",
+          "ms": 950.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0215",
+          "ms": 921.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0122",
+          "ms": 922.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0065",
+          "ms": 912.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0319",
+          "ms": 824.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0039",
+          "ms": 953.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0066",
+          "ms": 863.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0002",
+          "ms": 949.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0024",
+          "ms": 881.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0393",
+          "ms": 879.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0340",
+          "ms": 901.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0396",
+          "ms": 795.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0285",
+          "ms": 908.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0140",
+          "ms": 798.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0175",
+          "ms": 954.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0083",
+          "ms": 923.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0088",
+          "ms": 941.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0013",
+          "ms": 927.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0333",
+          "ms": 842.5,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0158",
+          "ms": 957.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0182",
+          "ms": 862.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0354",
+          "ms": 963.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0189",
+          "ms": 903.1,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0003",
+          "ms": 915.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0171",
+          "ms": 917.7,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0045",
+          "ms": 846.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0316",
+          "ms": 961.9,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0126",
+          "ms": 851.2,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0240",
+          "ms": 963.6,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0245",
+          "ms": 920.0,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0015",
+          "ms": 933.4,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0260",
+          "ms": 913.8,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        },
+        {
+          "scenario_id": "test-0264",
+          "ms": 789.3,
+          "mode": "zoro",
+          "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+          "policy_version": "person-choice-v1-fallback-v2",
+          "fallback_reason": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "2": {
+      "trials": 3,
+      "count": 300,
+      "median_elapsed_ms": 29007,
+      "median_decision_ms": 576.9,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0
+    },
+    "3": {
+      "trials": 3,
+      "count": 300,
+      "median_elapsed_ms": 28644,
+      "median_decision_ms": 844.0999999999999,
+      "fallback": 0,
+      "deadline_timeout": 0,
+      "other_fallback": 0
+    }
+  },
+  "chosen_workers": 3
+}

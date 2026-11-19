@@ -1,0 +1,42 @@
+{
+  "historic": {
+    "definite_n": 83,
+    "definite_missed": 52,
+    "possible_n": 79,
+    "miss_rate_min": 0.4369747899159664,
+    "miss_rate_max": 0.753968253968254,
+    "proxy_n": 114,
+    "proxy_missed": 71,
+    "proxy_rate": 0.6228070175438597
+  },
+  "previous_live": {
+    "definite_n": 83,
+    "definite_missed": 0,
+    "possible_n": 79,
+    "miss_rate_min": 0.0,
+    "miss_rate_max": 0.056818181818181816,
+    "proxy_n": 114,
+    "proxy_missed": 2,
+    "proxy_rate": 0.017543859649122806
+  },
+  "candidate": {
+    "definite_n": 83,
+    "definite_missed": 8,
+    "possible_n": 79,
+    "miss_rate_min": 0.05263157894736842,
+    "miss_rate_max": 0.1935483870967742,
+    "proxy_n": 114,
+    "proxy_missed": 11,
+    "proxy_rate": 0.09649122807017543
+  },
+  "final_live": {
+    "definite_n": 83,
+    "definite_missed": 0,
+    "possible_n": 79,
+    "miss_rate_min": 0.0,
+    "miss_rate_max": 0.056818181818181816,
+    "proxy_n": 114,
+    "proxy_missed": 2,
+    "proxy_rate": 0.017543859649122806
+  }
+}

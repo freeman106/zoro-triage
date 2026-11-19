@@ -1,0 +1,80 @@
+{
+  "n": 400,
+  "metrics": {
+    "people": {
+      "n": 400,
+      "changed": 0,
+      "before": 393,
+      "after": 393
+    },
+    "life": {
+      "n": 400,
+      "changed": 0,
+      "before": 395,
+      "after": 395
+    },
+    "person_state": {
+      "n": 400,
+      "changed": 0,
+      "before": 389,
+      "after": 389
+    },
+    "now": {
+      "n": 400,
+      "changed": 0,
+      "before": 387,
+      "after": 387
+    },
+    "severe": {
+      "n": 400,
+      "changed": 17,
+      "before": 249,
+      "after": 252
+    },
+    "field_photo": {
+      "n": 400,
+      "changed": 10
+    },
+    "ongoing_hazard": {
+      "n": 400,
+      "changed": 17
+    },
+    "claim_kind": {
+      "n": 400,
+      "changed": 0,
+      "before": 395,
+      "after": 395
+    },
+    "photo_kind": {
+      "n": 400,
+      "changed": 23,
+      "before": 312,
+      "after": 313
+    },
+    "mismatch": {
+      "n": 400,
+      "changed": 4,
+      "before": 385,
+      "after": 383
+    },
+    "urgency": {
+      "n": 303,
+      "changed": 13,
+      "before": 169,
+      "after": 164
+    },
+    "review": {
+      "n": 400,
+      "changed": 39
+    }
+  },
+  "ms": {
+    "before": 360.5505,
+    "after": 345.693
+  },
+  "resized": 345,
+  "size": {
+    "raw_bytes": 47429261,
+    "transmitted_bytes": 32022033
+  }
+}

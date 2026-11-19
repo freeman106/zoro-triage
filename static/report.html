@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#1c59ae">
+  <title>현장 제보 | Two Drone</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script defer src="/static/shared.js"></script>
+  <script defer src="/static/report.js"></script>
+</head>
+<body class="report-page">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-mark">119</span> <span>재난 접수 상황실</span></div>
+      <span class="edition">Two Drone · 발표 3번 <b>Zoro-1 Arena</b></span>
+    </div>
+  </header>
+  <main class="report-shell">
+    <div class="notice"><strong>훈련 전용</strong><span>합성 데이터 기준, 실제 119 성능 미검증. 실제 119에 연결되지 않습니다.</span></div>
+    <section class="report-intro">
+      <p class="eyebrow">현장 제보</p>
+      <h1>어떤 상황인가요?</h1>
+      <p>현장 사진 한 장과 지금 보이는 상황을 보내주세요.</p>
+    </section>
+    <form id="report-form" class="report-form">
+      <div class="field" id="report-auth" hidden>
+        <label for="report-token">제보 접근 키</label>
+        <input id="report-token" type="password" autocomplete="off" spellcheck="false" placeholder="진행자가 안내한 키를 입력하세요">
+      </div>
+      <div class="field">
+        <span class="field-label" id="image-label">현장 사진 <span class="field-meta">1장</span></span>
+        <div class="photo-panel" aria-labelledby="image-label">
+          <img id="photo-preview" alt="선택한 현장 사진" hidden>
+          <p id="photo-empty">촬영하거나 앨범에서 선택하세요.</p>
+          <p id="photo-name" class="photo-name" hidden></p>
+          <div class="photo-actions">
+            <label class="button photo-button"><span aria-hidden="true"></span> 사진 촬영<input id="camera" type="file" accept="image/*" capture="environment" aria-label="카메라로 촬영"></label>
+            <label class="button photo-button"><span aria-hidden="true"></span> 앨범에서 선택<input id="gallery" type="file" accept="image/*" aria-label="앨범에서 사진 선택"></label>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="report-text">상황 설명</label>
+        <textarea id="report-text" required maxlength="1500" rows="4" placeholder="예: 다리 아래 차량 두 대가 충돌했고, 차 안에 사람이 움직이지 못하고 있어요."></textarea>
+      </div>
+      <button class="button primary submit-report" id="send-report" type="submit">상황실로 제보 보내기</button>
+      <p id="report-status" class="form-status" role="status"></p>
+    </form>
+    <footer class="credits">예시 이미지 · <a href="https://crisisnlp.qcri.org/crisismmd" target="_blank" rel="noopener noreferrer">CrisisMMD</a> · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a></footer>
+  </main>
+</body>
+</html>

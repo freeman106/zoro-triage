@@ -1,0 +1,17 @@
+[Unit]
+Description=Zoro-1 decision server (trida-stack on SGLang), 127.0.0.1:30001
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+Environment=LD_LIBRARY_PATH=/usr/local/cuda-13.2/lib:/usr/local/cuda-13.2/lib64:/usr/local/cuda-13.2:/usr/local/cuda-13.2/targets/x86_64-linux/lib/:/usr/local/cuda-13.2/extras/CUPTI/lib64:/usr/local/lib:/usr/lib
+Environment=PATH=/home/ubuntu/venvs/zoro/bin:/usr/local/cuda-13.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/home/ubuntu/zoro-serve.sh
+Restart=always
+RestartSec=10
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target

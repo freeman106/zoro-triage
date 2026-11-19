@@ -1,0 +1,219 @@
+{
+  "passed": true,
+  "auth": {
+    "anonymous_state": 403,
+    "report_state": 403,
+    "report_events": 403,
+    "report_rule": 403,
+    "anonymous_upload": 403
+  },
+  "phone": {
+    "id": "fa43719149314494b32c111cee2120d5",
+    "receipt_ms": 13.978,
+    "upload_to_sse_ms": 13.905,
+    "server_receipt_to_sse_ms": 4.424
+  },
+  "examples": {
+    "elapsed_ms": 2839.775,
+    "results": {
+      "top": {
+        "id": "d41b3dc32f0a49879f75899020629f73",
+        "urgency": "top",
+        "mode": "zoro",
+        "review": false,
+        "mismatch": false,
+        "non_field_photo": false,
+        "claim_kind": "quake_collapse",
+        "claim_prob": 0.9338,
+        "photo_kind": "collapse",
+        "photo_prob": 0.9103,
+        "probs": {
+          "people": 0.9981,
+          "life_threat": 0.99,
+          "now": 0.9388,
+          "severe": 0.9883,
+          "field_photo": 0.9442,
+          "ongoing_hazard": 0.1886,
+          "mismatch": null
+        },
+        "person_state": "life_threat",
+        "person_probabilities": {
+          "life_threat": 0.99,
+          "trapped": 0.0077,
+          "minor_injury": 0.0004,
+          "none": 0.0019
+        },
+        "person_threshold": 0.34
+      },
+      "mismatch": {
+        "id": "f0c17cbccf7e4947b9c2b5f84f9b52ef",
+        "urgency": "top",
+        "mode": "zoro",
+        "review": true,
+        "mismatch": true,
+        "non_field_photo": false,
+        "claim_kind": "storm_flood",
+        "claim_prob": 0.9826,
+        "photo_kind": "fire_smoke_burn",
+        "photo_prob": 0.9207,
+        "probs": {
+          "people": 0.9572,
+          "life_threat": 0.008,
+          "now": 0.8669,
+          "severe": 0.7415,
+          "field_photo": 0.8945,
+          "ongoing_hazard": 0.9169,
+          "mismatch": null
+        },
+        "person_state": "trapped",
+        "person_probabilities": {
+          "life_threat": 0.008,
+          "trapped": 0.9471,
+          "minor_injury": 0.0022,
+          "none": 0.0428
+        },
+        "person_threshold": 0.34
+      },
+      "outage": {
+        "id": "a1f3e25787d34cd88e73d3aba3db20c4",
+        "urgency": "top",
+        "mode": "fallback",
+        "review": true,
+        "mismatch": null,
+        "non_field_photo": null,
+        "claim_kind": null,
+        "claim_prob": null,
+        "photo_kind": null,
+        "photo_prob": null,
+        "probs": {
+          "people": null,
+          "life_threat": null,
+          "now": null,
+          "severe": null,
+          "field_photo": null,
+          "ongoing_hazard": null,
+          "mismatch": null
+        },
+        "person_state": null,
+        "person_probabilities": null,
+        "person_threshold": 0.34
+      },
+      "past_hazard": {
+        "id": "ba90b24585fd40aab90174bd8b3277a6",
+        "urgency": "urgent",
+        "mode": "zoro",
+        "review": true,
+        "mismatch": false,
+        "non_field_photo": false,
+        "claim_kind": "fire",
+        "claim_prob": 0.9713,
+        "photo_kind": "fire_smoke_burn",
+        "photo_prob": 0.993,
+        "probs": {
+          "people": 0.007000000000000006,
+          "life_threat": 0.001,
+          "now": 0.2133,
+          "severe": 0.2083,
+          "field_photo": 0.9609,
+          "ongoing_hazard": 0.7764,
+          "mismatch": null
+        },
+        "person_state": "none",
+        "person_probabilities": {
+          "life_threat": 0.001,
+          "trapped": 0.003,
+          "minor_injury": 0.003,
+          "none": 0.993
+        },
+        "person_threshold": 0.34
+      },
+      "rule": {
+        "id": "0411f1438f5e49af9b0409380c3bd31f",
+        "urgency": "urgent",
+        "mode": "zoro",
+        "review": false,
+        "mismatch": false,
+        "non_field_photo": false,
+        "claim_kind": "storm_flood",
+        "claim_prob": 0.9782,
+        "photo_kind": "water_storm",
+        "photo_prob": 0.9628,
+        "probs": {
+          "people": 0.901,
+          "life_threat": 0.0135,
+          "now": 0.7612,
+          "severe": 0.1194,
+          "field_photo": 0.9459,
+          "ongoing_hazard": 0.3708,
+          "mismatch": null
+        },
+        "person_state": "trapped",
+        "person_probabilities": {
+          "life_threat": 0.0135,
+          "trapped": 0.8752,
+          "minor_injury": 0.0124,
+          "none": 0.099
+        },
+        "person_threshold": 0.34
+      }
+    }
+  },
+  "rule": {
+    "revision": 1,
+    "recomputed": 6,
+    "elapsed_ms": 1411.752,
+    "before": "urgent",
+    "after": "top",
+    "promoted": {
+      "id": "0411f1438f5e49af9b0409380c3bd31f",
+      "urgency": "top",
+      "mode": "zoro",
+      "review": false,
+      "mismatch": false,
+      "non_field_photo": false,
+      "claim_kind": "storm_flood",
+      "claim_prob": 0.9792,
+      "photo_kind": "water_storm",
+      "photo_prob": 0.9636,
+      "probs": {
+        "people": 0.9028,
+        "life_threat": 0.0131,
+        "now": 0.7568,
+        "severe": 0.1189,
+        "field_photo": 0.9455,
+        "ongoing_hazard": 0.3694,
+        "rule_1": 0.966,
+        "mismatch": null
+      },
+      "person_state": "trapped",
+      "person_probabilities": {
+        "life_threat": 0.0131,
+        "trapped": 0.8778,
+        "minor_injury": 0.0119,
+        "none": 0.0972
+      },
+      "person_threshold": 0.34
+    },
+    "rank_before": 5,
+    "rank_after": 4,
+    "control": {
+      "id": "ba90b24585fd40aab90174bd8b3277a6",
+      "rank_before": 4,
+      "rank_after": 5
+    }
+  },
+  "labels": {
+    "count": 1,
+    "persisted_after_rule": true
+  },
+  "burst": {
+    "count": 100,
+    "elapsed_ms": 29466,
+    "observed_ms": 29689.102,
+    "fallback": 0,
+    "started_revision": 1,
+    "revisions": [
+      1
+    ]
+  }
+}

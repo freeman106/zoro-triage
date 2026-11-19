@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "auth": {
+    "anonymous_state": 403,
+    "report_state": 403,
+    "report_events": 403,
+    "report_rule": 403,
+    "anonymous_upload": 403
+  },
+  "phone": {
+    "id": "599caaa93b194963b358c233146bf8a2",
+    "receipt_ms": 12.387,
+    "upload_to_sse_ms": 12.917,
+    "server_receipt_to_sse_ms": 4.381
+  },
+  "examples": {
+    "elapsed_ms": 3186.83,
+    "results": {
+      "top": {
+        "id": "1d52e2155bf34a2da9111b95900c8a04",
+        "urgency": "top",
+        "mode": "zoro",
+        "review": false,
+        "mismatch": false,
+        "non_field_photo": false,
+        "claim_kind": "quake_collapse",
+        "claim_prob": 0.9298,
+        "photo_kind": "collapse",
+        "photo_prob": 0.9145,
+        "probs": {
+          "people": 0.9982,
+          "life_threat": 0.9896,
+          "now": 0.9449,
+          "severe": 0.9882,
+          "field_photo": 0.9403,
+          "ongoing_hazard": 0.1797,
+          "mismatch": null
+        },
+        "person_state": "life_threat",
+        "person_probabilities": {
+          "life_threat": 0.9896,
+          "trapped": 0.0082,
+          "minor_injury": 0.0004,
+          "none": 0.0018
+        },
+        "person_threshold": 0.34
+      },
+      "mismatch": {
+        "id": "0804eec2d59b4be48f30a8ae4cdf1e6c",
+        "urgency": "top",
+        "mode": "zoro",
+        "review": true,
+        "mismatch": true,
+        "non_field_photo": false,
+        "claim_kind": "storm_flood",
+        "claim_prob": 0.9826,
+        "photo_kind": "fire_smoke_burn",
+        "photo_prob": 0.9354,
+        "probs": {
+          "people": 0.9572,
+          "life_threat": 0.008,
+          "now": 0.8669,
+          "severe": 0.6502,
+          "field_photo": 0.824,
+          "ongoing_hazard": 0.8806,
+          "mismatch": null
+        },
+        "person_state": "trapped",
+        "person_probabilities": {
+          "life_threat": 0.008,
+          "trapped": 0.9471,
+          "minor_injury": 0.0022,
+          "none": 0.0428
+        },
+        "person_threshold": 0.34
+      },
+      "outage": {
+        "id": "0b42736ae3d84bd8973c987e7315af71",
+        "urgency": "top",
+        "mode": "fallback",
+        "review": true,
+        "mismatch": null,
+        "non_field_photo": null,
+        "claim_kind": null,
+        "claim_prob": null,
+        "photo_kind": null,
+        "photo_prob": null,
+        "probs": {
+          "people": null,
+          "life_threat": null,
+          "now": null,
+          "severe": null,
+          "field_photo": null,
+          "ongoing_hazard": null,
+          "mismatch": null
+        },
+        "person_state": null,
+        "person_probabilities": null,
+        "person_threshold": 0.34
+      },
+      "past_hazard": {
+        "id": "ed208be400a74c27b4cd9d5eb044641e",
+        "urgency": "urgent",
+        "mode": "zoro",
+        "review": true,
+        "mismatch": false,
+        "non_field_photo": false,
+        "claim_kind": "fire",
+        "claim_prob": 0.9713,
+        "photo_kind": "fire_smoke_burn",
+        "photo_prob": 0.9909,
+        "probs": {
+          "people": 0.007000000000000006,
+          "life_threat": 0.001,
+          "now": 0.2133,
+          "severe": 0.2111,
+          "field_photo": 0.9387,
+          "ongoing_hazard": 0.8215,
+          "mismatch": null
+        },
+        "person_state": "none",
+        "person_probabilities": {
+          "life_threat": 0.001,
+          "trapped": 0.003,
+          "minor_injury": 0.003,
+          "none": 0.993
+        },
+        "person_threshold": 0.34
+      },
+      "rule": {
+        "id": "45a4269db13e4a53a85a14b3611f5ede",
+        "urgency": "urgent",
+        "mode": "zoro",
+        "review": false,
+        "mismatch": false,
+        "non_field_photo": false,
+        "claim_kind": "storm_flood",
+        "claim_prob": 0.9782,
+        "photo_kind": "water_storm",
+        "photo_prob": 0.9603,
+        "probs": {
+          "people": 0.901,
+          "life_threat": 0.0135,
+          "now": 0.7612,
+          "severe": 0.1921,
+          "field_photo": 0.962,
+          "ongoing_hazard": 0.4245,
+          "mismatch": null
+        },
+        "person_state": "trapped",
+        "person_probabilities": {
+          "life_threat": 0.0135,
+          "trapped": 0.8752,
+          "minor_injury": 0.0124,
+          "none": 0.099
+        },
+        "person_threshold": 0.34
+      }
+    }
+  },
+  "outage_recovery": {
+    "id": "0b42736ae3d84bd8973c987e7315af71",
+    "first_mode": "fallback",
+    "final_mode": "zoro",
+    "status": "recovered",
+    "due_at": 1795104498.9782689,
+    "attempted_at": 1795104498.9784179,
+    "finished_at": 1795104499.3485758,
+    "final_urgency": "top"
+  },
+  "rule": {
+    "revision": 1,
+    "recomputed": 6,
+    "elapsed_ms": 1062.236,
+    "before": "urgent",
+    "after": "top",
+    "promoted": {
+      "id": "45a4269db13e4a53a85a14b3611f5ede",
+      "urgency": "top",
+      "mode": "zoro",
+      "review": false,
+      "mismatch": false,
+      "non_field_photo": false,
+      "claim_kind": "storm_flood",
+      "claim_prob": 0.9785,
+      "photo_kind": "water_storm",
+      "photo_prob": 0.9608,
+      "probs": {
+        "people": 0.9002,
+        "life_threat": 0.013,
+        "now": 0.7563,
+        "severe": 0.1953,
+        "field_photo": 0.962,
+        "ongoing_hazard": 0.4549,
+        "rule_1": 0.9626,
+        "mismatch": null
+      },
+      "person_state": "trapped",
+      "person_probabilities": {
+        "life_threat": 0.013,
+        "trapped": 0.8756,
+        "minor_injury": 0.0115,
+        "none": 0.0998
+      },
+      "person_threshold": 0.34
+    },
+    "rank_before": 5,
+    "rank_after": 4,
+    "control": {
+      "id": "ed208be400a74c27b4cd9d5eb044641e",
+      "rank_before": 4,
+      "rank_after": 5
+    }
+  },
+  "labels": {
+    "count": 1,
+    "persisted_after_rule": true
+  },
+  "burst": {
+    "count": 100,
+    "elapsed_ms": 26554,
+    "observed_ms": 26857.111,
+    "fallback": 0,
+    "current_fallback": 0,
+    "started_revision": 1,
+    "revisions": [
+      1
+    ]
+  }
+}

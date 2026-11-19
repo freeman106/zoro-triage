@@ -1,0 +1,121 @@
+{
+  "old": {
+    "threshold": 0.5,
+    "n": 400,
+    "tp": 105,
+    "fp": 138,
+    "fn": 12,
+    "precision": 0.43209876543209874,
+    "recall": 0.8974358974358975,
+    "top": 245,
+    "top_rate": 0.6125
+  },
+  "candidate": {
+    "threshold": 0.2,
+    "n": 400,
+    "tp": 90,
+    "fp": 110,
+    "fn": 27,
+    "precision": 0.45,
+    "recall": 0.7692307692307693,
+    "top": 202,
+    "top_rate": 0.505
+  },
+  "adopt": false,
+  "old_gold_top": {
+    "historic": {
+      "n": 83,
+      "missed": 40,
+      "rate": 0.4819277108433735
+    },
+    "previous_live": {
+      "n": 83,
+      "missed": 2,
+      "rate": 0.024096385542168676
+    },
+    "candidate": {
+      "n": 83,
+      "missed": 11,
+      "rate": 0.13253012048192772
+    },
+    "selected_live": {
+      "n": 83,
+      "missed": 2,
+      "rate": 0.024096385542168676
+    }
+  },
+  "new_definite_top": {
+    "historic": {
+      "n": 83,
+      "missed": 52,
+      "rate": 0.6265060240963856
+    },
+    "previous_live": {
+      "n": 83,
+      "missed": 0,
+      "rate": 0.0
+    },
+    "candidate": {
+      "n": 83,
+      "missed": 8,
+      "rate": 0.0963855421686747
+    },
+    "selected_live": {
+      "n": 83,
+      "missed": 0,
+      "rate": 0.0
+    }
+  },
+  "groups": {
+    "가족 한 명이 다리를 다쳐 피를 흘림": {
+      "n": 30,
+      "before": 26,
+      "candidate": 19
+    },
+    "건물 잔해에 깔린 사람이 있음": {
+      "n": 29,
+      "before": 24,
+      "candidate": 26
+    },
+    "노부모가 거동을 못 해 집 안에 고립": {
+      "n": 33,
+      "before": 30,
+      "candidate": 29
+    },
+    "모두 대피해서 다친 사람 없음": {
+      "n": 84,
+      "before": 4,
+      "candidate": 0
+    },
+    "사람이 쓰러져서 의식이 없음": {
+      "n": 31,
+      "before": 29,
+      "candidate": 19
+    },
+    "아이들과 2층에 고립되어 못 나감": {
+      "n": 46,
+      "before": 40,
+      "candidate": 38
+    },
+    "언급 없음": {
+      "n": 63,
+      "before": 23,
+      "candidate": 4
+    },
+    "연기를 마신 사람이 숨을 잘 못 쉼": {
+      "n": 27,
+      "before": 26,
+      "candidate": 26
+    },
+    "옆집 할머니가 안에 있는데 연락이 안 됨": {
+      "n": 29,
+      "before": 18,
+      "candidate": 14
+    },
+    "차 안에 사람이 갇혀 있음": {
+      "n": 28,
+      "before": 23,
+      "candidate": 25
+    }
+  }
+}

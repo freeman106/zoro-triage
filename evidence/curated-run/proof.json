@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "auth": {
+    "anonymous_state": 403,
+    "report_state": 403,
+    "report_events": 403,
+    "report_rule": 403,
+    "anonymous_upload": 403
+  },
+  "phone": {
+    "id": "ddf9b9a777ba40bfa661259e13ec5074",
+    "receipt_ms": 13.442,
+    "upload_to_sse_ms": 13.602,
+    "server_receipt_to_sse_ms": 3.965
+  },
+  "examples": {
+    "elapsed_ms": 1064.039,
+    "results": {
+      "top": {
+        "id": "8163a67053c8447f9a4320253b062fe1",
+        "urgency": "top",
+        "mode": "zoro",
+        "review": false,
+        "mismatch": false,
+        "claim_kind": "quake_collapse",
+        "claim_prob": 0.9377,
+        "photo_kind": "collapse",
+        "photo_prob": 0.9156
+      },
+      "mismatch": {
+        "id": "a50f7c0fdce14c8394dcd29d84de0bec",
+        "urgency": "urgent",
+        "mode": "zoro",
+        "review": true,
+        "mismatch": true,
+        "claim_kind": "storm_flood",
+        "claim_prob": 0.9819,
+        "photo_kind": "fire_smoke_burn",
+        "photo_prob": 0.9226
+      },
+      "outage": {
+        "id": "b03cc8b7ebec4cd58f3e9d9309f8d972",
+        "urgency": "urgent",
+        "mode": "fallback",
+        "review": true,
+        "mismatch": null,
+        "claim_kind": null,
+        "claim_prob": null,
+        "photo_kind": null,
+        "photo_prob": null
+      },
+      "rule": {
+        "id": "aed9397259374816b1228672310d8141",
+        "urgency": "urgent",
+        "mode": "zoro",
+        "review": false,
+        "mismatch": false,
+        "claim_kind": "storm_flood",
+        "claim_prob": 0.9842,
+        "photo_kind": "water_storm",
+        "photo_prob": 0.9838
+      }
+    }
+  },
+  "burst": {
+    "count": 100,
+    "elapsed_ms": 23165,
+    "observed_ms": 23303.72,
+    "fallback": 0
+  },
+  "rule": {
+    "revision": 1,
+    "recomputed": 105,
+    "elapsed_ms": 26564.385,
+    "before": "urgent",
+    "after": "top",
+    "rank_before": 81,
+    "rank_after": 57
+  },
+  "labels": {
+    "count": 1,
+    "persisted_after_rule": true
+  }
+}

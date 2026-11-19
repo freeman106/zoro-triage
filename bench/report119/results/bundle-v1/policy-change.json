@@ -1,0 +1,75 @@
+{
+  "n": 400,
+  "same_evidence": {
+    "changed": 202,
+    "matrix": {
+      "top": {
+        "top": 86,
+        "urgent": 1,
+        "normal": 0,
+        "non_urgent": 0
+      },
+      "urgent": {
+        "top": 132,
+        "urgent": 58,
+        "normal": 0,
+        "non_urgent": 0
+      },
+      "normal": {
+        "top": 27,
+        "urgent": 18,
+        "normal": 19,
+        "non_urgent": 0
+      },
+      "non_urgent": {
+        "top": 0,
+        "urgent": 24,
+        "normal": 0,
+        "non_urgent": 35
+      }
+    }
+  },
+  "original_to_final": {
+    "changed": 202,
+    "matrix": {
+      "top": {
+        "top": 88,
+        "urgent": 1,
+        "normal": 0,
+        "non_urgent": 0
+      },
+      "urgent": {
+        "top": 128,
+        "urgent": 57,
+        "normal": 1,
+        "non_urgent": 0
+      },
+      "normal": {
+        "top": 29,
+        "urgent": 19,
+        "normal": 18,
+        "non_urgent": 0
+      },
+      "non_urgent": {
+        "top": 0,
+        "urgent": 24,
+        "normal": 0,
+        "non_urgent": 35
+      }
+    }
+  },
+  "before_policy": {
+    "top": 87,
+    "urgent": 190,
+    "normal": 64,
+    "non_urgent": 59
+  },
+  "final_policy": {
+    "top": 245,
+    "urgent": 101,
+    "normal": 19,
+    "non_urgent": 35
+  },
+  "past_with_hazard": 24,
+  "review_added": 17
+}

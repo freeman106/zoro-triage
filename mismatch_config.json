@@ -1,0 +1,5 @@
+{
+  "threshold": 0.5,
+  "model": "bf1b76b9b4df03b05fcbb73444e1cd4db0f566da",
+  "calibration_size": 500
+}
