@@ -1,0 +1,87 @@
+{
+  "instance": "l40s-zoro-119",
+  "remote_directory": "/ephemeral/crisis_bench/noisy-supervised/run-v1/weights",
+  "mac_repo_relative_directory": ".private/shift-weights",
+  "files": {
+    "clip-photo-heads.joblib": {
+      "bytes": 9453,
+      "sha256": "7c433dfb2c46982cdac0e256a69d9af1fa2d6cdf8fc2c7f626b9daea0a1ee351"
+    },
+    "kc-1500/config.json": {
+      "bytes": 857,
+      "sha256": "6249f75cc5ab9fb5e44d039b4ace8d04f2c2df29bfbd6f73a655e50dc99fa8d7"
+    },
+    "kc-1500/fit-signature.txt": {
+      "bytes": 64,
+      "sha256": "c231ee6c061e5f8daa877054c77f91b6a8cd5be7037b1c7ad0d6e6fc39d02072"
+    },
+    "kc-1500/model.safetensors": {
+      "bytes": 508766904,
+      "sha256": "33b7be8697fce580d4b2ed8a83312d6eae09ac0970137929f4b649dece643726"
+    },
+    "kc-1500/multitask-head.pt": {
+      "bytes": 23453,
+      "sha256": "2ee3b43dc1ace24e7d1b4fabe10fe9d53404d633b121e355fcd55c0fa7c22a98"
+    },
+    "kc-1500/tokenizer.json": {
+      "bytes": 1310845,
+      "sha256": "f8fc058156309be9594bbfffb9433a3a8c2898a17a54bf24c5751800248f58ce"
+    },
+    "kc-1500/tokenizer_config.json": {
+      "bytes": 402,
+      "sha256": "e1a1505d9f0a72b33e015775f5a3f8ed7095072ac45ef97c6243dc622333546d"
+    },
+    "kc-200/config.json": {
+      "bytes": 857,
+      "sha256": "6249f75cc5ab9fb5e44d039b4ace8d04f2c2df29bfbd6f73a655e50dc99fa8d7"
+    },
+    "kc-200/fit-signature.txt": {
+      "bytes": 64,
+      "sha256": "3d692acda059871a7325a38e067298764ea2895887e4e223b3652b990b17fe6c"
+    },
+    "kc-200/model.safetensors": {
+      "bytes": 508766904,
+      "sha256": "87a899b88e9d6eb23a7b6bbdb31e3097518bbf45f1998776171f7d6578e5d418"
+    },
+    "kc-200/multitask-head.pt": {
+      "bytes": 23453,
+      "sha256": "f2b2f32e9f424cbc989c91d00733c633d6cf9ac6b54a95928d38966b537d7cad"
+    },
+    "kc-200/tokenizer.json": {
+      "bytes": 1310845,
+      "sha256": "f8fc058156309be9594bbfffb9433a3a8c2898a17a54bf24c5751800248f58ce"
+    },
+    "kc-200/tokenizer_config.json": {
+      "bytes": 402,
+      "sha256": "e1a1505d9f0a72b33e015775f5a3f8ed7095072ac45ef97c6243dc622333546d"
+    },
+    "kc-50/config.json": {
+      "bytes": 857,
+      "sha256": "6249f75cc5ab9fb5e44d039b4ace8d04f2c2df29bfbd6f73a655e50dc99fa8d7"
+    },
+    "kc-50/fit-signature.txt": {
+      "bytes": 64,
+      "sha256": "7978ddcc1f7bd00e6e096f989d9a64f7e5e67cf21c203a0368366ae73d9df612"
+    },
+    "kc-50/model.safetensors": {
+      "bytes": 508766904,
+      "sha256": "2a0a224f4d7a5611058e60c6e3ec83fa6fbae29f59dd007db5fd50e3719ee50c"
+    },
+    "kc-50/multitask-head.pt": {
+      "bytes": 23453,
+      "sha256": "540fe74a1eadbdfd2c61b6c118ebb5e2be45b89a3859eee62da422ee55d32e24"
+    },
+    "kc-50/tokenizer.json": {
+      "bytes": 1310845,
+      "sha256": "f8fc058156309be9594bbfffb9433a3a8c2898a17a54bf24c5751800248f58ce"
+    },
+    "kc-50/tokenizer_config.json": {
+      "bytes": 402,
+      "sha256": "e1a1505d9f0a72b33e015775f5a3f8ed7095072ac45ef97c6243dc622333546d"
+    },
+    "multilingual-clip-mlp-1500.joblib": {
+      "bytes": 4761441,
+      "sha256": "4a30b468cf0470b668304a83a9f9c57d1c0b4aebbc0566347911040a77f6eca4"
+    }
+  }
+}

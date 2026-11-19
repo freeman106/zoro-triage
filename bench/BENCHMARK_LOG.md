@@ -384,3 +384,31 @@ CrisisMMD의 피해를 심각·경미·거의 없음으로 묻고 P(심각) ≥ 
 | 변경 | 15 | 7 | 0 | 27.169초 | 3.68건/초 | 271.69ms | 1,130.35ms |
 
 확인 필요에서 빠진 신고는 13건, 새로 표시된 신고는 0건이었다. 개별 판정 지연은 각 신고의 판정 함수 실행 시간이다. 변경 후 접수부터 최초 판정까지의 대기 포함 중앙값은 13.862초였다. 폭주 처리량은 완료 건수/총시간, 평균 처리 간격은 총시간/완료 건수다. 합성 신고 기준이며 실제 119 성능은 미검증이다. [변경 전](../evidence/damage-review/before.json) · [변경 후](../evidence/damage-review/after.json)
+
+## 17. 신고 글 분포 이동 실험 (2026-11-20)
+
+같은 가중치의 원문 → 잡음본 정확도다. 원문과 짝지은 잡음본은 사진·ID·정답이 같은 합성 신고 400건이다. 긴급도에는 이전 정책의 일치 신고 303건, 진행 중·위험 인원에는 전체 400건을 사용했다.
+
+| 모델 | 깨끗한 학습 신고 | 긴급도 (303) | 진행 중 (400) | 위험 인원 (400) |
+|---|---:|---:|---:|---:|
+| KcELECTRA+CLIP+규칙 | 50 | 67.3% → 65.0% | 96.5% → 95.5% | 90.5% → 86.2% |
+| KcELECTRA+CLIP+규칙 | 200 | 73.9% → 68.0% | 97.8% → 93.5% | 98.5% → 98.2% |
+| KcELECTRA+CLIP+규칙 | 1,500 | 77.9% → 78.2% | 100.0% → 100.0% | 99.8% → 100.0% |
+| 다국어 CLIP+MLP | 1,500 | 66.3% → 62.0% | 100.0% → 97.2% | 98.8% → 91.8% |
+
+- 시드 42로 뽑은 중첩 학습 ID를 기존 실험과 대조했다. KcELECTRA는 위험 인원·시점·재난군을 공동 학습했고, CLIP 사진 분류기는 별도 CrisisMMD train 라벨 2,468장을 사용했다. 다국어 CLIP+MLP의 긴급도 헤드는 기존처럼 사진·글 임베딩을 연결해 일치 학습 신고로 학습했다. 일치 학습 신고는 1,181건이다. 이 모델에는 중간 글 판단 출력이 없어, 진행 중·위험 인원은 동결된 글 임베딩에 별도로 학습한 두 MLP의 정확도다. 이 두 출력은 긴급도 계산에 쓰이지 않는다.
+- 5개 스타일은 받아쓰기 오류 81건, 오타 84건, 사투리 66건, 끊어 보내기 79건, 짧은 신고 90건이다. 슬롯 키워드 검사에 표시된 36건(일치 신고 21건)도 포함했다. 기존 합성 정답을 유지했고 잡음 문장의 의미 보존을 사람이 전수 검수하지 않았다.
+- 측정 시 GPU 가용량은 1,050 MiB였다. l40s-zoro-119의 격리된 CPU 환경에서 기존 학습 배치 16, 학습률·에포크 규칙·임베딩 및 분류기 구성을 유지했다. 표의 원문 값도 이번 재학습 결과다. 사진 CLIP은 CPU FP32로 추론했다. 횟수별 KcELECTRA 본체·토크나이저·3개 출력 헤드와 CLIP 사진·다국어 MLP 분류기를 저장하고 다시 읽어 양쪽 텍스트를 채점했다. 공개 동결 인코더의 정확한 리비전은 각 결과 JSON에 있다.
+
+```sh
+export CUDA_VISIBLE_DEVICES="" HF_HUB_OFFLINE=1 LD_LIBRARY_PATH=
+export OMP_NUM_THREADS=5 MKL_NUM_THREADS=5 OPENBLAS_NUM_THREADS=2 TOKENIZERS_PARALLELISM=false
+base=/ephemeral/crisis_bench/noisy-supervised
+cd "$base"
+export HF_HOME="$base/hf"
+for mode in kc mlp; do
+  venv/bin/python -u shift_models.py "$mode" --data /ephemeral/crisis_bench --noisy test119_noisy.json --out "$base/run-v1" --device cpu
+done
+```
+
+입력 사진을 교체할 때는 새 출력 디렉터리로 실행한다. 건별 예측과 정확도 분자·분모는 [실험 결과](report119/results/noisy-shift/)에 있다. 인스턴스의 `/ephemeral/crisis_bench/noisy-supervised/run-v1/weights/`와 맥북의 `demo119/.private/shift-weights/`에 학습된 가중치를 보존했다. [파일별 SHA-256 목록](report119/results/noisy-shift/weights-manifest.json)

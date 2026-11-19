@@ -27,70 +27,86 @@ EVENTS = {"california_wildfires": "fire", "mexico_earthquake": "quake", "iraq_ir
 
 
 class Photos:
-    def __init__(self):
-        self.model = CLIPModel.from_pretrained(B32, dtype=torch.float16).cuda().eval()
-        self.proc = AutoProcessor.from_pretrained(B32)
+    def __init__(self, device="cuda", root=ROOT, source=B32):
+        self.root = root
+        self.device = device
+        self.dtype = torch.float16 if device == "cuda" else torch.float32
+        self.model = CLIPModel.from_pretrained(source, torch_dtype=self.dtype).to(device).eval()
+        self.proc = AutoProcessor.from_pretrained(source)
 
     @torch.inference_mode()
     def __call__(self, rows):
         imgs = []
         for row in rows:
-            with Image.open(ROOT / row["image_path"]) as f:
+            with Image.open(self.root / row["image_path"]) as f:
                 imgs.append(f.convert("RGB"))
-        pixels = self.proc(images=imgs, return_tensors="pt")["pixel_values"].cuda().half()
+        pixels = self.proc(images=imgs, return_tensors="pt")["pixel_values"].to(device=self.device, dtype=self.dtype)
         feats = self.model.get_image_features(pixel_values=pixels)
         vec = feats if torch.is_tensor(feats) else feats.pooler_output
         return nn.functional.normalize(vec.float(), dim=1).cpu().numpy()
 
 
 class TextClip:
-    def __init__(self):
-        self.model = AutoModel.from_pretrained(MULTI).cuda().eval()
-        self.tok = AutoTokenizer.from_pretrained(MULTI)
-        path = hf_hub_download(MULTI, "2_Dense/model.safetensors", local_files_only=True)
-        self.weights = load_file(path)["linear.weight"].cuda()
+    def __init__(self, device="cuda", source=MULTI):
+        self.device = device
+        self.model = AutoModel.from_pretrained(source).to(device).eval()
+        self.tok = AutoTokenizer.from_pretrained(source)
+        path = Path(source) / "2_Dense/model.safetensors"
+        if not path.is_file():
+            path = hf_hub_download(source, "2_Dense/model.safetensors", local_files_only=True)
+        self.weights = load_file(str(path))["linear.weight"].to(device)
 
     @torch.inference_mode()
     def __call__(self, rows):
-        x = tokens(self.tok, rows)
+        x = tokens(self.tok, rows, self.device)
         h = self.model(**x).last_hidden_state
         mask = x.attention_mask.unsqueeze(-1)
         mean = (h*mask).sum(1) / mask.sum(1)
         return nn.functional.normalize(nn.functional.linear(mean, self.weights), dim=1).cpu().numpy()
 
 
-def tokens(tok, rows):
-    return tok([r["text"] for r in rows], truncation=True, max_length=128, padding=True, return_tensors="pt").to("cuda")
+def tokens(tok, rows, device="cuda"):
+    return tok([r["text"] for r in rows], truncation=True, max_length=128, padding=True, return_tensors="pt").to(device)
 
 
 def batched(fn, rows, size=24):
     return np.concatenate([fn(rows[i:i+size]) for i in range(0,len(rows),size)])
 
 
-def fit_kc(rows):
-    tok = AutoTokenizer.from_pretrained(KC)
-    model = AutoModel.from_pretrained(KC).cuda().train()
-    head = nn.Linear(model.config.hidden_size, 7).cuda()
+def kc_predictor(model, tok, head, device):
+    model.eval()
+    head.eval()
+    @torch.inference_mode()
+    def predict(batch):
+        hidden = model(**tokens(tok, batch, device)).last_hidden_state[:, 0]
+        return torch.stack([out.argmax(1) for out in head(hidden).split([2, 2, 3], dim=1)], dim=1).cpu().numpy()
+    return predict
+
+
+def fit_kc(rows, device="cuda", save_dir=None, source=KC):
+    tok = AutoTokenizer.from_pretrained(source)
+    model = AutoModel.from_pretrained(source).to(device).train()
+    head = nn.Linear(model.config.hidden_size, 7).to(device)
     opt = torch.optim.AdamW([{"params": model.parameters(), "lr": 3e-5},
                              {"params": head.parameters(), "lr": 5e-4}])
     rng = random.Random(42)
     def logits(batch):
-        return head(model(**tokens(tok, batch)).last_hidden_state[:,0]).split([2,2,3], dim=1)
+        return head(model(**tokens(tok, batch, device)).last_hidden_state[:,0]).split([2,2,3], dim=1)
     for _ in range(max(4, (60 + (len(rows)+15)//16 - 1)//((len(rows)+15)//16))):
         order = rng.sample(rows, len(rows))
         for i in range(0,len(rows),16):
             b = order[i:i+16]
             ys = [[int(r["people"] != "none") for r in b], [int(r["time"] == "now") for r in b],
                   [GROUPS.index(r["claim_group"]) for r in b]]
-            loss = sum(nn.functional.cross_entropy(out, torch.tensor(y, device="cuda")) for out,y in zip(logits(b),ys))
+            loss = sum(nn.functional.cross_entropy(out, torch.tensor(y, device=device)) for out,y in zip(logits(b),ys))
             opt.zero_grad()
             loss.backward()
             opt.step()
-    model.eval()
-    @torch.inference_mode()
-    def predict(batch):
-        return torch.stack([out.argmax(1) for out in logits(batch)], dim=1).cpu().numpy()
-    return predict
+    if save_dir is not None:
+        model.save_pretrained(save_dir)
+        tok.save_pretrained(save_dir)
+        torch.save(head.state_dict(), save_dir / "multitask-head.pt")
+    return kc_predictor(model, tok, head, device)
 
 
 def measure(fn, test):
