@@ -70,6 +70,19 @@ const recoveryNames = {
   recovered: "재판정 완료",
   failed: "재판정 실패",
 };
+const reasonStatusNames = {
+  pending: "대기 중",
+  running: "분석 중",
+  unavailable: "결과를 받지 못했습니다. 1차 분류 근거를 확인하세요.",
+};
+const reasonTopicMessages = {
+  people: "위험에 처한 사람이 있는지, 현재 상태가 어떤지 확인하세요.",
+  timing: "사건이 발생한 시점과 지금도 진행 중인지 확인하세요.",
+  photo: "사진이 신고와 같은 사건의 현장을 보여주는지 확인하세요.",
+  hazard: "사진에 진행 중인 위험이 보이는지, 현재도 이어지는지 확인하세요.",
+  damage: "사진에서 확인할 수 있는 물적 피해의 범위와 정도를 확인하세요.",
+  other: "판정에 필요한 정보가 빠져 있는지 확인하세요.",
+};
 const dateFormat = new Intl.DateTimeFormat("ko-KR", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
 const cardNodes = new Map();
 let stream;
@@ -393,6 +406,7 @@ function createCard(id) {
     fieldPhotoReview,
     details: element.querySelector(".card-details"),
     reason: element.querySelector(".ai-reason"),
+    reasonReview: element.querySelector(".reason-review"),
     meta: element.querySelector(".decision-meta"),
     probabilities: element.querySelector(".probabilities"),
     field: labelForm.elements.urgency,
@@ -451,14 +465,26 @@ function updateCard(view, card) {
   view.details.hidden = !classified;
   const nonFieldPhoto = decision?.non_field_photo === true;
   view.fieldPhotoReview.hidden = !classified || !nonFieldPhoto;
-  const uncertainGrade = Boolean(decision?.review_uncertainty?.length);
-  view.review.hidden = !classified || !(card.human_urgency || (decision?.review && (!nonFieldPhoto || uncertainGrade)));
+  const reasonReview = classified ? card.reason_review : undefined;
+  const reasonedAnswer = reasonReview?.status === "done" ? reasonReview : undefined;
+  const needsReview = reasonedAnswer?.needs_review ?? decision?.review;
+  const reasonedUncertainty = reasonedAnswer && !["clear", "photo"].includes(reasonedAnswer.topic);
+  const uncertainGrade = needsReview && (Boolean(decision?.review_uncertainty?.length) || reasonedUncertainty);
+  view.review.hidden = !classified || !(card.human_urgency || (needsReview && (!nonFieldPhoto || uncertainGrade)));
   view.review.textContent = card.human_urgency ? "사람 검수 완료"
     : uncertainGrade ? "확인 필요(판단 불확실)" : "사람 확인 필요";
   view.review.dataset.done = String(Boolean(card.human_urgency));
   const reasons = classified && Array.isArray(decision?.reasons) ? decision.reasons : [];
   view.reason.hidden = !reasons.length;
-  view.reason.textContent = reasons.join(" · ");
+  view.reason.textContent = reasons.length && reasonReview ? ["1차 분류", ...reasons].join(" · ") : reasons.join(" · ");
+  let reasonMessage = reasonStatusNames[reasonReview?.status];
+  if (reasonedAnswer) {
+    reasonMessage = !needsReview ? "추가 확인 항목 없음"
+      : reasonTopicMessages[reasonedAnswer.topic] || "1차 분류에 표시된 확인 사유를 검토하세요.";
+  }
+  view.reasonReview.hidden = !reasonMessage;
+  view.reasonReview.dataset.state = reasonReview?.status || "";
+  view.reasonReview.textContent = reasonMessage ? `Zoro 추론 · ${reasonMessage}` : "";
   const details = [];
   if (decision?.mode) details.push(modeNames[decision.mode] || decision.mode);
   if (decision?.urgency && urgencyNames[decision.urgency]) {
@@ -466,6 +492,9 @@ function updateCard(view, card) {
     details.push(`${classificationLabel} ${urgencyNames[decision.urgency]}`);
   }
   if (Number.isInteger(card.rule_revision)) details.push(`규칙 v${card.rule_revision}`);
+  if (Number.isFinite(reasonedAnswer?.probability) && (reasonedAnswer.topic !== "clear" || !needsReview)) {
+    details.push(`추론 항목 선택 확률 ${percent(reasonedAnswer.probability)}`);
+  }
   view.meta.textContent = details.join(" · ");
   if (card.human_urgency && card.human_urgency !== view.savedLabel) view.field.value = card.human_urgency;
   view.savedLabel = card.human_urgency;

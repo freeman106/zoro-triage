@@ -110,7 +110,8 @@ def done(snapshot, count, revision):
 def rank(card):
     if card["status"] == "pending":
         return (0, 0, False, card["created_at"])
-    needs_review = card["human_urgency"] is None and card["decision"]["review"]
+    review = (card.get("reason_review") or {}).get("needs_review", card["decision"]["review"])
+    needs_review = card["human_urgency"] is None and review
     return (
         1,
         LEVELS.index(card["human_urgency"] or card["urgency"]),

@@ -12,15 +12,22 @@ import threading
 import time
 import uuid
 
-from decision import DEFAULT_WORKERS, decide
+from decision import DEFAULT_WORKERS, decide, reason_review
 
 RETRY_DELAY_SECONDS = 5
 LEVELS = ("top", "urgent", "normal", "non_urgent")
+_LEVEL_ORDER = {level: index for index, level in enumerate(LEVELS)}
 LOG = logging.getLogger(__name__)
 
 
 class StoreConflict(ValueError):
     """The submitted request no longer matches durable inbox state."""
+
+
+def _pending_reason(decision):
+    if decision["mode"] == "zoro" and decision.get("review"):
+        return {"status": "pending"}
+    return None
 
 
 class Inbox:
@@ -69,21 +76,24 @@ class Inbox:
         self._export_thread.start()
         self._export_requested.set()
         self._queued_retries = set()
-        self._retry_stopping = False
+        self._stopping = False
         self._retry_thread = threading.Thread(target=self._retry_loop, name="decision-retry", daemon=True)
+        self._reason_thread = threading.Thread(target=self._reason_loop, name="reason-review", daemon=True)
         with self.changed:
             for c in self.cards.values():
                 if c["status"] == "pending":
                     self.pool.submit(self.work, c["id"], self.revision)
         self._retry_thread.start()
+        self._reason_thread.start()
 
     def close(self):
         with self.changed:
-            if self._retry_stopping:
+            if self._stopping:
                 return
-            self._retry_stopping = True
+            self._stopping = True
             self.changed.notify_all()
         self._retry_thread.join()
+        self._reason_thread.join()
         self.pool.shutdown()
         self._export_stopping.set()
         self._export_requested.set()
@@ -196,7 +206,7 @@ class Inbox:
 
     def _retry_loop(self):
         with self.changed:
-            while not self._retry_stopping:
+            while not self._stopping:
                 now = time.time()
                 next_due = None
                 for key, card in self.cards.items():
@@ -226,7 +236,7 @@ class Inbox:
             card = self.cards[key]
             due = self._retry_due(card)
             now = time.time()
-            if self._retry_stopping or due is None or due > now:
+            if self._stopping or due is None or due > now:
                 self.changed.notify_all()
                 return
             revision = self.revision
@@ -250,7 +260,7 @@ class Inbox:
                 status = "superseded"
             elif result and result["mode"] == "zoro":
                 status = "recovered"
-                card = dict(card, decision=result, urgency=result["urgency"])
+                card = dict(card, decision=result, urgency=result["urgency"], reason_review=_pending_reason(result))
             else:
                 status = "failed"
             recovery = dict(attempt, status=status, finished_at=time.time())
@@ -264,6 +274,54 @@ class Inbox:
             if owns_attempt:
                 self.cards[key] = card
             self.publish(journal=True)
+
+    def _next_reason_card(self):
+        if any(card["status"] == "pending" for card in self.cards.values()):
+            return None
+        # A running item found here was interrupted by a shutdown and can be resumed.
+        candidates = (
+            card for card in self.cards.values()
+            if (card.get("reason_review") or {}).get("status") in ("pending", "running")
+        )
+        return min(candidates, default=None, key=lambda card: (
+            _LEVEL_ORDER.get(card["human_urgency"] or card["urgency"], len(LEVELS)), card["created_at"],
+        ))
+
+    def _reason_loop(self):
+        while True:
+            with self.changed:
+                card = self._next_reason_card()
+                while card is None and not self._stopping:
+                    self.changed.wait()
+                    card = self._next_reason_card()
+                if self._stopping:
+                    return
+                key = card["id"]
+                revision = card["rule_revision"]
+                attempt = {"status": "running"}
+                card = dict(card, reason_review=attempt)
+                with self.db:
+                    self.save(card)
+                self.cards[key] = card
+                self.publish()
+
+            try:
+                result = reason_review(card["text"], Path(card["path"]).read_bytes(), card["decision"])
+            except Exception as error:
+                LOG.warning("Reason review failed for %s: %s", key, type(error).__name__)
+                result = None
+
+            with self.changed:
+                card = self.cards[key]
+                if revision != self.revision or card.get("reason_review") is not attempt:
+                    continue
+                review = {"status": "unavailable"} if result is None else dict(result, status="done")
+                card = dict(card, reason_review=review)
+                with self.db:
+                    self.save(card)
+                    self.journal("reason-reviews", event="reason_review", id=key, revision=revision, review=review)
+                self.cards[key] = card
+                self.publish(journal=True)
 
     def journal(self, stream, **data):
         payload = json.dumps(dict(ts=time.time(), **data), ensure_ascii=False)
@@ -289,9 +347,9 @@ class Inbox:
                     if c["status"] == "pending":
                         return (0, 0, False, c["created_at"])
                     level = c["human_urgency"] or c["urgency"]
-                    needs_review = c["human_urgency"] is None and (c["decision"] or {}).get("review", False)
-                    return (1, LEVELS.index(level) if level in LEVELS else len(LEVELS),
-                            not needs_review, c["created_at"])
+                    review = (c.get("reason_review") or {}).get("needs_review", (c["decision"] or {}).get("review", False))
+                    needs_review = c["human_urgency"] is None and review
+                    return (1, _LEVEL_ORDER.get(level, len(LEVELS)), not needs_review, c["created_at"])
                 private = ("path", "example", "batch", "burst_first_revision")
                 cards = [{k:v for k,v in c.items() if k not in private} for c in sorted(self.cards.values(),key=rank)]
                 self.cached = json.dumps(dict(cards=cards,rules=self.rules,revision=self.revision,labels=self.labels,
@@ -434,6 +492,7 @@ class Inbox:
                     c["first_decision_with_wait_ms"] = round((now - c["created_at"]) * 1000, 1)
             c.update(decision=result,status="done",urgency=result["urgency"],rule_revision=revision)
             c["recovery"] = self._new_recovery(c, now) if result["mode"] == "fallback" else None
+            c["reason_review"] = _pending_reason(result)
             burst = None
             if self.burst and c["batch"] == self.burst["id"] and "burst_first_revision" not in c:
                 c["burst_first_revision"] = revision
@@ -485,7 +544,7 @@ class Inbox:
                 raise ValueError("중복 조건이거나 최대 8개 조건에 도달했습니다.")
             rules = [*self.rules, text]
             revision = self.revision + 1
-            cards = {key: dict(c, status="pending") for key, c in self.cards.items()}
+            cards = {key: dict(c, status="pending", reason_review=None) for key, c in self.cards.items()}
             with self.db:
                 self.meta("rules", rules)
                 self.meta("revision", revision)
@@ -515,7 +574,8 @@ class Inbox:
                     self.meta("labels", count)
                 self.save(c)
                 self.journal("labels",event="label",id=key,input=self._journal_input(c),
-                             revision=c["rule_revision"],rules=self.rules,decision=c["decision"],human=level)
+                             revision=c["rule_revision"],rules=self.rules,decision=c["decision"],human=level,
+                             reason_review=c.get("reason_review"))
             self.cards[key] = c
             self.labels = count
             self.publish(journal=True)

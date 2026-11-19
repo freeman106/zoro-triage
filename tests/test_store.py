@@ -74,6 +74,114 @@ class StoreTest(unittest.TestCase):
     def card(self, inbox, key):
         return next(card for card in json.loads(inbox.state())["cards"] if card["id"] == key)
 
+    def test_reason_waits_for_initial_batch_and_processes_top_first(self):
+        allow_top = Event()
+        reason_started = Event()
+        allow_reason = Event()
+        calls = []
+        clear = {"topic": "clear", "probability": 0.95, "needs_review": False}
+
+        def model(text, image, rules, *, force_fallback):
+            if text == "second":
+                allow_top.wait(2)
+                return outcome() | {"urgency": "top", "review": True}
+            return outcome() | {"review": True}
+
+        def reason(text, image, decision):
+            calls.append(text)
+            reason_started.set()
+            allow_reason.wait(2)
+            return clear
+
+        self.model.side_effect = model
+        with patch.object(store, "reason_review", side_effect=reason):
+            inbox = self.open_inbox()
+            first, top = inbox.add_examples()
+            try:
+                first_pass = self.wait_for(lambda: self.card(inbox, first), lambda card: card["status"] == "done")
+                self.assertEqual(first_pass["reason_review"]["status"], "pending")
+                self.assertFalse(reason_started.is_set())
+                allow_top.set()
+                self.assertTrue(reason_started.wait(1))
+                state = self.settled(inbox, 2, 0)
+                self.assertEqual([c["id"] for c in state["cards"]], [top, first])
+                self.assertEqual(state["cards"][0]["reason_review"]["status"], "running")
+                self.assertEqual(state["burst"]["done"], 2)
+                inbox.label(top, "urgent")
+            finally:
+                allow_top.set()
+                allow_reason.set()
+            logs = self.wait_for(lambda: self.log("reason-reviews"), lambda entries: len(entries) == 2)
+            self.assertEqual(calls, ["second", "first"])
+            self.assertEqual([entry["id"] for entry in logs], [top, first])
+            self.assertEqual(self.card(inbox, top)["urgency"], "top")
+            self.assertEqual(self.card(inbox, top)["human_urgency"], "urgent")
+            self.assertEqual(self.card(inbox, first)["reason_review"], clear | {"status": "done"})
+            self.assertEqual(json.loads(inbox.state())["burst"], state["burst"])
+            inbox.close()
+
+    def test_rule_change_discards_old_reason_and_keeps_failed_review_flag(self):
+        reason_started = Event()
+        allow_old_reason = Event()
+        attempted = []
+
+        def model(text, image, rules, *, force_fallback):
+            return outcome() | {"review": True, "rules": rules}
+
+        def reason(text, image, decision):
+            attempted.append(decision["rules"])
+            if not decision["rules"]:
+                reason_started.set()
+                allow_old_reason.wait(2)
+                return {"topic": "clear", "probability": 0.95, "needs_review": False}
+            return None
+
+        self.model.side_effect = model
+        with patch.object(store, "reason_review", side_effect=reason):
+            inbox = self.open_inbox()
+            key = inbox.add_examples("top")[0]
+            try:
+                self.assertTrue(reason_started.wait(1))
+                inbox.rule("새로운 조건")
+                self.settled(inbox, 1, 1)
+                self.assertEqual(self.card(inbox, key)["reason_review"]["status"], "pending")
+            finally:
+                allow_old_reason.set()
+            card = self.wait_for(
+                lambda: self.card(inbox, key),
+                lambda card: card["reason_review"]["status"] == "unavailable",
+            )
+            self.assertTrue(card["decision"]["review"])
+            self.assertEqual(attempted, [[], ["새로운 조건"]])
+            entries = self.wait_for(lambda: self.log("reason-reviews"), bool)
+            self.assertEqual([entry["revision"] for entry in entries], [1])
+            inbox.close()
+
+    def test_reason_resumes_after_restart_and_orders_effective_review(self):
+        self.model.side_effect = [outcome(), outcome() | {"review": True}]
+        with patch.object(store.Inbox, "_next_reason_card", return_value=None):
+            inbox = self.open_inbox()
+            older = inbox.add_examples("top")[0]
+            self.settled(inbox, 1, 0)
+            needs_review = inbox.add_examples("mismatch")[0]
+            state = self.settled(inbox, 2, 0)
+            self.assertEqual([c["id"] for c in state["cards"]], [needs_review, older])
+            with inbox.changed, inbox.db:
+                interrupted = dict(inbox.cards[needs_review], reason_review={"status": "running"})
+                inbox.save(interrupted)
+            inbox.close()
+
+        result = {"topic": "clear", "probability": 0.9, "needs_review": False}
+        with patch.object(store, "reason_review", return_value=result) as reason:
+            reopened = self.open_inbox()
+            state = self.wait_for(
+                lambda: json.loads(reopened.state()),
+                lambda state: state["cards"][-1]["reason_review"] == result | {"status": "done"},
+            )
+            self.assertEqual([c["id"] for c in state["cards"]], [older, needs_review])
+            self.assertEqual(reason.call_count, 1)
+            reopened.close()
+
     def test_retry_recovers_in_background_and_preserves_manual_label_and_burst(self):
         retry_started = Event()
         release = Event()
