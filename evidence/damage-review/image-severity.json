@@ -1,0 +1,31 @@
+{
+  "metric": "binary severe damage accuracy",
+  "source_files_sha256": {
+    "severity_variants.json": "356ea25648297359baa21c6fc2ba744addeebd8377f7f559060fe39b768e59b1",
+    "severity_v2def.json": "b71bf7bdf3b4a02e7dc22ea8bc939f0c14bb24c7728ded5a776001f611a45e9e",
+    "severity_holdout.json": "2258a2a6dc17fea23cfd824ab3bb8a6619a9d6f0eda6c52e90ee34d8b1e5f8a3"
+  },
+  "scores": {
+    "original_noul": {
+      "threshold": 0.62,
+      "train_correct": 736,
+      "train_total": 1087,
+      "holdout_correct": 135,
+      "holdout_total": 193
+    },
+    "original_choice": {
+      "threshold": 0.47,
+      "train_correct": 789,
+      "train_total": 1087,
+      "holdout_correct": 148,
+      "holdout_total": 193
+    },
+    "revised_choice": {
+      "threshold": 0.6,
+      "train_correct": 827,
+      "train_total": 1087,
+      "holdout_correct": 149,
+      "holdout_total": 193
+    }
+  }
+}

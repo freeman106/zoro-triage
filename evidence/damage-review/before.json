@@ -1,0 +1,915 @@
+{
+  "workers": 4,
+  "reports": 100,
+  "fixture_sha256": "09c1c0b6d603d821171c47f9d300bb11a90812a347a372293091f53629cf199d",
+  "policy_version": "person-choice-v1-fallback-v2",
+  "review_badges": 28,
+  "uncertainty_reasons": 21,
+  "first_pass_fallback": 0,
+  "total_ms": 27152,
+  "throughput_per_second": 3.683,
+  "mean_completion_interval_ms": 271.52,
+  "median_decision_ms": 1045.15,
+  "records": [
+    {
+      "scenario": "test-0062",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1015.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0019",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1019.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0005",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1034.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0106",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1040.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0034",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1085.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0107",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1141.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0142",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1128.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0195",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1125.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0220",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 910.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0218",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1161.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0161",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1170.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0199",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1157.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0014",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 657.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0137",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1178.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0324",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1168.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0273",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1156.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0009",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1141.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0271",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1138.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0185",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1136.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0123",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1131.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0086",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1396.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0204",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 998.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0077",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1276.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0231",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1144.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0267",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 707.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0187",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 700.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0320",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 765.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0249",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1242.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0162",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1021.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0012",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1022.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0337",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1019.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0221",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1046.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0033",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1042.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0323",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1033.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0223",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1024.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0146",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1035.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0055",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1033.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0256",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1045.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0325",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1051.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0166",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1044.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0250",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1050.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0386",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1052.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0395",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1052.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0113",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1052.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0053",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1030.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0382",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1039.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0136",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1040.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0230",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1043.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0084",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1062.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0258",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1046.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0213",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1037.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0156",
+      "urgency": "non_urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1021.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0098",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1015.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0057",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1028.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0181",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1251.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0026",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1060.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0120",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1047.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0253",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1044.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0042",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1046.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0138",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1024.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0281",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1038.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0313",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1255.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0097",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1046.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0227",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1047.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0205",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1037.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0110",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1043.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0074",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1023.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0135",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1030.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0215",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1237.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0122",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1017.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0065",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1242.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0319",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1235.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0039",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1036.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0066",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1252.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0002",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1031.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0024",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1049.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0393",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1050.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0340",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1029.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0396",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1038.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0285",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1244.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0140",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1232.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0175",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1033.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0083",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1233.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0088",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1024.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0013",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1039.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0333",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1235.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0158",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1037.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0182",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1245.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0354",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1252.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0189",
+      "urgency": "normal",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1044.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0003",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1052.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0171",
+      "urgency": "non_urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 840.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0045",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1040.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0316",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1048.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0126",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1030.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0240",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1247.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0245",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1053.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0015",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1033.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0260",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1033.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    },
+    {
+      "scenario": "test-0264",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 809.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": null
+    }
+  ]
+}

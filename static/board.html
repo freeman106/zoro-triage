@@ -91,6 +91,11 @@
           <div id="burst-progress" class="burst-progress" hidden>
             <label for="burst-meter" id="burst-label"></label>
             <progress id="burst-meter" max="100" value="0"></progress>
+            <dl class="burst-metrics">
+              <div><dt>총 경과시간</dt><dd id="burst-elapsed">—</dd></div>
+              <div><dt>처리량</dt><dd id="burst-rate">—</dd></div>
+              <div><dt>평균 처리 간격</dt><dd id="burst-interval">—</dd></div>
+            </dl>
           </div>
         </section>
         <p id="board-status" class="form-status" role="status"></p>

@@ -464,6 +464,40 @@ class StoreTest(unittest.TestCase):
         self.assertEqual(logs[0]["input"]["image"], relative)
         self.assertEqual((self.home / relative).read_bytes(), b"photo")
 
+    def test_burst_card_and_concurrent_phone_keep_their_first_queue_inclusive_latency(self):
+        entered = Event()
+        release = Event()
+
+        def model(*args, **kwargs):
+            entered.set()
+            release.wait(2)
+            return outcome() | {"ms": 1.2}
+
+        self.model.side_effect = model
+        inbox = self.open_inbox()
+        try:
+            burst_ids = inbox.add_examples()
+            self.assertTrue(entered.wait(1))
+            phone_id = inbox.upload("during burst", b"photo")
+            time.sleep(0.03)
+        finally:
+            release.set()
+        completed = self.settled(inbox, 3, 0)
+        first = {c["id"]: c["first_decision_with_wait_ms"] for c in completed["cards"]}
+        self.assertEqual(set(first), {*burst_ids, phone_id})
+        self.assertGreater(first[phone_id], 20)
+        self.assertEqual(self.card(inbox, phone_id)["decision"]["ms"], 1.2)
+
+        late_id = inbox.upload("after burst", b"photo")
+        self.settled(inbox, 4, 0)
+        inbox.rule("new rule")
+        revised = self.settled(inbox, 4, 1)
+        for card in revised["cards"]:
+            if card["id"] == late_id:
+                self.assertNotIn("first_decision_with_wait_ms", card)
+            else:
+                self.assertEqual(card["first_decision_with_wait_ms"], first[card["id"]])
+
     def test_burst_receipt_replays_during_and_after_processing(self):
         processing = Event()
         release = Event()

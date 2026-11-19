@@ -1,0 +1,915 @@
+{
+  "workers": 4,
+  "reports": 100,
+  "fixture_sha256": "09c1c0b6d603d821171c47f9d300bb11a90812a347a372293091f53629cf199d",
+  "policy_version": "person-choice-v1-damage-choice-v1-review-v2",
+  "review_badges": 15,
+  "uncertainty_reasons": 7,
+  "first_pass_fallback": 0,
+  "total_ms": 27169,
+  "throughput_per_second": 3.681,
+  "mean_completion_interval_ms": 271.69,
+  "median_decision_ms": 1130.35,
+  "records": [
+    {
+      "scenario": "test-0062",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 917.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 923.9
+    },
+    {
+      "scenario": "test-0019",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 995.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 1002.1
+    },
+    {
+      "scenario": "test-0005",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 997.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 1005.9
+    },
+    {
+      "scenario": "test-0106",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1000.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 1009.8
+    },
+    {
+      "scenario": "test-0034",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 923.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 1851.1
+    },
+    {
+      "scenario": "test-0107",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1152.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 2162.6
+    },
+    {
+      "scenario": "test-0142",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1151.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 2166.5
+    },
+    {
+      "scenario": "test-0195",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1154.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 2170.7
+    },
+    {
+      "scenario": "test-0220",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 658.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 2514.2
+    },
+    {
+      "scenario": "test-0218",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1117.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 3288.0
+    },
+    {
+      "scenario": "test-0161",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1321.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 3497.0
+    },
+    {
+      "scenario": "test-0199",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1115.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 3291.9
+    },
+    {
+      "scenario": "test-0014",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1120.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 3638.3
+    },
+    {
+      "scenario": "test-0137",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1127.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 4423.8
+    },
+    {
+      "scenario": "test-0324",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 922.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 4219.2
+    },
+    {
+      "scenario": "test-0273",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1119.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 4620.8
+    },
+    {
+      "scenario": "test-0009",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1179.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 4822.2
+    },
+    {
+      "scenario": "test-0271",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 791.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 5014.7
+    },
+    {
+      "scenario": "test-0185",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 972.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 5400.0
+    },
+    {
+      "scenario": "test-0123",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 979.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 5604.1
+    },
+    {
+      "scenario": "test-0086",
+      "urgency": "normal",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 975.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 5801.6
+    },
+    {
+      "scenario": "test-0204",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 982.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 6001.1
+    },
+    {
+      "scenario": "test-0077",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 974.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 6378.8
+    },
+    {
+      "scenario": "test-0231",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 959.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 6567.8
+    },
+    {
+      "scenario": "test-0267",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1154.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 6959.7
+    },
+    {
+      "scenario": "test-0187",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1150.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 7155.9
+    },
+    {
+      "scenario": "test-0320",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1158.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 7541.6
+    },
+    {
+      "scenario": "test-0249",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1160.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 7732.5
+    },
+    {
+      "scenario": "test-0162",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1154.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 8118.5
+    },
+    {
+      "scenario": "test-0012",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1160.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 8320.5
+    },
+    {
+      "scenario": "test-0337",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1155.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 8701.6
+    },
+    {
+      "scenario": "test-0221",
+      "urgency": "top",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1165.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 8901.6
+    },
+    {
+      "scenario": "test-0033",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1158.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 9281.3
+    },
+    {
+      "scenario": "test-0323",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1151.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 9475.8
+    },
+    {
+      "scenario": "test-0223",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1156.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 9862.3
+    },
+    {
+      "scenario": "test-0146",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1154.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 10060.6
+    },
+    {
+      "scenario": "test-0055",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 975.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 10261.0
+    },
+    {
+      "scenario": "test-0256",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1163.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 10643.6
+    },
+    {
+      "scenario": "test-0325",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 984.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 10851.5
+    },
+    {
+      "scenario": "test-0166",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 971.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 11035.8
+    },
+    {
+      "scenario": "test-0250",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1153.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 11418.1
+    },
+    {
+      "scenario": "test-0386",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 977.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 11625.3
+    },
+    {
+      "scenario": "test-0395",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 967.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 11823.2
+    },
+    {
+      "scenario": "test-0113",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1164.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 12204.4
+    },
+    {
+      "scenario": "test-0053",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 977.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 12399.9
+    },
+    {
+      "scenario": "test-0382",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1158.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 12787.8
+    },
+    {
+      "scenario": "test-0136",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1162.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 12990.0
+    },
+    {
+      "scenario": "test-0230",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 971.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 13179.4
+    },
+    {
+      "scenario": "test-0084",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1156.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 13560.3
+    },
+    {
+      "scenario": "test-0258",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 967.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 13759.5
+    },
+    {
+      "scenario": "test-0213",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 970.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 13964.5
+    },
+    {
+      "scenario": "test-0156",
+      "urgency": "non_urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1157.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 14341.3
+    },
+    {
+      "scenario": "test-0098",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 974.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 14539.2
+    },
+    {
+      "scenario": "test-0057",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1159.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 14922.9
+    },
+    {
+      "scenario": "test-0181",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1148.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 15117.4
+    },
+    {
+      "scenario": "test-0026",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1159.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 15504.6
+    },
+    {
+      "scenario": "test-0120",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1166.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 15709.9
+    },
+    {
+      "scenario": "test-0253",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 974.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 15901.8
+    },
+    {
+      "scenario": "test-0042",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1169.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 16290.4
+    },
+    {
+      "scenario": "test-0138",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 987.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 16495.8
+    },
+    {
+      "scenario": "test-0281",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 931.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 16645.4
+    },
+    {
+      "scenario": "test-0313",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1123.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 17029.6
+    },
+    {
+      "scenario": "test-0097",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 934.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 17228.8
+    },
+    {
+      "scenario": "test-0227",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 932.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 17432.1
+    },
+    {
+      "scenario": "test-0205",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1161.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 17811.1
+    },
+    {
+      "scenario": "test-0110",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 968.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 18002.6
+    },
+    {
+      "scenario": "test-0074",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1159.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 18391.9
+    },
+    {
+      "scenario": "test-0135",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1147.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 18584.1
+    },
+    {
+      "scenario": "test-0215",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1164.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 18979.9
+    },
+    {
+      "scenario": "test-0122",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1175.3,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 19181.8
+    },
+    {
+      "scenario": "test-0065",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1168.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 19564.1
+    },
+    {
+      "scenario": "test-0319",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1180.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 19768.7
+    },
+    {
+      "scenario": "test-0039",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 975.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 19959.7
+    },
+    {
+      "scenario": "test-0066",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1162.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 20348.9
+    },
+    {
+      "scenario": "test-0002",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 970.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 20538.7
+    },
+    {
+      "scenario": "test-0024",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1157.8,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 20931.3
+    },
+    {
+      "scenario": "test-0393",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1172.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 21135.5
+    },
+    {
+      "scenario": "test-0340",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1164.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 21516.6
+    },
+    {
+      "scenario": "test-0396",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1178.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 21721.1
+    },
+    {
+      "scenario": "test-0285",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 958.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 21893.6
+    },
+    {
+      "scenario": "test-0140",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1133.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 22272.9
+    },
+    {
+      "scenario": "test-0175",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 955.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 22475.7
+    },
+    {
+      "scenario": "test-0083",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 952.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 22677.5
+    },
+    {
+      "scenario": "test-0088",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 963.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 22861.4
+    },
+    {
+      "scenario": "test-0013",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 977.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 23253.9
+    },
+    {
+      "scenario": "test-0333",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 963.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 23442.7
+    },
+    {
+      "scenario": "test-0158",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1156.9,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 23838.3
+    },
+    {
+      "scenario": "test-0182",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1168.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 24033.3
+    },
+    {
+      "scenario": "test-0354",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1163.6,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 24421.5
+    },
+    {
+      "scenario": "test-0189",
+      "urgency": "normal",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1181.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 24627.9
+    },
+    {
+      "scenario": "test-0003",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 986.1,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 24828.6
+    },
+    {
+      "scenario": "test-0171",
+      "urgency": "non_urgent",
+      "review": true,
+      "uncertainty_reason": true,
+      "decision_ms": 1174.4,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 25212.2
+    },
+    {
+      "scenario": "test-0045",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 981.2,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 25406.8
+    },
+    {
+      "scenario": "test-0316",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1164.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 25796.4
+    },
+    {
+      "scenario": "test-0126",
+      "urgency": "urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 1169.0,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 26001.7
+    },
+    {
+      "scenario": "test-0240",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 976.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 26193.0
+    },
+    {
+      "scenario": "test-0245",
+      "urgency": "urgent",
+      "review": true,
+      "uncertainty_reason": false,
+      "decision_ms": 1176.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 26587.2
+    },
+    {
+      "scenario": "test-0015",
+      "urgency": "normal",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 987.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 26787.9
+    },
+    {
+      "scenario": "test-0260",
+      "urgency": "top",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 969.5,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 26975.1
+    },
+    {
+      "scenario": "test-0264",
+      "urgency": "non_urgent",
+      "review": false,
+      "uncertainty_reason": false,
+      "decision_ms": 971.7,
+      "mode": "zoro",
+      "first_decision_with_wait_ms": 27168.7
+    }
+  ]
+}

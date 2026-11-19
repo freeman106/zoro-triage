@@ -22,6 +22,9 @@ const burstButton = document.querySelector("#run-burst");
 const progressBox = document.querySelector("#burst-progress");
 const burstLabel = document.querySelector("#burst-label");
 const burstMeter = document.querySelector("#burst-meter");
+const burstElapsed = document.querySelector("#burst-elapsed");
+const burstRate = document.querySelector("#burst-rate");
+const burstInterval = document.querySelector("#burst-interval");
 
 const urgencyNames = {
   top: "최우선",
@@ -32,7 +35,7 @@ const urgencyNames = {
 const probabilityNames = {
   people: "위험 인원",
   now: "글의 진행 여부",
-  severe: "사진 피해",
+  severe: "심각한 사진 피해",
 };
 const optionalProbabilityNames = {
   life_threat: "즉각적인 생명 위협",
@@ -232,9 +235,11 @@ function syncBurstButton() {
 function updateBurstLabel() {
   const { total, done, elapsed_ms } = burstState;
   const elapsed = burstRunning ? performance.now() - burstStartedTick : elapsed_ms;
-  const time = Number.isFinite(elapsed) ? ` · ${prettyTime(elapsed)}` : "";
-  const label = `${done}/${total}건 처리${time}`;
+  const label = `${done}/${total}건 완료`;
   if (burstLabel.textContent !== label) burstLabel.textContent = label;
+  burstElapsed.textContent = Number.isFinite(elapsed) ? prettyTime(elapsed) : "—";
+  burstRate.textContent = elapsed > 0 ? `${(done * 1000 / elapsed).toFixed(2)}건/초` : "—";
+  burstInterval.textContent = done > 0 && Number.isFinite(elapsed) ? prettyTime(elapsed / done) : "—";
 }
 
 function stopBurstClock() {
@@ -247,7 +252,7 @@ function renderBurst(burst) {
   if (running) {
     const now = performance.now();
     if (!burstRunning || burst.id !== burstState.id) {
-      const elapsed = Number.isFinite(burst.started_at) ? Date.now() - burst.started_at * 1000 : 0;
+      const elapsed = Number.isFinite(burst.elapsed_ms) ? burst.elapsed_ms : 0;
       burstStartedTick = now - Math.max(0, elapsed);
     }
     if (Number.isFinite(burst.elapsed_ms)) {
@@ -446,8 +451,10 @@ function updateCard(view, card) {
   view.details.hidden = !classified;
   const nonFieldPhoto = decision?.non_field_photo === true;
   view.fieldPhotoReview.hidden = !classified || !nonFieldPhoto;
-  view.review.hidden = !classified || !(card.human_urgency || (decision?.review && !nonFieldPhoto));
-  view.review.textContent = card.human_urgency ? "사람 검수 완료" : "사람 확인 필요";
+  const uncertainGrade = Boolean(decision?.review_uncertainty?.length);
+  view.review.hidden = !classified || !(card.human_urgency || (decision?.review && (!nonFieldPhoto || uncertainGrade)));
+  view.review.textContent = card.human_urgency ? "사람 검수 완료"
+    : uncertainGrade ? "확인 필요(판단 불확실)" : "사람 확인 필요";
   view.review.dataset.done = String(Boolean(card.human_urgency));
   const reasons = classified && Array.isArray(decision?.reasons) ? decision.reasons : [];
   view.reason.hidden = !reasons.length;
@@ -490,7 +497,12 @@ function updateCard(view, card) {
     } else {
       probabilities.push(metric("사진·설명 불일치", percent(decision.probs?.mismatch)));
     }
-    if (Number.isFinite(decision.ms)) probabilities.push(metric("처리", `${Math.round(decision.ms)} ms`));
+    if (Number.isFinite(decision.ms)) {
+      probabilities.push(metric("판정 지연", `${Math.round(decision.ms)} ms`));
+    }
+    if (Number.isFinite(card.first_decision_with_wait_ms)) {
+      probabilities.push(metric("접수→최초 판정 (대기 포함)", prettyTime(card.first_decision_with_wait_ms)));
+    }
   }
   view.probabilities.replaceChildren(...probabilities);
 }

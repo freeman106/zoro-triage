@@ -26,7 +26,7 @@ BASE_PROBS = {
 
 
 def model_response(claim=("fire", 0.9), photo=("fire_smoke_burn", 0.9),
-                   person=BASE_PERSON, **overrides):
+                   person=BASE_PERSON, damage=None, **overrides):
     probs = BASE_PROBS | overrides
     choices = {"claim_kind": claim, "photo_kind": photo}
 
@@ -37,6 +37,10 @@ def model_response(claim=("fire", 0.9), photo=("fire_smoke_burn", 0.9),
             if key == "person_state":
                 # The reported argmax is ignored by the calibrated policy.
                 answers[key] = {"type": "choice", "choice": "life_threat", "probabilities": person}
+            elif key == "severe" and question["type"] == "choice":
+                p = probs["severe"]
+                distribution = damage if damage is not None else {"severe": p, "mild": 1 - p, "none": 0.0}
+                answers[key] = {"type": "choice", "choice": "mild", "probabilities": distribution}
             elif question["type"] == "noul":
                 answers[key] = {"noul": probs[key]}
             else:
@@ -113,7 +117,7 @@ class DecisionTest(unittest.TestCase):
         photo = bodies[True]
         self.assertEqual(photo["state"], "첨부 사진")
         self.assertEqual(photo["questions"], {
-            "severe": {"type": "noul", "instructions": "사진에 구조물 붕괴, 지붕 소실, 도로 유실 등 심각한 물적 피해가 보이는가?"},
+            "severe": decision.DAMAGE_QUESTION,
             "field_photo": {"type": "noul", "instructions": decision.FIELD_PHOTO_QUESTION},
             "photo_kind": decision.PHOTO_QUESTION,
             "ongoing_hazard": {"type": "noul", "instructions": decision.QUESTIONS["ongoing_hazard"]},
@@ -147,7 +151,7 @@ class DecisionTest(unittest.TestCase):
                 self.assertEqual(result["probs"]["people"], 1 - person["none"])
                 self.assertEqual(result["probs"]["life_threat"], person["life_threat"])
                 self.assertEqual(result["probs"]["ongoing_hazard"], hazard)
-                self.assertEqual(result["review"], state in ("trapped", "minor_injury") or (now < 0.5 <= hazard))
+                self.assertEqual(result["review"], (state == "trapped" and hazard >= 0.5) or (now < 0.5 <= hazard))
 
     def test_threshold_uses_absolute_life_probability_and_next_best_class(self):
         for person, state, urgency in (
@@ -200,14 +204,50 @@ class DecisionTest(unittest.TestCase):
                 self.assertIsNone(result["probs"]["mismatch"])
 
     def test_core_uncertainty_threshold_is_inclusive(self):
-        for answers in ({"now": 0.35}, {"severe": 0.65}, {"person": {"life_threat": 0.2, "trapped": 0.1, "minor_injury": 0.1, "none": 0.6}}):
-            with (
-                self.subTest(answers=answers),
-                patch.object(decision, "urlopen", side_effect=model_response(**answers)),
-            ):
+        uncertain_person = {"life_threat": 0.1, "trapped": 0.2, "minor_injury": 0.1, "none": 0.6}
+        for key, answers in (
+            ("now", {"now": 0.35}), ("severe", {"severe": 0.65}), ("people", {"person": uncertain_person}),
+        ):
+            evidence = {"person": NO_PERSON, "severe": 0.1, "ongoing_hazard": 0.1} | answers
+            with self.subTest(key=key), patch.object(decision, "urlopen", side_effect=model_response(**evidence)):
                 result = decision.decide(REPORT, PHOTO, [])
                 self.assertTrue(result["review"])
-                self.assertIs(result["mismatch"], False)
+                self.assertEqual(result["review_uncertainty"], [key])
+
+    def test_damage_choice_uses_absolute_probability_and_calibrated_threshold(self):
+        for p, urgency in ((0.59, "normal"), (0.60, "urgent")):
+            damage = {"severe": p, "mild": 0.2, "none": 0.8 - p}
+            response = model_response(person=NO_PERSON, ongoing_hazard=0.1, damage=damage)
+            with self.subTest(p=p), patch.object(decision, "urlopen", side_effect=response):
+                result = decision.decide(REPORT, PHOTO, [])
+                self.assertEqual(result["urgency"], urgency)
+                self.assertEqual(result["probs"]["severe"], p)
+                self.assertEqual(result["damage_probabilities"], damage)
+                self.assertEqual(result["damage_threshold"], 0.60)
+
+    def test_invalid_damage_choice_uses_fallback(self):
+        for damage in ({"severe": 0.9}, {"severe": 0.9, "mild": 0.8, "none": 0.1},
+                       {"severe": True, "mild": 0.0, "none": 0.0}):
+            with self.subTest(damage=damage), patch.object(decision, "urlopen", side_effect=model_response(damage=damage)):
+                result = decision.decide(REPORT, PHOTO, [])
+                self.assertEqual(result["mode"], "fallback")
+
+    def test_irrelevant_uncertainty_is_explanatory_only(self):
+        response = model_response(severe=0.55)
+        with patch.object(decision, "urlopen", side_effect=response):
+            result = decision.decide(REPORT, PHOTO, [])
+        self.assertEqual(result["urgency"], "top")
+        self.assertFalse(result["review"])
+        self.assertTrue(any("참고" in reason and "사진 피해" in reason for reason in result["reasons"]))
+
+    def test_counterfactuals_preserve_rule_matches_across_past_and_present(self):
+        rule = ["글: 어린이 고립"]
+        for now in (0.4, 0.6):
+            response = model_response(now=now, person=NO_PERSON, severe=0.5, ongoing_hazard=0.9, rule_1=0.9)
+            with self.subTest(now=now), patch.object(decision, "urlopen", side_effect=response):
+                result = decision.decide(REPORT, PHOTO, rule)
+                self.assertEqual(result["review_uncertainty"], ["now"])
+                self.assertTrue(any("참고" in reason and "사진 피해" in reason for reason in result["reasons"]))
 
     def test_non_field_photo_triggers_review_below_point_five(self):
         for probability, flagged in ((0.0, True), (0.49, True), (0.5, False), (0.55, False), (1.0, False)):

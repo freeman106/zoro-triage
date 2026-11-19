@@ -421,8 +421,18 @@ class Inbox:
             if revision != self.revision or self.cards[key]["status"] != "pending":
                 return
             c = self.cards[key].copy()
-            c.update(decision=result,status="done",urgency=result["urgency"],rule_revision=revision)
             now = time.time()
+            if c["decision"] is None and self.burst:
+                # The latest burst necessarily started before this completion. If its end
+                # follows receipt, the two intervals overlap, including for phone uploads.
+                end = self.burst.get("finished_at")
+                if end is None:
+                    end = now if self.burst["done"] < self.burst["total"] else (
+                        self.burst["started_at"] + self.burst["elapsed_ms"] / 1000
+                    )
+                if c["batch"] or c["created_at"] <= end:
+                    c["first_decision_with_wait_ms"] = round((now - c["created_at"]) * 1000, 1)
+            c.update(decision=result,status="done",urgency=result["urgency"],rule_revision=revision)
             c["recovery"] = self._new_recovery(c, now) if result["mode"] == "fallback" else None
             burst = None
             if self.burst and c["batch"] == self.burst["id"] and "burst_first_revision" not in c:
@@ -433,6 +443,8 @@ class Inbox:
                     "fallback": self.burst["fallback"] + int(result["mode"] == "fallback"),
                     "revisions": sorted(set(self.burst["revisions"]) | {revision}),
                 }
+                if burst["done"] == burst["total"]:
+                    burst["finished_at"] = now
             with self.db:
                 self.save(c)
                 if burst is not None:
