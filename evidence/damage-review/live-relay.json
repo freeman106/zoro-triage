@@ -1,0 +1,20 @@
+{
+  "deployed_commit": "779f93cb196a38fef2f1fe5be9ca5b25e7c104de",
+  "workers": 4,
+  "instance_tests_passed": 45,
+  "zoro_service_restarted": false,
+  "live_mobile_browser": {
+    "mode": "zoro",
+    "policy": "person-choice-v1-damage-choice-v1-review-v2",
+    "threshold": 0.6,
+    "has_damage_choices": true,
+    "decision_ms": 1087.2,
+    "matching_receipt": true,
+    "phone_viewport": "390x844 Chromium",
+    "submit_to_pending_ms": 544,
+    "submit_to_sorted_result_ms": 1532,
+    "outcome": "최우선",
+    "pending_band_observed": true,
+    "completed_queue_observed": true
+  }
+}
