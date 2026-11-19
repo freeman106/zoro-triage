@@ -102,6 +102,7 @@ class DecisionTest(unittest.TestCase):
             self.assertGreater(call.kwargs["timeout"], 0)
             body = json.loads(request.data)
             self.assertEqual(body["model"], "zoro-1")
+            self.assertNotIn("reasoning", body)
             bodies[bool(body.get("images"))] = body
 
         text = bodies[False]
@@ -175,6 +176,7 @@ class DecisionTest(unittest.TestCase):
             result = decision.decide(REPORT, PHOTO, ["고립된 고령자·어린이는 최우선"])
         self.assertEqual(result["urgency"], "urgent")
         self.assertTrue(result["review"])
+        self.assertTrue(result["past_with_hazard"])
         self.assertTrue(any("지난 사건" in reason and "사진" in reason for reason in result["reasons"]))
         self.assertTrue(result["rules"][0]["matched"])
         self.assertFalse(result["rules"][0]["applied"])
@@ -415,6 +417,79 @@ class DecisionTest(unittest.TestCase):
         self.assertLess(elapsed, 0.4)
         self.assertEqual(result["mode"], "fallback")
         self.assertIn("시간 초과", result["reasons"][0])
+
+
+class ReasonReviewTest(unittest.TestCase):
+    def setUp(self):
+        with patch.object(decision, "urlopen", side_effect=model_response(person=NO_PERSON, now=0.6,
+                                                                         severe=0.1, ongoing_hazard=0.1)):
+            self.initial = decision.decide(REPORT, PHOTO, [])
+
+    def response(self, topic="timing", probability=0.9):
+        criteria = decision._CONFIRMATION_QUESTION["criteria"]
+        probabilities = dict.fromkeys(criteria, (1 - probability) / (len(criteria) - 1))
+        probabilities[topic] = probability
+        return {
+            "answers_source": "reasoned",
+            "model": "model-revision",
+            "reasoning": "Trace that must not be retained",
+            "answers": {
+                "confirmation": {"type": "choice", "choice": topic, "probabilities": probabilities},
+            },
+        }
+
+    def test_uses_reasoned_choice_with_report_photo_and_first_pass_observations(self):
+        with (
+            patch.dict(os.environ, {"ZORO_URL": "http://zoro.example:8080/v1/systemone"}),
+            patch.object(decision, "urlopen", return_value=io.BytesIO(json.dumps(self.response()).encode())) as send,
+        ):
+            result = decision.reason_review(REPORT, PHOTO, self.initial)
+
+        request = send.call_args.args[0]
+        body = json.loads(request.data)
+        self.assertEqual(request.full_url, "http://zoro.example:8080/v1/systemone")
+        self.assertLessEqual(send.call_args.kwargs["timeout"], decision.REVIEW_TIMEOUT)
+        self.assertTrue(body["reasoning"])
+        self.assertEqual(body["max_reasoning_tokens"], decision.REVIEW_REASONING_TOKENS)
+        self.assertEqual(body["state"]["report"], REPORT)
+        self.assertEqual(body["state"]["Initial model hints (unverified)"]["p_current"], 0.6)
+        self.assertEqual(base64.b64decode(body["images"][0], validate=True), PHOTO)
+        self.assertEqual(set(body["questions"]), {"confirmation"})
+        self.assertGreaterEqual(result.pop("ms"), 0)
+        self.assertEqual(result, {
+            "topic": "timing", "probability": 0.9, "needs_review": True, "model": "model-revision",
+        })
+
+    def test_can_clear_only_soft_uncertainty_with_high_confidence(self):
+        for override, probability, needs_review in (
+            ({}, 0.85, False), ({}, 0.849, True),
+            ({"mismatch": True}, 0.99, True), ({"non_field_photo": True}, 0.99, True),
+            ({"past_with_hazard": True}, 0.99, True), ({"review_uncertainty": []}, 0.99, True),
+        ):
+            payload = self.response("clear", probability)
+            with (
+                self.subTest(override=override, probability=probability),
+                patch.object(decision, "urlopen", return_value=io.BytesIO(json.dumps(payload).encode())),
+            ):
+                result = decision.reason_review(REPORT, PHOTO, self.initial | override)
+            self.assertEqual(result["needs_review"], needs_review)
+
+    def test_ignores_cut_or_malformed_reasoning_and_unavailable_model(self):
+        bad_distribution = self.response()
+        bad_distribution["answers"]["confirmation"]["probabilities"]["other"] = 0.5
+        invalid_selection = self.response(probability=0.01)
+        for payload in (
+            [], self.response() | {"answers_source": "direct", "cut": "length"},
+            self.response() | {"answers": {}}, bad_distribution, invalid_selection,
+        ):
+            with (
+                self.subTest(payload=payload),
+                patch.object(decision, "urlopen", return_value=io.BytesIO(json.dumps(payload).encode())),
+            ):
+                self.assertIsNone(decision.reason_review(REPORT, PHOTO, self.initial))
+
+        with patch.object(decision, "urlopen", side_effect=TimeoutError):
+            self.assertIsNone(decision.reason_review(REPORT, PHOTO, self.initial))
 
 
 if __name__ == "__main__":

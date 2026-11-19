@@ -288,7 +288,8 @@ h2 { font-size: 20px; letter-spacing: -.035em; }
 .card-head time { margin-inline-start: auto; color: var(--soft-ink); font-size: 11px; font-variant-numeric: tabular-nums; }
 .card-source { color: var(--soft-ink); font-size: 11px; }
 .card-text { margin-top: 8px; font-size: 16px; line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; }
-.ai-reason, .decision-meta { margin-top: 4px; color: var(--soft-ink); font-size: 12px; line-height: 1.55; overflow-wrap: anywhere; }
+.ai-reason, .decision-meta, .reason-review { margin-top: 4px; color: var(--soft-ink); font-size: 12px; line-height: 1.55; overflow-wrap: anywhere; }
+.reason-review[data-state="done"] { color: var(--blue); font-weight: 750; }
 .card-details { margin-top: 6px; font-size: 12px; }
 .card-details summary { color: var(--blue); font-weight: 750; }
 .card-details[open] { padding-top: 6px; border-top: 1px solid var(--line); }
