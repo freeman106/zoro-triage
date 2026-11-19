@@ -37,6 +37,19 @@ phone_ip=$(tailscale ip -4) && ssh -NT -S none -o BatchMode=yes -o ExitOnForward
 
 최초 실행 시 `DEMO_HOME/access.json`에 서로 다른 `report`·`admin` 키가 생성된다. 신고 화면은 `/#token=<report>`, 상황판은 `/board#token=<admin>`이다. 토큰은 URL fragment로 받아 브라우저 주소에서 지운다. 실제 사진·자유 입력·토큰은 로컬 실행 디렉터리에 보관한다. 제출용 증빙에는 합성 사례만 포함한다.
 
+## 새 GPU 인스턴스에서 처음부터 실행 (팀원용)
+
+Brev L40S(AWS g6e, Ubuntu 22.04, CUDA 13.2 이미지) 기준이다. 모델 가중치, 사진, 토큰은 저장소에 없다.
+
+1. `git clone` 또는 `git pull` 후 `bash server/setup_instance.sh` (5~8분). venv 두 개, trida-stack 고정 커밋과 패치, `~/zoro-serve.sh`, systemd `zoro` 유닛을 만든다. 마지막 줄 `STAGE1_DONE: 0.5.23 2.14.1+cu130 True`를 확인한다.
+2. Hugging Face에서 `trillionlabs/Zoro-1` 약관에 동의한 계정으로 `~/venvs/zoro/bin/hf auth login`을 실행하고, `~/venvs/zoro/bin/hf download trillionlabs/Zoro-1`로 모델을 받는다.
+3. `sudo systemctl enable --now zoro` 후 `tail -F ~/zoro-serve.log`. 첫 기동은 약 3분 걸린다. `curl localhost:30001/health`로 확인한다.
+4. 데모 사진: `~/venvs/bench/bin/python fixtures/fetch_images.py /ephemeral/crisis_bench/crisismmd` (폭주·예시에 쓰는 사진만 받는다).
+5. 데모 실행: `CRISIS_ROOT=/ephemeral/crisis_bench/crisismmd ZORO_URL=http://127.0.0.1:30001 DEMO_WORKERS=4 ~/venvs/bench/bin/python server.py`. 접근 키는 `DEMO_HOME/access.json`에 새로 생성된다.
+6. 판정 동일성 확인(선택): `server/zoro_equiv.py`의 기준값 파일은 저장소에 없다. 같은 서버 버전이면 데모 테스트 `python -m unittest discover -s tests`와 상황판 확인으로 충분하다.
+
+폰 연결(Tailscale·SSH 중계)은 각자 맥북에서 설정한다. AI Hub 119 데이터는 재배포가 금지돼 있어 저장소에 넣지 않는다.
+
 ## 발표 순서
 
 1. 사설 신고 QR을 폰으로 열고 사진 한 장과 신고 글을 제출한다. 상황판에서 접수 대기 카드와 이어지는 Zoro 판정을 확인한다.

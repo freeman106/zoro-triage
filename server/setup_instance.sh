@@ -3,6 +3,7 @@
 # Stage 1 (no HF token needed): venvs, packages, trida-stack + patch, serve script, systemd unit.
 # Model download and service start happen after the user runs `hf auth login`.
 set -euo pipefail
+HERE=$(cd "$(dirname "$0")" && pwd)   # the repo's server/ directory
 cd ~
 UV=~/.local/bin/uv
 [ -x "$UV" ] || { curl -LsSf https://astral.sh/uv/install.sh | sh; UV=~/.local/bin/uv; }
@@ -16,7 +17,7 @@ mkdir -p /ephemeral/cache/huggingface ~/.cache
 [ -d ~/venvs/zoro ] || $UV venv -q ~/venvs/zoro --python 3.11 --seed
 # Exact freeze of the working environment (210 packages), from PyPI as originally installed
 # (the old torch reports 2.14.1+cu130 although its distribution version is plain 2.14.1).
-$UV pip install -q --python ~/venvs/zoro/bin/python -r ~/zoro-requirements.txt
+$UV pip install -q --python ~/venvs/zoro/bin/python -r "$HERE/zoro-requirements.txt"
 
 # Demo backend venv (only needs Pillow + requests; the old one also had benchmark extras).
 [ -d ~/venvs/bench ] || $UV venv -q ~/venvs/bench --python 3.11 --seed
@@ -25,7 +26,7 @@ $UV pip install -q --python ~/venvs/bench/bin/python pillow requests huggingface
 # Serving code at the same commit, plus tonight's verified patch (CPU work off the event loop).
 [ -d ~/trida-stack ] || git clone -q https://github.com/trillion-labs/trida-stack ~/trida-stack
 cd ~/trida-stack && git checkout -q 0ddcf516e458a82892d7fe0d0dabeb113d3cf424
-git apply --check ~/zoro-patch.diff 2>/dev/null && git apply ~/zoro-patch.diff || echo "patch already applied or failed: check git diff"
+git apply --check "$HERE/zoro-patch.diff" 2>/dev/null && git apply "$HERE/zoro-patch.diff" || echo "patch already applied or failed: check git diff"
 cd ~
 
 # systemd unit identical to the old instance.
@@ -48,6 +49,6 @@ TimeoutStopSec=60
 [Install]
 WantedBy=multi-user.target
 UNIT
-chmod +x ~/zoro-serve.sh ~/zoro 2>/dev/null || true
+cp "$HERE/zoro-serve.sh" ~/zoro-serve.sh && chmod +x ~/zoro-serve.sh
 sudo systemctl daemon-reload
 echo "STAGE1_DONE: $(~/venvs/zoro/bin/python -c 'import sglang, torch; print(sglang.__version__, torch.__version__, torch.cuda.is_available())')"
