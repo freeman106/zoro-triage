@@ -1,0 +1,400 @@
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0000", "ms": 1230.3465539989702}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"disaster_type_mismatch\": true\n}"}, "urgency": "non_urgent", "id": "test-0001", "ms": 1143.5763709996536}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"불\"\n  }\n}"}, "urgency": "normal", "id": "test-0002", "ms": 1254.3130550002388}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0003", "ms": 1069.8039130002144}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0004", "ms": 1067.4264579974988}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0005", "ms": 1067.031691000011}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0006", "ms": 1224.8013690004882}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0007", "ms": 1062.7932809984486}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0008", "ms": 1061.6297589986061}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0009", "ms": 1276.3339699995413}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "top", "id": "test-0010", "ms": 1408.378175998223}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0011", "ms": 1071.9871499968576}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0012", "ms": 1073.1742230018426}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0013", "ms": 1060.861895999551}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0014", "ms": 1066.4623440025025}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0015", "ms": 1408.4425219989498}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"false\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0016", "ms": 1413.4577089971572}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0017", "ms": 1417.5081760004105}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0018", "ms": 2316.8829759997607}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0019", "ms": 1283.008238999173}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "urgency": "urgent", "id": "test-0020", "ms": 1251.0402749976492}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage\": true\n}\n```", "mismatch": "{\n  \"재난 종류가 일치하는지\": false,\n  \"재난 종류가 서로 다른지\": true\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0021", "ms": 1550.2500000002328}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "urgent", "id": "test-0022", "ms": 2183.8056849992427}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0023", "ms": 1058.777630001714}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0024", "ms": 1053.0788690011832}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0025", "ms": 1405.0229839995154}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0026", "ms": 1063.9705119974678}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false,\n    \"reason\": \"The image shows flooding with water covering the road and streetlights reflecting on the wet surface, which is consistent with a flood scenario. The text mentions a flood in Gurye County, South"}, "urgency": "urgent", "id": "test-0027", "ms": 2332.4950219976017}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0028", "ms": 1030.5825989998993}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"폭풍·홍수\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0029", "ms": 1557.797710000159}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0030", "ms": 1495.8270379975147}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0031", "ms": 1068.908780998754}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0032", "ms": 1579.9546540001757}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"폭풍·홍수\",\n    \"instructions\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0033", "ms": 1494.953194000118}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"洪水\",\n    \"instructions\": \"false\"\n  }\n}"}, "urgency": "normal", "id": "test-0034", "ms": 1411.844509999355}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0035", "ms": 1064.631813998858}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0036", "ms": 1239.851397000166}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(물리적 손상/폐기물)가 서로 다르다.\"\n  }\n}"}, "urgency": "normal", "id": "test-0037", "ms": 2188.465629998973}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0038", "ms": 1061.1411770005361}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0039", "ms": 1068.9652049986762}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0040", "ms": 1064.7941559982428}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0041", "ms": 1061.6889970006014}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0042", "ms": 1069.0921780005738}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage_detected\": true\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0043", "ms": 1115.4737979995843}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0044", "ms": 1416.0812600021018}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"재난 종류 일치\": true,\n  \"신고 내용 일치\": false\n}"}, "urgency": "non_urgent", "id": "test-0045", "ms": 1383.0055719990924}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0046", "ms": 1377.9433370000334}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0047", "ms": 1280.2223750004487}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "top", "id": "test-0048", "ms": 1419.582103000721}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0049", "ms": 1074.3672770004196}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "normal", "id": "test-0050", "ms": 1413.336994999554}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0051", "ms": 1061.2883970024996}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "urgency": "normal", "id": "test-0052", "ms": 1280.4647289995046}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0053", "ms": 1069.3599539990828}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0054", "ms": 1063.4841680002864}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0055", "ms": 1021.0014399999636}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0056", "ms": 1074.6825109999918}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0057", "ms": 1581.0919420000573}
+{"people": true, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage\": true\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0058", "ms": 1098.9857229978952}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0059", "ms": 1077.1431069988466}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0060", "ms": 1074.1707710003539}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0061", "ms": 1284.353277998889}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0062", "ms": 935.4847829999926}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage\": false\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0063", "ms": 1427.1293339988915}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0064", "ms": 1071.01134000186}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": \"재난 종류가 서로 다르다.\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0065", "ms": 1766.690912998456}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"false\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0066", "ms": 1420.3311940000276}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0067", "ms": 1073.0043280018435}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0068", "ms": 1077.3835020008846}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0069", "ms": 1409.2010029999074}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0070", "ms": 1432.327743001224}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0071", "ms": 1419.727733999025}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0072", "ms": 1059.459299001901}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0073", "ms": 1065.9804260030796}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0074", "ms": 1422.1129460020165}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0075", "ms": 1079.1016949988261}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0076", "ms": 1161.466751997068}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0077", "ms": 1420.3904829992098}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0078", "ms": 1378.587196002627}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0079", "ms": 2190.0881699984893}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0080", "ms": 1061.1317760012753}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0081", "ms": 1418.986181000946}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0082", "ms": 1076.1597380005696}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0083", "ms": 1062.4037300003693}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"yes\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0084", "ms": 1254.5643640005437}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0085", "ms": 1072.5911580011598}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0086", "ms": 1127.440216998366}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage_detected\": false\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0087", "ms": 1114.7322129982058}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0088", "ms": 1574.5851339997898}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0089", "ms": 1408.9250219985843}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0090", "ms": 1228.0756949985516}
+{"people": true, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0091", "ms": 1579.502433000016}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0092", "ms": 1223.2462190004298}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0093", "ms": 1408.4105220026686}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "normal", "id": "test-0094", "ms": 1408.7920189995202}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0095", "ms": 1054.6803690012894}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"fire\": false,\n    \"storm_flood\": false,\n    \"earthquake\": false\n  }\n}"}, "urgency": "normal", "id": "test-0096", "ms": 1578.3972399985942}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "urgent", "id": "test-0097", "ms": 2071.811940000771}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0098", "ms": 1227.1128629981831}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0099", "ms": 1063.4140840011241}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0100", "ms": 1059.619734998705}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0101", "ms": 1420.181600999058}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0102", "ms": 1073.953236998932}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0103", "ms": 1073.9125860018248}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"structural_damage\": true,\n    \"roof_loss\": false,\n    \"road_loss\": false\n  }\n}\n```", "mismatch": "{\n  \"재난 종류 일치\": false,\n  \"재난 종류\": \"폭풍·홍수\"\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0104", "ms": 1999.9685590009904}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0105", "ms": 1420.0440690001415}
+{"people": true, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0106", "ms": 1241.5906990026997}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "normal", "id": "test-0107", "ms": 1427.5168990025122}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0108", "ms": 1420.4712470018421}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0109", "ms": 1071.0646830011683}
+{"people": true, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0110", "ms": 1217.2439220012166}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "normal", "id": "test-0111", "ms": 1397.140037999634}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0112", "ms": 1414.4381630030693}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0113", "ms": 1072.6121219995548}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0114", "ms": 1232.8543010007706}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0115", "ms": 1251.2961190004717}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"fire\": true,\n    \"flood\": false,\n    \"earthquake\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0116", "ms": 1558.3131219973438}
+{"people": true, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0117", "ms": 1058.4821720003674}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0118", "ms": 2469.0312610000547}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"tornado\"\n  }\n}"}, "urgency": "urgent", "id": "test-0119", "ms": 1280.6889599996794}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0120", "ms": 1060.4387599996699}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0121", "ms": 1067.1135079974192}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0122", "ms": 1064.7818079996796}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "top", "id": "test-0123", "ms": 2143.522647998907}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "top", "id": "test-0124", "ms": 1413.3159839984728}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0125", "ms": 1395.378735000122}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0126", "ms": 1274.6237600003951}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0127", "ms": 2350.436955999612}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"재난 종류 일치\": false\n}"}, "urgency": "non_urgent", "id": "test-0128", "ms": 1154.5078579983965}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0129", "ms": 1057.3932059996878}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0130", "ms": 1076.1270959992544}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0131", "ms": 1067.9048340025474}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"earthquake\"\n  }\n}"}, "urgency": "urgent", "id": "test-0132", "ms": 1276.9639619982627}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0133", "ms": 1421.3168810019852}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0134", "ms": 1052.6770569995278}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0135", "ms": 1070.9665809990838}
+{"people": true, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"폭풍·홍수\",\n    \"instructions\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0136", "ms": 1652.743737999117}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0137", "ms": 1582.034063001629}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0138", "ms": 1050.6989079985942}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage_detected\": false\n}\n```", "mismatch": "{\n  \"재난 종류 일치\": false,\n  \"신고 내용\": \"태풍\"\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0139", "ms": 1434.6375550012453}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"불화재\"\n  }\n}"}, "urgency": "top", "id": "test-0140", "ms": 1297.5139569971361}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0141", "ms": 1068.409638999583}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0142", "ms": 1066.0959609995189}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0143", "ms": 1363.6562050014618}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"재난 종류\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0144", "ms": 1460.309693000454}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0145", "ms": 1413.7900960013212}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0146", "ms": 1069.3548189992725}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"폭풍·홍수\"\n  }\n}"}, "urgency": "top", "id": "test-0147", "ms": 1350.564405998739}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0148", "ms": 1423.8292400004866}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "urgent", "id": "test-0149", "ms": 2189.8147930005507}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0150", "ms": 1074.321564999991}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0151", "ms": 1071.3998630017159}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"신고 글에서 언급된 재난 종류는 폭우로 인한 침수입니다. 그러나 사진에는 폭풍이나 홍수의 증상이 보이지 않습니다. 대신 건"}, "urgency": "non_urgent", "id": "test-0152", "ms": 2334.577874000388}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(침수)와 사진의 재난 종류(화재)가 서로 다르다.\"\n  }\n}"}, "urgency": "urgent", "id": "test-0153", "ms": 2002.2690430014336}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0154", "ms": 1062.8521120015648}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0155", "ms": 1077.170135002234}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0156", "ms": 1075.8307790019899}
+{"people": true, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0157", "ms": 1062.5702970028215}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0158", "ms": 1069.6273559988185}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0159", "ms": 1046.3919719986734}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0160", "ms": 1060.7086769996386}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0161", "ms": 1068.202406000637}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0162", "ms": 1226.6471969996928}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0163", "ms": 1060.267778000707}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "top", "id": "test-0164", "ms": 1420.9466710017296}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0165", "ms": 1055.3941540019878}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0166", "ms": 1072.9707580030663}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0167", "ms": 1059.9004100004095}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0168", "ms": 1417.4379069991119}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0169", "ms": 1059.3627089983784}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(폭풍·홍수)가 서로 다르다.\"\n  }\n}"}, "urgency": "top", "id": "test-0170", "ms": 2072.533722999651}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0171", "ms": 1070.7659389991022}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"재난 종류 일치\": false\n}"}, "urgency": "non_urgent", "id": "test-0172", "ms": 1152.9885939999076}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0173", "ms": 1026.9561050008633}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0174", "ms": 1554.7352079993288}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0175", "ms": 1527.2311080007057}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\",\n    \"instructions\": false,\n    \"image_type\": \"storm\"\n  }\n}"}, "urgency": "normal", "id": "test-0176", "ms": 1582.7106060023652}
+{"people": true, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0177", "ms": 1061.792839998816}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0178", "ms": 1228.6023140004545}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\",\n    \"instructions\": false,\n    \"image\": true\n  }\n}"}, "urgency": "normal", "id": "test-0179", "ms": 1524.5077279978432}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(폭풍·홍수)가 서로 다르다.\"\n  }\n}"}, "urgency": "normal", "id": "test-0180", "ms": 2078.6703679987113}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0181", "ms": 1068.643864000478}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0182", "ms": 1069.484055002249}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(폭풍·홍수)가 서로 다르다.\"\n  }\n}"}, "urgency": "urgent", "id": "test-0183", "ms": 2070.037431003584}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0184", "ms": 1070.5001759997685}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0185", "ms": 1062.643711000419}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0186", "ms": 1409.6063869983482}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0187", "ms": 1627.7976220007986}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0188", "ms": 935.6140519994369}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0189", "ms": 1526.2782890022208}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0190", "ms": 1065.8793799993873}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0191", "ms": 1062.9386990003695}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0192", "ms": 1061.8418070007465}
+{"people": true, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0193", "ms": 1066.1620259998017}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0194", "ms": 1581.8977380004071}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0195", "ms": 1068.7992729981488}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "top", "id": "test-0196", "ms": 1415.7636859999911}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "urgency": "urgent", "id": "test-0197", "ms": 1254.0531449994887}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0198", "ms": 1071.2141980002343}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0199", "ms": 1060.8458430033352}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0200", "ms": 1074.2717260000063}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0201", "ms": 1065.5937430019549}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "urgency": "normal", "id": "test-0202", "ms": 1277.3368140005914}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0203", "ms": 1062.9135519993724}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0204", "ms": 919.655977999355}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0205", "ms": 1070.7101309999416}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0206", "ms": 1075.9349469990411}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0207", "ms": 1403.721285998472}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0208", "ms": 1061.09302600089}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0209", "ms": 1065.3664720011875}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0210", "ms": 1041.8005639985495}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0211", "ms": 1408.7263280016487}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0212", "ms": 1074.1797410009895}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0213", "ms": 1063.8949429994682}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0214", "ms": 1442.072295001708}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0215", "ms": 1076.7153319975478}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0216", "ms": 1070.124408997799}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0217", "ms": 1247.5728079989494}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0218", "ms": 1070.1429790024122}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0219", "ms": 1069.0418269987276}
+{"people": true, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0220", "ms": 1072.7919429991744}
+{"people": true, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0221", "ms": 1066.8142610011273}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"재난 종류가 일치하는지\": false,\n  \"재난 종류가 일치하는지\": true\n}"}, "urgency": "urgent", "id": "test-0222", "ms": 1548.7107589979132}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0223", "ms": 1061.6172730005928}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0224", "ms": 1071.1913349987299}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0225", "ms": 1368.6400139995385}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\",\n    \"instructions\": \"false\"\n  }\n}"}, "urgency": "urgent", "id": "test-0226", "ms": 1421.8025769987435}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0227", "ms": 1056.3758330026758}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0228", "ms": 1064.868003999436}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0229", "ms": 2339.9820660015394}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": false,\n    \"instructions\": \"글이 주장하는 재난 종류(태풍)와 사진의 재난 종류(폭풍·홍수)가 서로 다른가?\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0230", "ms": 2070.362236998335}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0231", "ms": 1062.777343999187}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "normal", "id": "test-0232", "ms": 1410.0624329985294}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0233", "ms": 1231.0285210005532}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0234", "ms": 1367.6579560014943}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\",\n    \"instructions\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0235", "ms": 1397.9376240022248}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0236", "ms": 1068.4729730019171}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0237", "ms": 1066.2036280009488}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0238", "ms": 1063.548725000146}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0239", "ms": 1583.8310449980781}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0240", "ms": 1068.9696430017648}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0241", "ms": 1269.7926860018924}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0242", "ms": 1070.0568339998426}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0243", "ms": 1378.5983240013593}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0244", "ms": 1063.8089600033709}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0245", "ms": 1217.4299969992717}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0246", "ms": 1069.0762449994509}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0247", "ms": 1069.7830979988794}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0248", "ms": 1418.7306719977641}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0249", "ms": 1065.4463450009644}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0250", "ms": 1407.9270950023783}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0251", "ms": 1063.9672659999633}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0252", "ms": 1229.4688319998386}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0253", "ms": 1419.2003190000833}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0254", "ms": 1065.7455309992656}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0255", "ms": 1071.2296299971058}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "urgency": "top", "id": "test-0256", "ms": 1252.5205599995388}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0257", "ms": 1071.379031996912}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0258", "ms": 1058.2926930001122}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0259", "ms": 1416.208889997506}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0260", "ms": 1067.0934280024085}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0261", "ms": 1069.7735309986456}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": \"재난 종류가 서로 다르다.\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0262", "ms": 1769.6401069988497}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0263", "ms": 1233.847468996828}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0264", "ms": 1071.7802709987154}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0265", "ms": 1061.4779669995187}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "```json\n{\n  \"mismatch\": {\n    \"type\": \"재난 종류\",\n    \"value\": true\n  }\n}\n```"}, "urgency": "non_urgent", "id": "test-0266", "ms": 1549.736799999664}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0267", "ms": 1062.0919089997187}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0268", "ms": 1420.244270000694}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0269", "ms": 1063.5805380006786}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0270", "ms": 1071.514275001391}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0271", "ms": 1065.1633400011633}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0272", "ms": 1072.2323400004825}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0273", "ms": 1042.4736960012524}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0274", "ms": 1147.8901789996598}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0275", "ms": 1378.5561779986892}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0276", "ms": 1074.8943610014976}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0277", "ms": 1411.2199939991115}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0278", "ms": 1062.2963790010544}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0279", "ms": 1067.744402000244}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0280", "ms": 1239.3536359995778}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0281", "ms": 1227.5621909975598}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0282", "ms": 1582.3563590020058}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0283", "ms": 1065.871323000465}
+{"people": false, "now": true, "severe": false, "mismatch": false, "urgency": "normal", "id": "test-0284", "ms": 1065.9749650003505}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0285", "ms": 1065.3542330001073}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0286", "ms": 1063.4877439988486}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0287", "ms": 1072.3850389986183}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\"\n  }\n}"}, "urgency": "urgent", "id": "test-0288", "ms": 1258.7541079992661}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0289", "ms": 1409.0099269997154}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "normal", "id": "test-0290", "ms": 1392.0562250023067}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"구조물 붕괴\": false,\n  \"지붕 소실\": true,\n  \"도로 유실\": false\n}\n```", "mismatch": "{\n  \"재난 종류 일치\": false,\n  \"신고 내용 일치\": true\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0291", "ms": 1874.4896389980568}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0292", "ms": 1415.5642980003904}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"fire\": false,\n    \"storm_flood\": true,\n    \"earthquake\": false\n  }\n}"}, "urgency": "normal", "id": "test-0293", "ms": 1579.8801639975864}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0294", "ms": 1067.8055259995745}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0295", "ms": 1077.4991389989736}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0296", "ms": 1069.623691997549}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0297", "ms": 1238.5688399990613}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"재난 종류\",\n    \"value\": false\n  }\n}"}, "urgency": "normal", "id": "test-0298", "ms": 1454.5417230001476}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0299", "ms": 1068.1157809995057}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "urgent", "id": "test-0300", "ms": 2185.362382999301}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0301", "ms": 1060.3048089978984}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0302", "ms": 1012.6914090033097}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"tornado\"\n  }\n}"}, "urgency": "urgent", "id": "test-0303", "ms": 1278.1780030018126}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0304", "ms": 1065.0094880002143}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0305", "ms": 1241.3556499996048}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "```json\n{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": false\n  }\n}\n```"}, "urgency": "urgent", "id": "test-0306", "ms": 1461.652663998393}
+{"people": true, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0307", "ms": 1070.7398589984223}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0308", "ms": 2300.11207699863}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0309", "ms": 1416.0843079989718}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0310", "ms": 1416.705837000336}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0311", "ms": 1064.0330599999288}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0312", "ms": 1065.5633239985036}
+{"people": true, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0313", "ms": 1072.1743760004756}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\",\n    \"instructions\": true,\n    \"answer\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0314", "ms": 1527.4716630010516}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0315", "ms": 1721.3450869967346}
+{"people": true, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0316", "ms": 1222.938252001768}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0317", "ms": 1072.4464070008253}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(폭풍·홍수)가 서로 다르다.\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0318", "ms": 2068.6714780022157}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "top", "id": "test-0319", "ms": 2191.9008000004396}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0320", "ms": 1162.9283219990612}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0321", "ms": 1064.364611000201}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0322", "ms": 1067.6198679975641}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0323", "ms": 1054.2750320018968}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0324", "ms": 1070.2830270020058}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0325", "ms": 1064.1572450003878}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"disaster_type_mismatch\": true\n}"}, "urgency": "normal", "id": "test-0326", "ms": 1139.6606799971778}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0327", "ms": 1069.9821170019277}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0328", "ms": 1071.338146997732}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0329", "ms": 1416.052287000639}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": false,\n    \"instructions\": \"글이 주장하는 재난 종류(침수)와 사진의 재난 종류(화재)가 서로 다르다.\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0330", "ms": 1986.9410620012786}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0331", "ms": 1071.6582880013448}
+{"people": true, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0332", "ms": 1048.775917999592}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "top", "id": "test-0333", "ms": 1424.2447840006207}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0334", "ms": 1071.746429999621}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0335", "ms": 921.9045019999612}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage_detected\": false\n}\n```", "mismatch": "{\n  \"재난 종류 일치 여부\": true,\n  \"신고 내용과 사진 내용 일치 여부\": true\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0336", "ms": 1595.2638759990805}
+{"people": false, "now": true, "severe": true, "mismatch": false, "urgency": "urgent", "id": "test-0337", "ms": 1072.3891130000993}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"洪水\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0338", "ms": 2283.52338699915}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0339", "ms": 1424.1170519999287}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\",\n    \"instructions\": true,\n    \"image\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0340", "ms": 1528.6682879996079}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0341", "ms": 1066.7036279992317}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": \"The disaster type claimed in the text (flood) and the disaster type shown in the image (flood) are the same.\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0342", "ms": 2017.737075999321}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0343", "ms": 1075.0671530004183}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"is_severe_damage\": true\n}\n```", "mismatch": "{\n  \"재난 종류 일치\": false\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0344", "ms": 1210.7795129995793}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0345", "ms": 1058.8060010013578}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0346", "ms": 1068.6554280000564}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(폭풍·홍수)가 서로 다르다.\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0347", "ms": 2060.0074139983917}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0348", "ms": 1069.500445999438}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0349", "ms": 1414.750602998538}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0350", "ms": 1052.2140190005302}
+{"people": true, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0351", "ms": 1059.0654170009657}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재)와 사진의 재난 종류(폭풍·홍수)가 서로 다르다.\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0352", "ms": 2070.7290440004726}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe_damage\": true\n}\n```", "mismatch": "{\n  \"재난 종류 일치 여부\": false\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0353", "ms": 1224.9360399982834}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0354", "ms": 1064.0040780017443}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "urgent", "id": "test-0355", "ms": 1408.9051490009297}
+{"people": true, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0356", "ms": 1053.8956720010901}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "normal", "id": "test-0357", "ms": 1417.9849430001923}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "urgency": "urgent", "id": "test-0358", "ms": 1284.7354660007113}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "non_urgent", "id": "test-0359", "ms": 1415.3468149997934}
+{"people": true, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"洪水\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0360", "ms": 1210.4504519993498}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0361", "ms": 1585.8210449987382}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0362", "ms": 1054.9358380012563}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0363", "ms": 1072.9022009982145}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "urgency": "top", "id": "test-0364", "ms": 1270.3389269991021}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\",\n    \"instructions\": false\n  }\n}"}, "urgency": "normal", "id": "test-0365", "ms": 1426.3626069987367}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0366", "ms": 1067.897910001193}
+{"people": false, "now": false, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"재난 종류 일치\": false,\n  \"신고 내용 일치\": true\n}"}, "urgency": "non_urgent", "id": "test-0367", "ms": 1398.7827100027062}
+{"people": false, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0368", "ms": 1013.3978800004115}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": false\n  }\n}"}, "urgency": "urgent", "id": "test-0369", "ms": 1376.4673799996672}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0370", "ms": 1420.1460010008304}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0371", "ms": 1206.7990449977515}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": true,\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0372", "ms": 2297.515452999505}
+{"people": true, "now": true, "severe": true, "mismatch": false, "urgency": "top", "id": "test-0373", "ms": 1063.8410469982773}
+{"people": true, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0374", "ms": 1072.4304590003158}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```"}, "mismatch": false, "urgency": "invalid", "id": "test-0375", "ms": 1233.4579510024923}
+{"people": true, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0376", "ms": 1074.5479029974376}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\",\n    \"instructions\": false\n  }\n}"}, "urgency": "top", "id": "test-0377", "ms": 1390.1261920000252}
+{"people": true, "now": false, "severe": false, "mismatch": true, "urgency": "non_urgent", "id": "test-0378", "ms": 1029.6370700016269}
+{"people": true, "now": true, "severe": true, "mismatch": true, "urgency": "top", "id": "test-0379", "ms": 1061.9015999982366}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0380", "ms": 1070.7823939992522}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"instructions\": \"글이 주장하는 재난 종류(화재, 폭풍·홍수, 지진)와 사진의 재난 종류가 서로 다른가?\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0381", "ms": 2178.164838001976}
+{"people": false, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": false,\n    \"instructions\": \"글이 주장하는 재난 종류(지진)와 사진의 재난 종류(지진)가 같습니다.\"\n  }\n}"}, "urgency": "urgent", "id": "test-0382", "ms": 1942.2452819999307}
+{"people": true, "now": true, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"폭풍·홍수\"\n  }\n}"}, "urgency": "top", "id": "test-0383", "ms": 1347.293114002241}
+{"people": false, "now": false, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": \"noul\"\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0384", "ms": 1626.6223300008278}
+{"people": false, "now": true, "severe": true, "mismatch": true, "urgency": "urgent", "id": "test-0385", "ms": 1065.6588599995303}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0386", "ms": 1058.255220999854}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": false\n  }\n}\n```", "mismatch": "{\n  \"mismatch\": {\n    \"type\": \"noul\",\n    \"value\": true\n  }\n}"}, "mismatch": null, "urgency": "invalid", "id": "test-0387", "ms": 1581.502223998541}
+{"people": true, "now": true, "severe": false, "mismatch": true, "urgency": "urgent", "id": "test-0388", "ms": 1063.8499579981726}
+{"people": false, "now": true, "severe": false, "mismatch": true, "urgency": "normal", "id": "test-0389", "ms": 1064.1734339988034}
+{"people": false, "now": false, "severe": true, "mismatch": false, "urgency": "non_urgent", "id": "test-0390", "ms": 1073.3825380011695}
+{"people": false, "now": true, "severe": null, "invalid_raw": {"severe": "```json\n{\n  \"severe\": {\n    \"type\": true\n  }\n}\n```"}, "mismatch": true, "urgency": "invalid", "id": "test-0391", "ms": 1217.4867909998284}
+{"people": true, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"fire\",\n    \"instructions\": true,\n    \"image\": true\n  }\n}"}, "urgency": "non_urgent", "id": "test-0392", "ms": 1534.2732559984142}
+{"people": false, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"재난 종류 일치\": false,\n  \"신고 내용 일치\": true\n}"}, "urgency": "normal", "id": "test-0393", "ms": 1396.9323139972403}
+{"people": true, "now": true, "severe": false, "mismatch": false, "urgency": "urgent", "id": "test-0394", "ms": 1062.3741769995831}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0395", "ms": 1068.5004250008205}
+{"people": false, "now": false, "severe": false, "mismatch": false, "urgency": "non_urgent", "id": "test-0396", "ms": 1070.0739180028904}
+{"people": false, "now": false, "severe": true, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"ornado\"\n  }\n}"}, "urgency": "non_urgent", "id": "test-0397", "ms": 1250.806788000773}
+{"people": false, "now": false, "severe": true, "mismatch": true, "urgency": "non_urgent", "id": "test-0398", "ms": 1070.1562800022657}
+{"people": true, "now": true, "severe": false, "mismatch": null, "invalid_raw": {"mismatch": "{\n  \"mismatch\": {\n    \"type\": \"flood\"\n  }\n}"}, "urgency": "urgent", "id": "test-0399", "ms": 1283.0175349990895}
