@@ -18,7 +18,22 @@ python fixtures/fetch_images.py "$PWD/runtime/crisismmd"
 CRISIS_ROOT="$PWD/runtime/crisismmd" ZORO_URL=http://127.0.0.1:30001 python server.py
 ```
 
-기본 주소는 `127.0.0.1:8119`, 사진 루트는 `/ephemeral/crisis_bench/crisismmd`다. `PORT`, `DEMO_HOME`, `DEMO_WORKERS`로 각각 포트, 영속 디렉터리, 동시 판정 건수를 설정한다. 기본 동시 판정은 6건이다. 패치된 Zoro(mem-fraction 0.8)에서 합성 100건 폭주를 설정별 3회 실행해 폴백 0건을 유지한 설정 중 완료시간 중앙값이 가장 짧았다. 기본 신고는 글·사진 두 요청을 병렬로 처리한다.
+기본 주소는 `127.0.0.1:8119`, 사진 루트는 `/ephemeral/crisis_bench/crisismmd`다. `PORT`, `DEMO_HOME`, `DEMO_WORKERS`로 각각 포트, 영속 디렉터리, 동시 판정 건수를 설정한다. 현재 데모는 동시 판정 4건으로 운영한다. 기존 인스턴스에서 6건으로 늘리면 폭주 완료 시간은 줄지만 건당 지연이 길어져 4건을 선택했다. 기본 신고는 글·사진 두 요청을 병렬로 처리한다.
+
+새 인스턴스 `l40s-zoro-119`에서 기존 접수 내역을 이어 쓰려면 다음 명령을 실행한다.
+
+```sh
+cd ~/demo119 && test -s runtime-field-live/access.json && test -s runtime-field-live/inbox.sqlite && \
+  DEMO_HOME="$PWD/runtime-field-live" DEMO_WORKERS=4 ~/venvs/bench/bin/python -u server.py
+```
+
+맥북에서 다음 SSH 연결을 열면 상황판은 `127.0.0.1:8119/board`, 폰 신고 페이지는 맥북 Tailscale 주소의 8120번 포트로 접속한다. 기존 신고 QR과 접수요원 키를 그대로 쓴다. Zoro 호출은 인스턴스 내부에서 처리한다.
+
+```sh
+phone_ip=$(tailscale ip -4) && ssh -NT -S none -o BatchMode=yes -o ExitOnForwardFailure=yes \
+  -o ServerAliveInterval=20 -o ServerAliveCountMax=3 \
+  -L 127.0.0.1:8119:127.0.0.1:8119 -L "${phone_ip}:8120:127.0.0.1:8119" l40s-zoro-119
+```
 
 최초 실행 시 `DEMO_HOME/access.json`에 서로 다른 `report`·`admin` 키가 생성된다. 신고 화면은 `/#token=<report>`, 상황판은 `/board#token=<admin>`이다. 토큰은 URL fragment로 받아 브라우저 주소에서 지운다. 실제 사진·자유 입력·토큰은 로컬 실행 디렉터리에 보관한다. 제출용 증빙에는 합성 사례만 포함한다.
 

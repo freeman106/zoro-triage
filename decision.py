@@ -23,7 +23,7 @@ from scene_question import FIELD_PHOTO_QUESTION
 ZORO_MODEL = "zoro-1"
 DEFAULT_ZORO_URL = "http://127.0.0.1:30001"
 DECISION_TIMEOUT = 2.0
-DEFAULT_WORKERS = 6
+DEFAULT_WORKERS = 4
 MAX_PHOTO_PIXELS = 448 * 448
 _PHOTO_GRID = 32  # Zoro's vision patch size (16) times spatial merge size (2).
 _MAX_GRID_ASPECT_RATIO = 200

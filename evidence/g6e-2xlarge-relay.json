@@ -1,0 +1,34 @@
+{
+  "instance": "l40s-zoro-119",
+  "workers": 4,
+  "passed": true,
+  "live_mobile_chromium_via_mac_relay": {
+    "phone_viewport": "390x844 Chromium",
+    "submit_to_pending_ms": 491,
+    "submit_to_sorted_result_ms": 702,
+    "outcome": "최우선",
+    "pending_band_observed": true,
+    "completed_queue_observed": true
+  },
+  "isolated_inbox_on_same_instance": {
+    "server_receipt_to_sse_ms": 3.694,
+    "burst": {
+      "count": 100,
+      "elapsed_ms": 27824,
+      "observed_ms": 27849.988,
+      "fallback": 0,
+      "current_fallback": 0,
+      "started_revision": 1,
+      "revisions": [
+        1
+      ]
+    },
+    "simulated_outage": {
+      "first_mode": "fallback",
+      "final_mode": "zoro",
+      "status": "recovered",
+      "retry_after_due_ms": 0.14,
+      "retry_duration_ms": 383.36
+    }
+  }
+}
